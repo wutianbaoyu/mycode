@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <H3>购物系统</H3> -->
+<applicationtype xmlns="http://www.activecomponents.org/jadex-application"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.activecomponents.org/jadex-application 
+	                    http://www.activecomponents.org/jadex-application-${jadex_build_version}.xsd"
+	name="Shopping" package="shop"
+	autoshutdown="true">
+
+	<componenttypes>
+		<componenttype name="Shop" filename="shop/ShopBDI.class" />
+		<componenttype name="Customer" filename="shop/CustomerBDI.class" />
+		<componenttype name="ShopAndCustomer" filename="shop/ShopAndCustomerBDI.class" />
+	</componenttypes>
+
+	<configurations>
+		<configuration name="2个商店/1个顾客">
+			<components>
+				<component type="Shop"> <!-- 1号商店 -->
+					<arguments>
+						<argument name="shopname">"杂货店,"+$component.getComponentIdentifier().getPlatformName()
+						</argument>
+						<argument name="catalog"><!-- 1号商店(卖杂货) -->
+							new shop.service.Service().getShopInfo(1)
+						</argument>
+					</arguments>
+				</component>
+				<component type="Shop"> <!-- 2号商店(卖甜品) -->
+					<arguments>
+						<argument name="shopname">"甜品店,"+$component.getComponentIdentifier().getPlatformName()
+						</argument>
+						<argument name="catalog">
+							new shop.service.Service().getShopInfo(2)
+						</argument>
+					</arguments>
+				</component>
+				<component type="Customer" /> <!-- 1个顾客 -->
+			</components>
+		</configuration>
+
+		<configuration name="1商店/1顾客">
+			<components>
+				<component type="Shop"> 
+					<arguments>
+						<argument name="shopname">"杂货店,"+$component.getComponentIdentifier().getPlatformName()
+						</argument>
+						<argument name="catalog">
+							new shop.service.Service().getShopInfo(1)
+						</argument>
+					</arguments>
+				</component>
+				<component type="Customer" />  <!-- 1位顾客 -->
+			</components>
+		</configuration>
+		
+		<configuration name="1商店">
+			<components>
+				<component type="Shop"> 
+					<arguments>
+						<argument name="shopname">"杂货店,"+$component.getComponentIdentifier().getPlatformName()
+						</argument>
+						<argument name="catalog">
+							new shop.service.Service().getShopInfo(1)
+						</argument>
+					</arguments>
+				</component>
+			</components>
+		</configuration>
+		
+		<configuration name="1顾客">
+			<components>
+				<component type="Customer"  />  <!-- 1位顾客 -->
+			</components>
+		</configuration>
+
+		<configuration name="2个店也是客户">
+			<components>
+				<component type="ShopAndCustomer" name="Ladl"> <!-- Ladl 是1位店主(卖食品)，同时也是一位顾客 -->
+					<arguments>
+						<argument name="shopname">"杂货店,"+$component.getComponentIdentifier().getPlatformName()
+						</argument>
+						<argument name="catalog">
+							new shop.service.Service().getShopInfo(1)
+						</argument>
+					</arguments>
+				</component>
+				<component type="ShopAndCustomer" name="Herzie"><!--Herzie 是1位店主(卖衣装)，同时也是一位顾客 -->
+					<arguments>
+						<argument name="shopname">"甜品店,"+$component.getComponentIdentifier().getPlatformName()
+						</argument>
+						<argument name="catalog">
+							new shop.service.Service().getShopInfo(2)
+						</argument>
+					</arguments>
+				</component>
+			</components>
+		</configuration>
+	</configurations>
+
+</applicationtype>
