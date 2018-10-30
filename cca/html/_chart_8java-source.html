@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>cca: D:/dude/cca/src/edu/packt/neuralnet/util/Chart.javaÊ∫êÊñá‰ª∂</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Âà∂‰ΩúËÄÖ Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>È¶ñÈ°µ</span></a></li>
+    <li><a href="namespaces.html"><span>ÂåÖ</span></a></li>
+    <li><a href="annotated.html"><span>Á±ª</span></a></li>
+    <li class="current"><a href="files.html"><span>Êñá‰ª∂</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>Êñá‰ª∂ÂàóË°®</span></a></li>
+    <li><a href="globals.html"><span>Êñá‰ª∂ÊàêÂëò</span></a></li>
+  </ul>
+</div>
+<h1>D:/dude/cca/src/edu/packt/neuralnet/util/Chart.java</h1><a href="_chart_8java.html">ÊµèËßàËØ•Êñá‰ª∂ÁöÑÊñáÊ°£„ÄÇ</a><div class="fragment"><pre class="fragment"><a name="l00001"></a><a class="code" href="namespaceedu_1_1packt_1_1neuralnet_1_1util.html">00001</a> <span class="keyword">package </span>edu.packt.neuralnet.util;
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="keyword">import</span> java.awt.BasicStroke;
+<a name="l00004"></a>00004 <span class="keyword">import</span> java.awt.Color;
+<a name="l00005"></a>00005 
+<a name="l00006"></a>00006 <span class="keyword">import</span> org.jfree.chart.ChartFactory;
+<a name="l00007"></a>00007 <span class="keyword">import</span> org.jfree.chart.ChartFrame;
+<a name="l00008"></a>00008 <span class="keyword">import</span> org.jfree.chart.JFreeChart;
+<a name="l00009"></a>00009 <span class="keyword">import</span> org.jfree.chart.plot.PlotOrientation;
+<a name="l00010"></a>00010 <span class="keyword">import</span> org.jfree.chart.plot.XYPlot;
+<a name="l00011"></a>00011 <span class="keyword">import</span> org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
+<a name="l00012"></a>00012 <span class="keyword">import</span> org.jfree.data.xy.XYSeries;
+<a name="l00013"></a>00013 <span class="keyword">import</span> org.jfree.data.xy.XYSeriesCollection;
+<a name="l00014"></a>00014 
+<a name="l00015"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html">00015</a> <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html">Chart</a> {
+<a name="l00016"></a>00016         
+<a name="l00017"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#9eeffe137fac7b20754fe94e3e75109f">00017</a>         <span class="keyword">public</span> <span class="keyword">enum</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#9eeffe137fac7b20754fe94e3e75109f">ChartPlotTypeENUM</a> {
+<a name="l00018"></a><a class="code" href="_chart_8java.html#9eeffe137fac7b20754fe94e3e75109f3b42f7bedd2f2cc461eb31220977be5b">00018</a>                 <a class="code" href="_chart_8java.html#9eeffe137fac7b20754fe94e3e75109f3b42f7bedd2f2cc461eb31220977be5b">FULL_DATA</a>, <a class="code" href="_chart_8java.html#9eeffe137fac7b20754fe94e3e75109f195d45c0c030939920d8a2aad646216e">COMPARISON</a>;
+<a name="l00019"></a>00019         }
+<a name="l00020"></a>00020         <span class="comment">//¥Ê¥¢ø…“‘ªÊ÷∆µƒÕº±Í¿‡–Õµƒ√∂æŸ</span>
+<a name="l00021"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#cd70ff94ea2678020d41d9f1bb4456b0">00021</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#cd70ff94ea2678020d41d9f1bb4456b0">plotXYData</a>(Object[] vector, String chartTitle, String xAxisLabel, String yAxisLabel) {
+<a name="l00022"></a>00022                 <span class="comment">//ª˘”⁄ ˝æ›œÚ¡øªÊ÷∆XYÕº±Íµƒ∑Ω∑®£¨≤Œ ˝£∫“™ªÊÕºµƒ ˝æ›œÚ¡ø°¢Õº±Í±ÍÃ‚°¢x÷·œÚ¡ø£¨y÷·œÚ¡ø</span>
+<a name="l00023"></a>00023                 <span class="keywordtype">int</span> length = vector.length;
+<a name="l00024"></a>00024                 
+<a name="l00025"></a>00025                 XYSeriesCollection dataset = <span class="keyword">new</span> XYSeriesCollection();
+<a name="l00026"></a>00026                 
+<a name="l00027"></a>00027                 XYSeries series = <span class="keyword">new</span> XYSeries( yAxisLabel );
+<a name="l00028"></a>00028                 
+<a name="l00029"></a>00029                 <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; length; i++) {
+<a name="l00030"></a>00030                                 
+<a name="l00031"></a>00031                 series.add( (i+1), (<span class="keywordtype">double</span>) vector[i] );
+<a name="l00032"></a>00032                         
+<a name="l00033"></a>00033                 }
+<a name="l00034"></a>00034                 
+<a name="l00035"></a>00035                 dataset.addSeries(series);
+<a name="l00036"></a>00036                 
+<a name="l00037"></a>00037                 JFreeChart chart = ChartFactory.createXYLineChart(
+<a name="l00038"></a>00038                         chartTitle,             <span class="comment">// chart title</span>
+<a name="l00039"></a>00039             xAxisLabel,     <span class="comment">// x axis label</span>
+<a name="l00040"></a>00040             yAxisLabel,     <span class="comment">// y axis label</span>
+<a name="l00041"></a>00041             dataset,        <span class="comment">// data</span>
+<a name="l00042"></a>00042             PlotOrientation.VERTICAL,
+<a name="l00043"></a>00043             <span class="keyword">true</span>,           <span class="comment">// include legend</span>
+<a name="l00044"></a>00044             <span class="keyword">true</span>,           <span class="comment">// tooltips</span>
+<a name="l00045"></a>00045             <span class="keyword">false</span>           <span class="comment">// urls</span>
+<a name="l00046"></a>00046         );
+<a name="l00047"></a>00047                 
+<a name="l00048"></a>00048         ChartFrame frame = <span class="keyword">new</span> ChartFrame(<span class="stringliteral">"Neural Net Chart"</span>, chart);
+<a name="l00049"></a>00049                 frame.pack();
+<a name="l00050"></a>00050                 frame.setVisible(<span class="keyword">true</span>);
+<a name="l00051"></a>00051 
+<a name="l00052"></a>00052         }
+<a name="l00053"></a>00053         
+<a name="l00054"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#9e1e0d8847a78fab8e2cfa95e85b3da6">00054</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#cd70ff94ea2678020d41d9f1bb4456b0">plotXYData</a>(<span class="keywordtype">double</span>[][] matrix, String chartTitle, String xAxisLabel, String yAxisLabel, <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#9eeffe137fac7b20754fe94e3e75109f">ChartPlotTypeENUM</a> chartPlotType) {
+<a name="l00055"></a>00055                 <span class="comment">//ª˘”⁄ ˝æ›œÚ¡øªÊ÷∆XYÕº±Ìµƒ∑Ω∑®£¨≤Œ ˝£∫“™ªÊÕºµƒ ˝æ›œÚ¡ø°¢Õº±Ì±ÍÃ‚°¢X÷·±Í«©°¢Y÷·±Í«©°¢ªÊ÷∆¿‡–Õ</span>
+<a name="l00056"></a>00056                 <span class="keywordtype">int</span> rows = matrix.length;
+<a name="l00057"></a>00057                 <span class="keywordtype">int</span> cols = matrix[0].length;
+<a name="l00058"></a>00058                 
+<a name="l00059"></a>00059                 XYSeriesCollection dataset = <span class="keyword">new</span> XYSeriesCollection();
+<a name="l00060"></a>00060                 
+<a name="l00061"></a>00061                 <span class="keywordflow">for</span> (<span class="keywordtype">int</span> cols_i = 0; cols_i &lt; cols; cols_i++) {
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063                         XYSeries seriesMin = null;
+<a name="l00064"></a>00064                         XYSeries seriesMax = null;
+<a name="l00065"></a>00065                         
+<a name="l00066"></a>00066                         XYSeries series = null;
+<a name="l00067"></a>00067                         
+<a name="l00068"></a>00068                         <span class="keywordflow">switch</span> (chartPlotType) {
+<a name="l00069"></a>00069                                 <span class="keywordflow">case</span> <a class="code" href="_chart_8java.html#9eeffe137fac7b20754fe94e3e75109f3b42f7bedd2f2cc461eb31220977be5b">FULL_DATA</a>:
+<a name="l00070"></a>00070                                         series = <span class="keyword">new</span> XYSeries( <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#18626db7bfff9c7be41f5a9edf944f54">selectTemperatureSeriesName</a>(cols_i) );
+<a name="l00071"></a>00071                                         <span class="keywordflow">break</span>;
+<a name="l00072"></a>00072                                 <span class="keywordflow">case</span> <a class="code" href="_chart_8java.html#9eeffe137fac7b20754fe94e3e75109f195d45c0c030939920d8a2aad646216e">COMPARISON</a>:
+<a name="l00073"></a>00073                                         series = <span class="keyword">new</span> XYSeries( <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#96b34b4706dc50ce7bd80c16f383c272">selectComparisonSeriesName</a>(cols_i) );
+<a name="l00074"></a>00074                                         <span class="keywordflow">break</span>;
+<a name="l00075"></a>00075                                 <span class="keywordflow">default</span>:
+<a name="l00076"></a>00076                                         <span class="keywordflow">throw</span> <span class="keyword">new</span> IllegalArgumentException(chartPlotType + <span class="stringliteral">" does not exist in ChartPlotTypeENUM"</span>);
+<a name="l00077"></a>00077                         }
+<a name="l00078"></a>00078                         
+<a name="l00079"></a>00079                         <span class="keywordflow">if</span>(cols_i &gt; 0) {
+<a name="l00080"></a>00080                                 seriesMin = <span class="keyword">new</span> XYSeries( <span class="stringliteral">"-1.0 ∞C"</span> );
+<a name="l00081"></a>00081                                 seriesMax = <span class="keyword">new</span> XYSeries( <span class="stringliteral">"+1.0 ∞C"</span> );
+<a name="l00082"></a>00082                         }
+<a name="l00083"></a>00083                         
+<a name="l00084"></a>00084                         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> rows_i = 0; rows_i &lt; rows; rows_i++) {
+<a name="l00085"></a>00085                                 
+<a name="l00086"></a>00086                                 <span class="keywordflow">if</span>(cols_i &gt; 0) {
+<a name="l00087"></a>00087                                         seriesMin.add( (rows_i+1), matrix[rows_i][cols_i] - 1.0 );
+<a name="l00088"></a>00088                                         seriesMax.add( (rows_i+1), matrix[rows_i][cols_i] + 1.0 );
+<a name="l00089"></a>00089                                 }
+<a name="l00090"></a>00090                                 
+<a name="l00091"></a>00091                         series.add( (rows_i+1), matrix[rows_i][cols_i] );
+<a name="l00092"></a>00092                                 
+<a name="l00093"></a>00093                         }
+<a name="l00094"></a>00094                         
+<a name="l00095"></a>00095                         dataset.addSeries(series);
+<a name="l00096"></a>00096                         
+<a name="l00097"></a>00097                         <span class="keywordflow">if</span>(cols_i &gt; 0) {
+<a name="l00098"></a>00098                                 dataset.addSeries(seriesMin);
+<a name="l00099"></a>00099                                 dataset.addSeries(seriesMax);
+<a name="l00100"></a>00100                         }
+<a name="l00101"></a>00101                         
+<a name="l00102"></a>00102                         
+<a name="l00103"></a>00103                 }
+<a name="l00104"></a>00104                 
+<a name="l00105"></a>00105                 JFreeChart chart = ChartFactory.createXYLineChart(
+<a name="l00106"></a>00106                         chartTitle,             <span class="comment">// chart title</span>
+<a name="l00107"></a>00107             xAxisLabel,     <span class="comment">// x axis label</span>
+<a name="l00108"></a>00108             yAxisLabel,     <span class="comment">// y axis label</span>
+<a name="l00109"></a>00109             dataset,        <span class="comment">// data</span>
+<a name="l00110"></a>00110             PlotOrientation.VERTICAL,
+<a name="l00111"></a>00111             <span class="keyword">true</span>,           <span class="comment">// include legend</span>
+<a name="l00112"></a>00112             <span class="keyword">true</span>,           <span class="comment">// tooltips</span>
+<a name="l00113"></a>00113             <span class="keyword">false</span>           <span class="comment">// urls</span>
+<a name="l00114"></a>00114         );
+<a name="l00115"></a>00115                 
+<a name="l00116"></a>00116                 XYPlot plot = chart.getXYPlot();
+<a name="l00117"></a>00117                 
+<a name="l00118"></a>00118                 chart.getXYPlot().getRangeAxis().setRange(22, 30);
+<a name="l00119"></a>00119                 
+<a name="l00120"></a>00120                 <span class="comment">//dashed line (min and max):</span>
+<a name="l00121"></a>00121                 XYLineAndShapeRenderer rendererMin = (XYLineAndShapeRenderer) plot.getRenderer();
+<a name="l00122"></a>00122                 XYLineAndShapeRenderer rendererMax = (XYLineAndShapeRenderer) plot.getRenderer();
+<a name="l00123"></a>00123                 rendererMin.setSeriesPaint(2, Color.black);
+<a name="l00124"></a>00124                 rendererMax.setSeriesPaint(3, Color.black);
+<a name="l00125"></a>00125                 rendererMin.setSeriesStroke(2, <span class="keyword">new</span> BasicStroke(
+<a name="l00126"></a>00126                 2.0f, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND,
+<a name="l00127"></a>00127                 1.0f, <span class="keyword">new</span> <span class="keywordtype">float</span>[] {1.0f, 6.0f}, 0.0f
+<a name="l00128"></a>00128             ));
+<a name="l00129"></a>00129                 
+<a name="l00130"></a>00130                 rendererMax.setSeriesStroke(3, <span class="keyword">new</span> BasicStroke(
+<a name="l00131"></a>00131                 2.0f, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND,
+<a name="l00132"></a>00132                 1.0f, <span class="keyword">new</span> <span class="keywordtype">float</span>[] {1.0f, 6.0f}, 0.0f
+<a name="l00133"></a>00133             ));
+<a name="l00134"></a>00134                 plot.setRenderer(0, rendererMin);
+<a name="l00135"></a>00135                 plot.setRenderer(1, rendererMax);
+<a name="l00136"></a>00136                 
+<a name="l00137"></a>00137 
+<a name="l00138"></a>00138                 ChartFrame frame = <span class="keyword">new</span> ChartFrame(<span class="stringliteral">"Neural Net Chart"</span>, chart);
+<a name="l00139"></a>00139                 frame.pack();
+<a name="l00140"></a>00140                 frame.setVisible(<span class="keyword">true</span>);
+<a name="l00141"></a>00141 
+<a name="l00142"></a>00142         }
+<a name="l00143"></a>00143         
+<a name="l00144"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#96b34b4706dc50ce7bd80c16f383c272">00144</a>         <span class="keyword">private</span> String selectComparisonSeriesName(<span class="keywordtype">int</span> index){
+<a name="l00145"></a>00145                 <span class="comment">//—°‘Ò±»Ωœ–Ú¡–√˚µƒ∑Ω∑®£¨≤Œ ˝£∫À˜“˝£¨∑µªÿ£∫–Ú¡–√˚</span>
+<a name="l00146"></a>00146                 <span class="keywordflow">switch</span> (index) {
+<a name="l00147"></a>00147                 <span class="keywordflow">case</span> 0:
+<a name="l00148"></a>00148                         <span class="keywordflow">return</span> <span class="stringliteral">"Real"</span>;
+<a name="l00149"></a>00149                 <span class="keywordflow">case</span> 1:
+<a name="l00150"></a>00150                         <span class="keywordflow">return</span> <span class="stringliteral">"Estimated"</span>;
+<a name="l00151"></a>00151                 <span class="keywordflow">default</span>:
+<a name="l00152"></a>00152                         <span class="keywordflow">return</span> <span class="stringliteral">"Undefined"</span>;
+<a name="l00153"></a>00153                 }
+<a name="l00154"></a>00154         }
+<a name="l00155"></a>00155         
+<a name="l00156"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#18626db7bfff9c7be41f5a9edf944f54">00156</a>         <span class="keyword">private</span> String selectTemperatureSeriesName(<span class="keywordtype">int</span> index){
+<a name="l00157"></a>00157                 <span class="comment">//—°‘ÒŒ¬∂»–Ú¡–√˚µƒ∑Ω∑®£¨≤Œ ˝£∫À˜“˝£¨∑µªÿ£∫–Ú¡–√˚</span>
+<a name="l00158"></a>00158                 <span class="keywordflow">switch</span> (index) {
+<a name="l00159"></a>00159                 <span class="keywordflow">case</span> 0:
+<a name="l00160"></a>00160                         <span class="keywordflow">return</span> <span class="stringliteral">"TempMean"</span>;
+<a name="l00161"></a>00161                 <span class="keywordflow">case</span> 1:
+<a name="l00162"></a>00162                         <span class="keywordflow">return</span> <span class="stringliteral">"PrecipMean"</span>;    
+<a name="l00163"></a>00163                 <span class="keywordflow">case</span> 2:
+<a name="l00164"></a>00164                         <span class="keywordflow">return</span> <span class="stringliteral">"Insolation"</span>;
+<a name="l00165"></a>00165                 <span class="keywordflow">case</span> 3:
+<a name="l00166"></a>00166                         <span class="keywordflow">return</span> <span class="stringliteral">"RelHumiMean"</span>;
+<a name="l00167"></a>00167                 <span class="keywordflow">case</span> 4:
+<a name="l00168"></a>00168                         <span class="keywordflow">return</span> <span class="stringliteral">"WindSpeedMean"</span>;
+<a name="l00169"></a>00169                 <span class="keywordflow">default</span>:
+<a name="l00170"></a>00170                         <span class="keywordflow">return</span> <span class="stringliteral">"Undefined"</span>;
+<a name="l00171"></a>00171                 }
+<a name="l00172"></a>00172         }
+<a name="l00173"></a>00173         
+<a name="l00174"></a>00174         
+<a name="l00175"></a>00175         
+<a name="l00176"></a>00176 }
+</pre></div><hr size="1"><address style="text-align: right;"><small>Generated at Sat Sep 8 21:51:21 2018 for cca by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

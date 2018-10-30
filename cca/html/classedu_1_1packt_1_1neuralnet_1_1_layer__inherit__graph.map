@@ -1,0 +1,3 @@
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html" title="{edu.packt.neuralnet.HiddenLayer\n||+ initLayer()\l+ printLayer()\l+ setNumberOfNeuronsInLayer()\l}" alt="" coords="5,213,224,325">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1_input_layer.html" title="{edu.packt.neuralnet.InputLayer\n||+ initLayer()\l+ printLayer()\l+ setNumberOfNeuronsInLayer()\l}" alt="" coords="248,213,464,325">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1_output_layer.html" title="{edu.packt.neuralnet.OutputLayer\n||+ initLayer()\l+ printLayer()\l}" alt="" coords="488,221,704,317">

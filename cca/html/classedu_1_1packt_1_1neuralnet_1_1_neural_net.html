@@ -1,0 +1,1778 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>cca: edu.packt.neuralnet.NeuralNet类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li><a href="namespaces.html"><span>包</span></a></li>
+    <li class="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul>
+</div>
+<div class="nav">
+<a class="el" href="namespaceedu.html">edu</a>.<a class="el" href="namespaceedu_1_1packt.html">packt</a>.<a class="el" href="namespaceedu_1_1packt_1_1neuralnet.html">neuralnet</a>.<a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a></div>
+<h1>edu.packt.neuralnet.NeuralNet类参考</h1><!-- doxytag: class="edu::packt::neuralnet::NeuralNet" -->edu.packt.neuralnet.NeuralNet合作图：<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net__coll__graph.png" border="0" usemap="#edu_8packt_8neuralnet_8_neural_net__coll__map" alt="Collaboration graph"></center>
+<map name="edu_8packt_8neuralnet_8_neural_net__coll__map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_output_layer.html" title="{edu.packt.neuralnet.OutputLayer\n||+ initLayer()\l+ printLayer()\l}" alt="" coords="5,224,221,320"><area shape="rect" title="outputLayer" alt="" coords="128,316,136,324"><area shape="rect" title="outputLayer" alt="" coords="241,611,249,619"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html" title="{edu.packt.neuralnet.Layer\n|# numberOfNeuronsInLayer\l&#45; listOfNeurons\l|+ printLayer()\l+ getListOfNeurons()\l+ setListOfNeurons()\l+ getNumberOfNeuronsInLayer()\l+ setNumberOfNeuronsInLayer()\l}" alt="" coords="244,5,463,165"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html" title="{edu.packt.neuralnet.InputLayer\n||+ initLayer()\l+ printLayer()\l+ setNumberOfNeuronsInLayer()\l}" alt="" coords="245,216,461,328"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html" title="{edu.packt.neuralnet.HiddenLayer\n||+ initLayer()\l+ printLayer()\l+ setNumberOfNeuronsInLayer()\l}" alt="" coords="485,216,704,328"><area shape="rect" title="inputLayer" alt="" coords="349,324,357,332"><area shape="rect" title="inputLayer" alt="" coords="349,388,357,396"><area shape="rect" title="hiddenLayer" alt="" coords="569,324,577,332"><area shape="rect" title="hiddenLayer" alt="" coords="457,613,465,621"></map>
+<center><font size="2">[<a href="graph_legend.html">图例</a>]</font></center><a href="classedu_1_1packt_1_1neuralnet_1_1_neural_net-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a391d187fbca78fa9fac6eb08a9dbede">initNet</a> (int numberOfInputNeurons, int <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d0d02b544d2edcdf17ed38f22d4b83cb">numberOfHiddenLayers</a>, int numberOfNeuronsInHiddenLayer, int numberOfOutputNeurons)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d8a8c2e14e0dca5720f083781cd65a75">printNet</a> (<a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> n)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651">trainNet</a> (<a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> n)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a8eeacb9e33fb2ad7afa7255afac5f8a">printTrainedNetResult</a> (<a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> n)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">double[][]&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#82c9337c75bc84b8d1e84c4846a0b138">getNetOutputValues</a> (<a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> trainedNet)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#58dc5996f68b42708d8b991eae4cfdae">netValidation</a> (<a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> n)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html">InputLayer</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#61327e435c95e3c3de0bbf2f2f556392">getInputLayer</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#24cfee30d0351c5d58aa34b7d2071d1e">setInputLayer</a> (<a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html">InputLayer</a> <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#790681f72fcbf2c158632bf0e3b1239a">inputLayer</a>)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html">HiddenLayer</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#367b52fc13f06b36b77135b25cb9b798">getHiddenLayer</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#780816351285521bf51d63080d243c01">setHiddenLayer</a> (<a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html">HiddenLayer</a> <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#fe0d76dcfd041e6940a2c5cf0086c3f2">hiddenLayer</a>)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">ArrayList&lt; <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html">HiddenLayer</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#7b73c95ca04f299357dc5ea32f72893d">getListOfHiddenLayer</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#67782e73b6b32e2cf17341c1f326624c">setListOfHiddenLayer</a> (ArrayList&lt; <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html">HiddenLayer</a> &gt; <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1c9e22f187dd0a667def1afb9548dfe8">listOfHiddenLayer</a>)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_output_layer.html">OutputLayer</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#242fb32fd1cfdf033445094116679d9a">getOutputLayer</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f1c1aa92631538b5eae425583f4cc53c">setOutputLayer</a> (<a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_output_layer.html">OutputLayer</a> <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#b61a78e231cae9b29dfbe69bb2baab4c">outputLayer</a>)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#4cf1b9453bf3e121abc949a12106487e">getNumberOfHiddenLayers</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#770366f71716a4fd81f7743281b3a036">setNumberOfHiddenLayers</a> (int <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d0d02b544d2edcdf17ed38f22d4b83cb">numberOfHiddenLayers</a>)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">double[][]&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#c2e7c33dcd99679a76e6b405d93d7f5b">getTrainSet</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#cfabb83136c77f550a8151c973b32efd">setTrainSet</a> (double[][] <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#afdbc0aa780133cc4cfbbadefc3ce139">trainSet</a>)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">double[]&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#ce05c78718bed1c012fa76da1607736e">getRealOutputSet</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#8976215b3ef4c92dc944edaeae8edec5">setRealOutputSet</a> (double[] <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#00c34ff29cd160256c7d31917077314d">realOutputSet</a>)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f14057f123727ff718a5403015e4e647">getMaxEpochs</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#460e07bbcd7a383b25dcdd17515edfb7">setMaxEpochs</a> (int <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#5de098de78163ec131c4cd11e6978a2a">maxEpochs</a>)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#2f63bc17bf5a76266ab3a09660a96e5f">getTargetError</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#4772754bde999eea841cce83891a441e">setTargetError</a> (double <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a23dd06d7ee8a5ca177bdbd008c43c24">targetError</a>)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#107c193fc9a6af728cc511406ee89c35">getLearningRate</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#07c09b1cded532abff86d9ab9a4f1800">setLearningRate</a> (double <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0e8d2277c7c993ab268100e221af291b">learningRate</a>)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0d05e835e0ae90e7fef72a1f28cb7809">getTrainingError</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#91c8857c9c3a82e61f5512c09e79a376">setTrainingError</a> (double <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#8bc1a0c863fe8051bc1982b8fcfa46ca">trainingError</a>)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">ActivationFncENUM&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#20ef5ea336c7d1730b65c4026d6fd285">getActivationFnc</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#59ca603e369ac4319892bc9d49d50477">setActivationFnc</a> (ActivationFncENUM <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d7c0ed2fd6018cda917a139708eaf95a">activationFnc</a>)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">TrainingTypesENUM&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0272182f49606767f22dafa1a5c36f3a">getTrainType</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#c499625ada286215d3b5a7441ec15439">setTrainType</a> (TrainingTypesENUM <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1a617dc4ba66625087e8bfc46ef6f880">trainType</a>)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">ArrayList&lt; Double &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#42d6e1250122830856d89a3686b3a796">getListOfMSE</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#59d28282fb7086f06254c471efde5af0">setListOfMSE</a> (ArrayList&lt; Double &gt; <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#bee7e85243a01f1880b221734fa46a45">listOfMSE</a>)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">double[][]&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#79fa7f9b399b5358a6c490fc1e9e5a9c">getRealMatrixOutputSet</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#eb1b8b8c88a3ee75dccedc0ab7efd919">setRealMatrixOutputSet</a> (double[][] <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#e58c1c69c13e1f4004dc47b034f9dfd9">realMatrixOutputSet</a>)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#06b04584eccf0496d268a34cfb062a34">getErrorMean</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#3e642d97304902c4e777d03d66074af5">setErrorMean</a> (double <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f9d91d2ad2b7ea749a1f917a20bd80c7">errorMean</a>)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">ActivationFncENUM&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0d441aaaf3fc0902c508a255db617050">getActivationFncOutputLayer</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#62616fe89b4ee62efc92bc0f4490a372">setActivationFncOutputLayer</a> (ActivationFncENUM <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#63fb0f3e3551a618d157b83e9609e35a">activationFncOutputLayer</a>)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">double[][]&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#35b0661fea2763a1c97103ddd7e9fcb3">getValidationSet</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#57b2828d7b4a77eafd7882057522cde0">setValidationSet</a> (double[][] <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#392ce58c6e8a989c4dbd77d8d27d496c">validationSet</a>)</td></tr>
+
+<tr><td colspan="2"><br><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html">InputLayer</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#790681f72fcbf2c158632bf0e3b1239a">inputLayer</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html">HiddenLayer</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#fe0d76dcfd041e6940a2c5cf0086c3f2">hiddenLayer</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">ArrayList&lt; <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html">HiddenLayer</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1c9e22f187dd0a667def1afb9548dfe8">listOfHiddenLayer</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_output_layer.html">OutputLayer</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#b61a78e231cae9b29dfbe69bb2baab4c">outputLayer</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d0d02b544d2edcdf17ed38f22d4b83cb">numberOfHiddenLayers</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">double[][]&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#afdbc0aa780133cc4cfbbadefc3ce139">trainSet</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">double[][]&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#392ce58c6e8a989c4dbd77d8d27d496c">validationSet</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">double[]&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#00c34ff29cd160256c7d31917077314d">realOutputSet</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">double[][]&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#e58c1c69c13e1f4004dc47b034f9dfd9">realMatrixOutputSet</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#5de098de78163ec131c4cd11e6978a2a">maxEpochs</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0e8d2277c7c993ab268100e221af291b">learningRate</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a23dd06d7ee8a5ca177bdbd008c43c24">targetError</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#8bc1a0c863fe8051bc1982b8fcfa46ca">trainingError</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f9d91d2ad2b7ea749a1f917a20bd80c7">errorMean</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">ArrayList&lt; Double &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#bee7e85243a01f1880b221734fa46a45">listOfMSE</a> = new ArrayList&lt;Double&gt;()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">ActivationFncENUM&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d7c0ed2fd6018cda917a139708eaf95a">activationFnc</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">ActivationFncENUM&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#63fb0f3e3551a618d157b83e9609e35a">activationFncOutputLayer</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">TrainingTypesENUM&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1a617dc4ba66625087e8bfc46ef6f880">trainType</a></td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00012">12</a>行定义。<hr><h2>成员函数文档</h2>
+<a class="anchor" name="a391d187fbca78fa9fac6eb08a9dbede"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::initNet" ref="a391d187fbca78fa9fac6eb08a9dbede" args="(int numberOfInputNeurons, int numberOfHiddenLayers, int numberOfNeuronsInHiddenLayer, int numberOfOutputNeurons)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> edu.packt.neuralnet.NeuralNet.initNet           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>numberOfInputNeurons</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>numberOfHiddenLayers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>numberOfNeuronsInHiddenLayer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>numberOfOutputNeurons</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00035">35</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00015">edu.packt.neuralnet.NeuralNet.hiddenLayer</a>、<a class="el" href="_output_layer_8java-source.html#l00008">edu.packt.neuralnet.OutputLayer.initLayer()</a>、<a class="el" href="_hidden_layer_8java-source.html#l00008">edu.packt.neuralnet.HiddenLayer.initLayer()</a>、<a class="el" href="_input_layer_8java-source.html#l00008">edu.packt.neuralnet.InputLayer.initLayer()</a>、<a class="el" href="_neural_net_8java-source.html#l00014">edu.packt.neuralnet.NeuralNet.inputLayer</a>、<a class="el" href="_neural_net_8java-source.html#l00016">edu.packt.neuralnet.NeuralNet.listOfHiddenLayer</a>、<a class="el" href="_neural_net_8java-source.html#l00017">edu.packt.neuralnet.NeuralNet.outputLayer</a>、<a class="el" href="_neural_net_8java-source.html#l00185">edu.packt.neuralnet.NeuralNet.setHiddenLayer()</a>、<a class="el" href="_neural_net_8java-source.html#l00177">edu.packt.neuralnet.NeuralNet.setInputLayer()</a>、<a class="el" href="_neural_net_8java-source.html#l00193">edu.packt.neuralnet.NeuralNet.setListOfHiddenLayer()</a>、<a class="el" href="_neural_net_8java-source.html#l00209">edu.packt.neuralnet.NeuralNet.setNumberOfHiddenLayers()</a>、<a class="el" href="_layer_8java-source.html#l00025">edu.packt.neuralnet.Layer.setNumberOfNeuronsInLayer()</a>、<a class="el" href="_hidden_layer_8java-source.html#l00108">edu.packt.neuralnet.HiddenLayer.setNumberOfNeuronsInLayer()</a>、<a class="el" href="_input_layer_8java-source.html#l00043">edu.packt.neuralnet.InputLayer.setNumberOfNeuronsInLayer()</a>及<a class="el" href="_neural_net_8java-source.html#l00201">edu.packt.neuralnet.NeuralNet.setOutputLayer()</a>.
+<p>
+参考自 <a class="el" href="_weather_8java-source.html#l00015">edu.packt.neuralnet.weather.Weather.main()</a>、<a class="el" href="_neural_net_test_8java-source.html#l00013">edu.packt.neuralnet.NeuralNetTest.testKohonen()</a>及<a class="el" href="_kohonen_8java-source.html#l00013">edu.packt.neuralnet.som.Kohonen.train()</a>.
+<p>
+函数调用图:<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_a391d187fbca78fa9fac6eb08a9dbede_cgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_a391d187fbca78fa9fac6eb08a9dbede_cgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_a391d187fbca78fa9fac6eb08a9dbede_cgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_output_layer.html#ee350d0014be1cfbd3e8de279142becc" title="edu.packt.neuralnet.OutputLayer.initLayer" alt="" coords="363,107,632,133"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html#75811af83413fa7fc0c71d5eaa488ad1" title="edu.packt.neuralnet.HiddenLayer.initLayer" alt="" coords="361,5,633,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html#183330370b7cc424aef8604c00b338f7" title="edu.packt.neuralnet.InputLayer.initLayer" alt="" coords="368,56,627,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#780816351285521bf51d63080d243c01" title="edu.packt.neuralnet.NeuralNet.setHiddenLayer" alt="" coords="348,157,647,184"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#24cfee30d0351c5d58aa34b7d2071d1e" title="edu.packt.neuralnet.NeuralNet.setInputLayer" alt="" coords="353,208,641,235"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#67782e73b6b32e2cf17341c1f326624c" title="edu.packt.neuralnet.NeuralNet.setListOfHiddenLayer" alt="" coords="331,259,664,285"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#770366f71716a4fd81f7743281b3a036" title="edu.packt.neuralnet.NeuralNet.setNumberOfHiddenLayers" alt="" coords="313,309,681,336"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#98869674f0859a4ed7978f5dcd964cfc" title="edu.packt.neuralnet.Layer.setNumberOfNeuronsInLayer" alt="" coords="320,360,675,387"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html#5a73556371b65931dceba233a25a79d0" title="edu.packt.neuralnet.HiddenLayer.setNumberOfNeuronsInLayer" alt="" coords="300,411,695,437"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html#e23766eccd21e834320faa75bf8875fd" title="edu.packt.neuralnet.InputLayer.setNumberOfNeuronsInLayer" alt="" coords="305,461,689,488"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f1c1aa92631538b5eae425583f4cc53c" title="edu.packt.neuralnet.NeuralNet.setOutputLayer" alt="" coords="348,512,647,539"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#897922d6c13d0079f6918338b1ed7147" title="edu.packt.neuralnet.Layer.getNumberOfNeuronsInLayer" alt="" coords="744,56,1099,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#21227cb2127f63fd8a7ed9df8c452b8f" title="edu.packt.neuralnet.Layer.setListOfNeurons" alt="" coords="780,107,1063,133"></map>
+
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_a391d187fbca78fa9fac6eb08a9dbede_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_a391d187fbca78fa9fac6eb08a9dbede_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_a391d187fbca78fa9fac6eb08a9dbede_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="920,8,1197,35"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="905,59,1212,85"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#be84746fa2c87ad362c4232c6b700930" title="edu.packt.neuralnet.som.Kohonen.train" alt="" coords="300,33,553,60"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="1261,59,1523,85"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651" title="edu.packt.neuralnet.NeuralNet.trainNet" alt="" coords="603,33,856,60"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="d8a8c2e14e0dca5720f083781cd65a75"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::printNet" ref="d8a8c2e14e0dca5720f083781cd65a75" args="(NeuralNet n)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.packt.neuralnet.NeuralNet.printNet           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a>&nbsp;</td>
+          <td class="paramname"> <em>n</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00072">72</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00181">edu.packt.neuralnet.NeuralNet.getHiddenLayer()</a>、<a class="el" href="_neural_net_8java-source.html#l00173">edu.packt.neuralnet.NeuralNet.getInputLayer()</a>、<a class="el" href="_neural_net_8java-source.html#l00189">edu.packt.neuralnet.NeuralNet.getListOfHiddenLayer()</a>、<a class="el" href="_neural_net_8java-source.html#l00197">edu.packt.neuralnet.NeuralNet.getOutputLayer()</a>、<a class="el" href="_neural_net_8java-source.html#l00015">edu.packt.neuralnet.NeuralNet.hiddenLayer</a>、<a class="el" href="_neural_net_8java-source.html#l00014">edu.packt.neuralnet.NeuralNet.inputLayer</a>、<a class="el" href="_neural_net_8java-source.html#l00017">edu.packt.neuralnet.NeuralNet.outputLayer</a>、<a class="el" href="_output_layer_8java-source.html#l00029">edu.packt.neuralnet.OutputLayer.printLayer()</a>、<a class="el" href="_hidden_layer_8java-source.html#l00085">edu.packt.neuralnet.HiddenLayer.printLayer()</a>及<a class="el" href="_input_layer_8java-source.html#l00030">edu.packt.neuralnet.InputLayer.printLayer()</a>.
+<p>
+参考自 <a class="el" href="_weather_8java-source.html#l00015">edu.packt.neuralnet.weather.Weather.main()</a>.
+<p>
+函数调用图:<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_d8a8c2e14e0dca5720f083781cd65a75_cgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_d8a8c2e14e0dca5720f083781cd65a75_cgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_d8a8c2e14e0dca5720f083781cd65a75_cgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#367b52fc13f06b36b77135b25cb9b798" title="edu.packt.neuralnet.NeuralNet.getHiddenLayer" alt="" coords="325,5,624,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#61327e435c95e3c3de0bbf2f2f556392" title="edu.packt.neuralnet.NeuralNet.getInputLayer" alt="" coords="331,56,619,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#7b73c95ca04f299357dc5ea32f72893d" title="edu.packt.neuralnet.NeuralNet.getListOfHiddenLayer" alt="" coords="307,107,643,133"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#242fb32fd1cfdf033445094116679d9a" title="edu.packt.neuralnet.NeuralNet.getOutputLayer" alt="" coords="325,157,624,184"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_output_layer.html#4f579ab9ea2637957305539f8f35dcd5" title="edu.packt.neuralnet.OutputLayer.printLayer" alt="" coords="335,208,615,235"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html#e29a01aad1799ecf5c5fb88dd062ef31" title="edu.packt.neuralnet.HiddenLayer.printLayer" alt="" coords="335,309,615,336"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html#d952b41e31d2d80e8a39b66b1e9816e3" title="edu.packt.neuralnet.InputLayer.printLayer" alt="" coords="340,259,609,285"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#884240cc906fb8b36194cccf19c2b6bc" title="edu.packt.neuralnet.Layer.getListOfNeurons" alt="" coords="704,208,987,235"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#38f3084a2ed3c3aef247b6f63df22df4" title="edu.packt.neuralnet.Neuron.getListOfWeightOut" alt="" coords="692,259,999,285"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#0b36eaf596659d5588362ac484225b04" title="edu.packt.neuralnet.Neuron.getOutputValue" alt="" coords="704,157,987,184"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#a7dbd13df945a1940769f9c8cd47fe80" title="edu.packt.neuralnet.Neuron.getListOfWeightIn" alt="" coords="697,309,993,336"></map>
+
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_d8a8c2e14e0dca5720f083781cd65a75_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_d8a8c2e14e0dca5720f083781cd65a75_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_d8a8c2e14e0dca5720f083781cd65a75_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="307,5,584,32"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="0fb68b5351c5a8be51f96c0197ab6651"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::trainNet" ref="0fb68b5351c5a8be51f96c0197ab6651" args="(NeuralNet n)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> edu.packt.neuralnet.NeuralNet.trainNet           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a>&nbsp;</td>
+          <td class="paramname"> <em>n</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00084">84</a>行定义。
+<p>
+参考 <a class="el" href="_training_8java-source.html#l00016">ADALINE</a>、<a class="el" href="_training_8java-source.html#l00016">BACKPROPAGATION</a>、<a class="el" href="_training_8java-source.html#l00016">KOHONEN</a>、<a class="el" href="_training_8java-source.html#l00016">PERCEPTRON</a>、<a class="el" href="_kohonen_8java-source.html#l00013">edu.packt.neuralnet.som.Kohonen.train()</a>、<a class="el" href="_backpropagation_8java-source.html#l00013">edu.packt.neuralnet.learn.Backpropagation.train()</a>、<a class="el" href="_adaline_8java-source.html#l00007">edu.packt.neuralnet.learn.Adaline.train()</a>、<a class="el" href="_perceptron_8java-source.html#l00007">edu.packt.neuralnet.learn.Perceptron.train()</a>及<a class="el" href="_neural_net_8java-source.html#l00033">edu.packt.neuralnet.NeuralNet.trainType</a>.
+<p>
+参考自 <a class="el" href="_weather_8java-source.html#l00015">edu.packt.neuralnet.weather.Weather.main()</a>及<a class="el" href="_neural_net_test_8java-source.html#l00013">edu.packt.neuralnet.NeuralNetTest.testKohonen()</a>.
+<p>
+函数调用图:<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_0fb68b5351c5a8be51f96c0197ab6651_cgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_0fb68b5351c5a8be51f96c0197ab6651_cgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_0fb68b5351c5a8be51f96c0197ab6651_cgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#be84746fa2c87ad362c4232c6b700930" title="edu.packt.neuralnet.som.Kohonen.train" alt="" coords="333,791,587,817"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#6e80c193a016810e682ac21b413a2ea4" title="edu.packt.neuralnet.learn.Backpropagation.train" alt="" coords="307,1120,613,1147"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_adaline.html#f398ad45e799b7e57b3c2f60e2526a55" title="edu.packt.neuralnet.learn.Adaline.train" alt="" coords="335,1171,585,1197"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_perceptron.html#1ae0dba3298a93d7ad2ab02935513f44" title="edu.packt.neuralnet.learn.Perceptron.train" alt="" coords="324,1221,596,1248"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#6415d36bba0f02933bf31b6c7a8b8cfc" title="edu.packt.neuralnet.som.Kohonen.calcEuclideanDistance" alt="" coords="669,765,1032,792"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#03c52691dc2a357f612be3f20bfd383d" title="edu.packt.neuralnet.som.Kohonen.fixWinnerWeights" alt="" coords="684,689,1017,716"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#c2e7c33dcd99679a76e6b405d93d7f5b" title="edu.packt.neuralnet.NeuralNet.getTrainSet" alt="" coords="1149,816,1424,843"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f14057f123727ff718a5403015e4e647" title="edu.packt.neuralnet.NeuralNet.getMaxEpochs" alt="" coords="704,867,997,893"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a391d187fbca78fa9fac6eb08a9dbede" title="edu.packt.neuralnet.NeuralNet.initNet" alt="" coords="729,284,972,311"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#61327e435c95e3c3de0bbf2f2f556392" title="edu.packt.neuralnet.NeuralNet.getInputLayer" alt="" coords="1143,664,1431,691"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#884240cc906fb8b36194cccf19c2b6bc" title="edu.packt.neuralnet.Layer.getListOfNeurons" alt="" coords="1145,765,1428,792"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#897922d6c13d0079f6918338b1ed7147" title="edu.packt.neuralnet.Layer.getNumberOfNeuronsInLayer" alt="" coords="1540,613,1895,640"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#242fb32fd1cfdf033445094116679d9a" title="edu.packt.neuralnet.NeuralNet.getOutputLayer" alt="" coords="1137,968,1436,995"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#107c193fc9a6af728cc511406ee89c35" title="edu.packt.neuralnet.NeuralNet.getLearningRate" alt="" coords="1135,563,1439,589"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_output_layer.html#ee350d0014be1cfbd3e8de279142becc" title="edu.packt.neuralnet.OutputLayer.initLayer" alt="" coords="1152,259,1421,285"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html#75811af83413fa7fc0c71d5eaa488ad1" title="edu.packt.neuralnet.HiddenLayer.initLayer" alt="" coords="1151,512,1423,539"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html#183330370b7cc424aef8604c00b338f7" title="edu.packt.neuralnet.InputLayer.initLayer" alt="" coords="1157,309,1416,336"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#780816351285521bf51d63080d243c01" title="edu.packt.neuralnet.NeuralNet.setHiddenLayer" alt="" coords="1137,107,1436,133"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#24cfee30d0351c5d58aa34b7d2071d1e" title="edu.packt.neuralnet.NeuralNet.setInputLayer" alt="" coords="1143,157,1431,184"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#67782e73b6b32e2cf17341c1f326624c" title="edu.packt.neuralnet.NeuralNet.setListOfHiddenLayer" alt="" coords="1120,208,1453,235"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#770366f71716a4fd81f7743281b3a036" title="edu.packt.neuralnet.NeuralNet.setNumberOfHiddenLayers" alt="" coords="1103,360,1471,387"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#98869674f0859a4ed7978f5dcd964cfc" title="edu.packt.neuralnet.Layer.setNumberOfNeuronsInLayer" alt="" coords="1109,411,1464,437"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html#5a73556371b65931dceba233a25a79d0" title="edu.packt.neuralnet.HiddenLayer.setNumberOfNeuronsInLayer" alt="" coords="1089,461,1484,488"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html#e23766eccd21e834320faa75bf8875fd" title="edu.packt.neuralnet.InputLayer.setNumberOfNeuronsInLayer" alt="" coords="1095,5,1479,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f1c1aa92631538b5eae425583f4cc53c" title="edu.packt.neuralnet.NeuralNet.setOutputLayer" alt="" coords="1137,56,1436,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#21227cb2127f63fd8a7ed9df8c452b8f" title="edu.packt.neuralnet.Layer.setListOfNeurons" alt="" coords="1576,309,1859,336"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#98392299268e48c9d57cd8a0dcce0824" title="edu.packt.neuralnet.learn.Backpropagation.backpropagation" alt="" coords="661,968,1040,995"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#bf900f3a44652640f21f048704ccaffd" title="edu.packt.neuralnet.learn.Backpropagation.forward" alt="" coords="689,1095,1012,1121"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#06b04584eccf0496d268a34cfb062a34" title="edu.packt.neuralnet.NeuralNet.getErrorMean" alt="" coords="707,1145,995,1172"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#42d6e1250122830856d89a3686b3a796" title="edu.packt.neuralnet.NeuralNet.getListOfMSE" alt="" coords="707,1196,995,1223"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#b5cf1337fba9c089662d99fae5977c8c" title="edu.packt.neuralnet.learn.Training.getMse" alt="" coords="715,1247,987,1273"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#2f63bc17bf5a76266ab3a09660a96e5f" title="edu.packt.neuralnet.NeuralNet.getTargetError" alt="" coords="704,1297,997,1324"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#8d24c85a9586aad2cf00a305e04d39b8" title="edu.packt.neuralnet.learn.Training.setMse" alt="" coords="715,1348,987,1375"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#0e7eb2e324e36d3b5e740675f10bdda8" title="edu.packt.neuralnet.learn.Training.derivativeActivationFnc" alt="" coords="1104,1019,1469,1045"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#20ef5ea336c7d1730b65c4026d6fd285" title="edu.packt.neuralnet.NeuralNet.getActivationFnc" alt="" coords="1135,1069,1439,1096"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0d441aaaf3fc0902c508a255db617050" title="edu.packt.neuralnet.NeuralNet.getActivationFncOutputLayer" alt="" coords="1097,1120,1476,1147"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#7b73c95ca04f299357dc5ea32f72893d" title="edu.packt.neuralnet.NeuralNet.getListOfHiddenLayer" alt="" coords="1119,1171,1455,1197"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#6945a19ff740099659c9e81e1255f749" title="edu.packt.neuralnet.learn.Training.derivativeFncHyperTan" alt="" coords="1535,1095,1900,1121"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#5bd0c1ba948a3a82c530752305bab65c" title="edu.packt.neuralnet.learn.Training.derivativeFncLinear" alt="" coords="1545,943,1889,969"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#b68e279289768f703ef8ac4ff6a18829" title="edu.packt.neuralnet.learn.Training.derivativeFncSigLog" alt="" coords="1543,993,1892,1020"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#fa2fcd32fa0b2fa3582ce21e5f0548b1" title="edu.packt.neuralnet.learn.Training.derivativeFncStep" alt="" coords="1551,1044,1884,1071"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#16214b108139b3452c15a0c6695afcb7" title="edu.packt.neuralnet.learn.Training.activationFnc" alt="" coords="1133,1323,1440,1349"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#a7dbd13df945a1940769f9c8cd47fe80" title="edu.packt.neuralnet.Neuron.getListOfWeightIn" alt="" coords="1139,1373,1435,1400"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#79fa7f9b399b5358a6c490fc1e9e5a9c" title="edu.packt.neuralnet.NeuralNet.getRealMatrixOutputSet" alt="" coords="1112,1424,1461,1451"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#3e642d97304902c4e777d03d66074af5" title="edu.packt.neuralnet.NeuralNet.setErrorMean" alt="" coords="1143,1475,1431,1501"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#52e2674319fa5ac381a007d17853dddb" title="edu.packt.neuralnet.Neuron.setOutputValue" alt="" coords="1145,1272,1428,1299"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#a1e191cb5ca4c28728e50f3a82004c36" title="edu.packt.neuralnet.learn.Training.fncHyperTan" alt="" coords="1565,1272,1869,1299"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#9496d7cd3c4c9098d6d636c5e657b12c" title="edu.packt.neuralnet.learn.Training.fncLinear" alt="" coords="1576,1323,1859,1349"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#030c1ece3079d2691fe8b550ef789bcd" title="edu.packt.neuralnet.learn.Training.fncSigLog" alt="" coords="1573,1373,1861,1400"></map>
+
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_0fb68b5351c5a8be51f96c0197ab6651_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_0fb68b5351c5a8be51f96c0197ab6651_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_0fb68b5351c5a8be51f96c0197ab6651_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="323,5,600,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="308,56,615,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="664,56,925,83"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="a8eeacb9e33fb2ad7afa7255afac5f8a"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::printTrainedNetResult" ref="a8eeacb9e33fb2ad7afa7255afac5f8a" args="(NeuralNet n)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.packt.neuralnet.NeuralNet.printTrainedNetResult           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a>&nbsp;</td>
+          <td class="paramname"> <em>n</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00111">111</a>行定义。
+<p>
+参考 <a class="el" href="_training_8java-source.html#l00016">ADALINE</a>、<a class="el" href="_training_8java-source.html#l00016">BACKPROPAGATION</a>、<a class="el" href="_training_8java-source.html#l00016">PERCEPTRON</a>、<a class="el" href="_training_8java-source.html#l00201">edu.packt.neuralnet.learn.Training.printTrainedNetResult()</a>及<a class="el" href="_neural_net_8java-source.html#l00033">edu.packt.neuralnet.NeuralNet.trainType</a>.
+<p>
+函数调用图:<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_a8eeacb9e33fb2ad7afa7255afac5f8a_cgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_a8eeacb9e33fb2ad7afa7255afac5f8a_cgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_a8eeacb9e33fb2ad7afa7255afac5f8a_cgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#90656f54913d63b3bba8edeaa4b95757" title="edu.packt.neuralnet.learn.Training.printTrainedNetResult" alt="" coords="389,107,747,133"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#20ef5ea336c7d1730b65c4026d6fd285" title="edu.packt.neuralnet.NeuralNet.getActivationFnc" alt="" coords="817,5,1121,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#61327e435c95e3c3de0bbf2f2f556392" title="edu.packt.neuralnet.NeuralNet.getInputLayer" alt="" coords="825,56,1113,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#884240cc906fb8b36194cccf19c2b6bc" title="edu.packt.neuralnet.Layer.getListOfNeurons" alt="" coords="828,107,1111,133"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#79fa7f9b399b5358a6c490fc1e9e5a9c" title="edu.packt.neuralnet.NeuralNet.getRealMatrixOutputSet" alt="" coords="795,157,1144,184"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#c2e7c33dcd99679a76e6b405d93d7f5b" title="edu.packt.neuralnet.NeuralNet.getTrainSet" alt="" coords="832,208,1107,235"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="82c9337c75bc84b8d1e84c4846a0b138"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::getNetOutputValues" ref="82c9337c75bc84b8d1e84c4846a0b138" args="(NeuralNet trainedNet)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [][] edu.packt.neuralnet.NeuralNet.getNetOutputValues           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a>&nbsp;</td>
+          <td class="paramname"> <em>trainedNet</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00131">131</a>行定义。
+<p>
+参考 <a class="el" href="_training_8java-source.html#l00016">BACKPROPAGATION</a>、<a class="el" href="_backpropagation_8java-source.html#l00052">edu.packt.neuralnet.learn.Backpropagation.forward()</a>、<a class="el" href="_layer_8java-source.html#l00013">edu.packt.neuralnet.Layer.getListOfNeurons()</a>、<a class="el" href="_layer_8java-source.html#l00021">edu.packt.neuralnet.Layer.getNumberOfNeuronsInLayer()</a>、<a class="el" href="_neural_net_8java-source.html#l00197">edu.packt.neuralnet.NeuralNet.getOutputLayer()</a>、<a class="el" href="_neural_net_8java-source.html#l00213">edu.packt.neuralnet.NeuralNet.getTrainSet()</a>及<a class="el" href="_neural_net_8java-source.html#l00033">edu.packt.neuralnet.NeuralNet.trainType</a>.
+<p>
+参考自 <a class="el" href="_weather_8java-source.html#l00015">edu.packt.neuralnet.weather.Weather.main()</a>.
+<p>
+函数调用图:<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_82c9337c75bc84b8d1e84c4846a0b138_cgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_82c9337c75bc84b8d1e84c4846a0b138_cgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_82c9337c75bc84b8d1e84c4846a0b138_cgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#bf900f3a44652640f21f048704ccaffd" title="edu.packt.neuralnet.learn.Backpropagation.forward" alt="" coords="383,309,705,336"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#884240cc906fb8b36194cccf19c2b6bc" title="edu.packt.neuralnet.Layer.getListOfNeurons" alt="" coords="803,5,1085,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#897922d6c13d0079f6918338b1ed7147" title="edu.packt.neuralnet.Layer.getNumberOfNeuronsInLayer" alt="" coords="767,461,1121,488"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#242fb32fd1cfdf033445094116679d9a" title="edu.packt.neuralnet.NeuralNet.getOutputLayer" alt="" coords="795,512,1093,539"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#c2e7c33dcd99679a76e6b405d93d7f5b" title="edu.packt.neuralnet.NeuralNet.getTrainSet" alt="" coords="807,563,1081,589"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#16214b108139b3452c15a0c6695afcb7" title="edu.packt.neuralnet.learn.Training.activationFnc" alt="" coords="791,259,1097,285"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#20ef5ea336c7d1730b65c4026d6fd285" title="edu.packt.neuralnet.NeuralNet.getActivationFnc" alt="" coords="792,309,1096,336"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0d441aaaf3fc0902c508a255db617050" title="edu.packt.neuralnet.NeuralNet.getActivationFncOutputLayer" alt="" coords="755,360,1133,387"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#7b73c95ca04f299357dc5ea32f72893d" title="edu.packt.neuralnet.NeuralNet.getListOfHiddenLayer" alt="" coords="776,411,1112,437"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#a7dbd13df945a1940769f9c8cd47fe80" title="edu.packt.neuralnet.Neuron.getListOfWeightIn" alt="" coords="796,56,1092,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#79fa7f9b399b5358a6c490fc1e9e5a9c" title="edu.packt.neuralnet.NeuralNet.getRealMatrixOutputSet" alt="" coords="769,107,1119,133"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#3e642d97304902c4e777d03d66074af5" title="edu.packt.neuralnet.NeuralNet.setErrorMean" alt="" coords="800,157,1088,184"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#52e2674319fa5ac381a007d17853dddb" title="edu.packt.neuralnet.Neuron.setOutputValue" alt="" coords="803,208,1085,235"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#a1e191cb5ca4c28728e50f3a82004c36" title="edu.packt.neuralnet.learn.Training.fncHyperTan" alt="" coords="1183,183,1487,209"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#9496d7cd3c4c9098d6d636c5e657b12c" title="edu.packt.neuralnet.learn.Training.fncLinear" alt="" coords="1193,233,1476,260"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#030c1ece3079d2691fe8b550ef789bcd" title="edu.packt.neuralnet.learn.Training.fncSigLog" alt="" coords="1191,284,1479,311"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#3f840606d471f9c495ae317b43d2aa6c" title="edu.packt.neuralnet.learn.Training.fncStep" alt="" coords="1199,335,1471,361"></map>
+
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_82c9337c75bc84b8d1e84c4846a0b138_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_82c9337c75bc84b8d1e84c4846a0b138_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_82c9337c75bc84b8d1e84c4846a0b138_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="381,5,659,32"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="58dc5996f68b42708d8b991eae4cfdae"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::netValidation" ref="58dc5996f68b42708d8b991eae4cfdae" args="(NeuralNet n)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.packt.neuralnet.NeuralNet.netValidation           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a>&nbsp;</td>
+          <td class="paramname"> <em>n</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00160">160</a>行定义。
+<p>
+参考 <a class="el" href="_training_8java-source.html#l00016">KOHONEN</a>、<a class="el" href="_kohonen_8java-source.html#l00119">edu.packt.neuralnet.som.Kohonen.netValidation()</a>及<a class="el" href="_neural_net_8java-source.html#l00033">edu.packt.neuralnet.NeuralNet.trainType</a>.
+<p>
+参考自 <a class="el" href="_neural_net_test_8java-source.html#l00013">edu.packt.neuralnet.NeuralNetTest.testKohonen()</a>.
+<p>
+函数调用图:<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_58dc5996f68b42708d8b991eae4cfdae_cgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_58dc5996f68b42708d8b991eae4cfdae_cgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_58dc5996f68b42708d8b991eae4cfdae_cgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#f264dde9528f1778b220867363c80015" title="edu.packt.neuralnet.som.Kohonen.netValidation" alt="" coords="339,107,645,133"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#6415d36bba0f02933bf31b6c7a8b8cfc" title="edu.packt.neuralnet.som.Kohonen.calcEuclideanDistance" alt="" coords="693,81,1056,108"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#35b0661fea2763a1c97103ddd7e9fcb3" title="edu.packt.neuralnet.NeuralNet.getValidationSet" alt="" coords="723,132,1027,159"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#61327e435c95e3c3de0bbf2f2f556392" title="edu.packt.neuralnet.NeuralNet.getInputLayer" alt="" coords="1137,5,1425,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#884240cc906fb8b36194cccf19c2b6bc" title="edu.packt.neuralnet.Layer.getListOfNeurons" alt="" coords="1140,56,1423,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#897922d6c13d0079f6918338b1ed7147" title="edu.packt.neuralnet.Layer.getNumberOfNeuronsInLayer" alt="" coords="1104,107,1459,133"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#242fb32fd1cfdf033445094116679d9a" title="edu.packt.neuralnet.NeuralNet.getOutputLayer" alt="" coords="1132,157,1431,184"></map>
+
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_58dc5996f68b42708d8b991eae4cfdae_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_58dc5996f68b42708d8b991eae4cfdae_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_58dc5996f68b42708d8b991eae4cfdae_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="340,5,647,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="696,5,957,32"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="61327e435c95e3c3de0bbf2f2f556392"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::getInputLayer" ref="61327e435c95e3c3de0bbf2f2f556392" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html">InputLayer</a> edu.packt.neuralnet.NeuralNet.getInputLayer           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00173">173</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00014">edu.packt.neuralnet.NeuralNet.inputLayer</a>.
+<p>
+参考自 <a class="el" href="_backpropagation_8java-source.html#l00143">edu.packt.neuralnet.learn.Backpropagation.backpropagation()</a>、<a class="el" href="_kohonen_8java-source.html#l00055">edu.packt.neuralnet.som.Kohonen.calcEuclideanDistance()</a>、<a class="el" href="_kohonen_8java-source.html#l00083">edu.packt.neuralnet.som.Kohonen.fixWinnerWeights()</a>、<a class="el" href="_kohonen_8java-source.html#l00042">edu.packt.neuralnet.som.Kohonen.initNet()</a>、<a class="el" href="_neural_net_8java-source.html#l00072">edu.packt.neuralnet.NeuralNet.printNet()</a>、<a class="el" href="_training_8java-source.html#l00201">edu.packt.neuralnet.learn.Training.printTrainedNetResult()</a>、<a class="el" href="_training_8java-source.html#l00078">edu.packt.neuralnet.learn.Training.teachNeuronsOfLayer()</a>及<a class="el" href="_training_8java-source.html#l00019">edu.packt.neuralnet.learn.Training.train()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_61327e435c95e3c3de0bbf2f2f556392_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_61327e435c95e3c3de0bbf2f2f556392_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_61327e435c95e3c3de0bbf2f2f556392_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#98392299268e48c9d57cd8a0dcce0824" title="edu.packt.neuralnet.learn.Backpropagation.backpropagation" alt="" coords="341,107,720,133"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#6415d36bba0f02933bf31b6c7a8b8cfc" title="edu.packt.neuralnet.som.Kohonen.calcEuclideanDistance" alt="" coords="349,5,712,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#03c52691dc2a357f612be3f20bfd383d" title="edu.packt.neuralnet.som.Kohonen.fixWinnerWeights" alt="" coords="364,56,697,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#031630a1fae98c0924059a7b190bb2be" title="edu.packt.neuralnet.som.Kohonen.initNet" alt="" coords="397,157,664,184"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d8a8c2e14e0dca5720f083781cd65a75" title="edu.packt.neuralnet.NeuralNet.printNet" alt="" coords="1168,169,1421,196"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#90656f54913d63b3bba8edeaa4b95757" title="edu.packt.neuralnet.learn.Training.printTrainedNetResult" alt="" coords="352,259,709,285"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#7a5294957e77ea3df7d906c2e690de8c" title="edu.packt.neuralnet.learn.Training.teachNeuronsOfLayer" alt="" coords="352,309,709,336"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#1d18c774a21a409420750021a6661cec" title="edu.packt.neuralnet.learn.Training.train" alt="" coords="809,335,1063,361"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#6e80c193a016810e682ac21b413a2ea4" title="edu.packt.neuralnet.learn.Backpropagation.train" alt="" coords="783,107,1089,133"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651" title="edu.packt.neuralnet.NeuralNet.trainNet" alt="" coords="1168,81,1421,108"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="1501,120,1779,147"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="1487,51,1793,77"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="1843,51,2104,77"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#f264dde9528f1778b220867363c80015" title="edu.packt.neuralnet.som.Kohonen.netValidation" alt="" coords="783,5,1089,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#be84746fa2c87ad362c4232c6b700930" title="edu.packt.neuralnet.som.Kohonen.train" alt="" coords="809,56,1063,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#58dc5996f68b42708d8b991eae4cfdae" title="edu.packt.neuralnet.NeuralNet.netValidation" alt="" coords="1153,19,1436,45"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a8eeacb9e33fb2ad7afa7255afac5f8a" title="edu.packt.neuralnet.NeuralNet.printTrainedNetResult" alt="" coords="768,259,1104,285"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="24cfee30d0351c5d58aa34b7d2071d1e"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::setInputLayer" ref="24cfee30d0351c5d58aa34b7d2071d1e" args="(InputLayer inputLayer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.packt.neuralnet.NeuralNet.setInputLayer           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html">InputLayer</a>&nbsp;</td>
+          <td class="paramname"> <em>inputLayer</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00177">177</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00014">edu.packt.neuralnet.NeuralNet.inputLayer</a>.
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00035">edu.packt.neuralnet.NeuralNet.initNet()</a>及<a class="el" href="_training_8java-source.html#l00019">edu.packt.neuralnet.learn.Training.train()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_24cfee30d0351c5d58aa34b7d2071d1e_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_24cfee30d0351c5d58aa34b7d2071d1e_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_24cfee30d0351c5d58aa34b7d2071d1e_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a391d187fbca78fa9fac6eb08a9dbede" title="edu.packt.neuralnet.NeuralNet.initNet" alt="" coords="348,33,591,60"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#1d18c774a21a409420750021a6661cec" title="edu.packt.neuralnet.learn.Training.train" alt="" coords="343,84,596,111"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="1267,8,1544,35"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="1252,59,1559,85"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#be84746fa2c87ad362c4232c6b700930" title="edu.packt.neuralnet.som.Kohonen.train" alt="" coords="647,33,900,60"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="1608,59,1869,85"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651" title="edu.packt.neuralnet.NeuralNet.trainNet" alt="" coords="949,33,1203,60"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="367b52fc13f06b36b77135b25cb9b798"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::getHiddenLayer" ref="367b52fc13f06b36b77135b25cb9b798" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html">HiddenLayer</a> edu.packt.neuralnet.NeuralNet.getHiddenLayer           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00181">181</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00015">edu.packt.neuralnet.NeuralNet.hiddenLayer</a>.
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00072">edu.packt.neuralnet.NeuralNet.printNet()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_367b52fc13f06b36b77135b25cb9b798_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_367b52fc13f06b36b77135b25cb9b798_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_367b52fc13f06b36b77135b25cb9b798_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d8a8c2e14e0dca5720f083781cd65a75" title="edu.packt.neuralnet.NeuralNet.printNet" alt="" coords="355,5,608,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="656,5,933,32"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="780816351285521bf51d63080d243c01"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::setHiddenLayer" ref="780816351285521bf51d63080d243c01" args="(HiddenLayer hiddenLayer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.packt.neuralnet.NeuralNet.setHiddenLayer           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html">HiddenLayer</a>&nbsp;</td>
+          <td class="paramname"> <em>hiddenLayer</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00185">185</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00015">edu.packt.neuralnet.NeuralNet.hiddenLayer</a>.
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00035">edu.packt.neuralnet.NeuralNet.initNet()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_780816351285521bf51d63080d243c01_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_780816351285521bf51d63080d243c01_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_780816351285521bf51d63080d243c01_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a391d187fbca78fa9fac6eb08a9dbede" title="edu.packt.neuralnet.NeuralNet.initNet" alt="" coords="356,33,599,60"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="1269,8,1547,35"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="1255,59,1561,85"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#be84746fa2c87ad362c4232c6b700930" title="edu.packt.neuralnet.som.Kohonen.train" alt="" coords="649,33,903,60"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="1611,59,1872,85"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651" title="edu.packt.neuralnet.NeuralNet.trainNet" alt="" coords="952,33,1205,60"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="7b73c95ca04f299357dc5ea32f72893d"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::getListOfHiddenLayer" ref="7b73c95ca04f299357dc5ea32f72893d" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ArrayList&lt;<a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html">HiddenLayer</a>&gt; edu.packt.neuralnet.NeuralNet.getListOfHiddenLayer           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00189">189</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00016">edu.packt.neuralnet.NeuralNet.listOfHiddenLayer</a>.
+<p>
+参考自 <a class="el" href="_backpropagation_8java-source.html#l00143">edu.packt.neuralnet.learn.Backpropagation.backpropagation()</a>、<a class="el" href="_backpropagation_8java-source.html#l00052">edu.packt.neuralnet.learn.Backpropagation.forward()</a>及<a class="el" href="_neural_net_8java-source.html#l00072">edu.packt.neuralnet.NeuralNet.printNet()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_7b73c95ca04f299357dc5ea32f72893d_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_7b73c95ca04f299357dc5ea32f72893d_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_7b73c95ca04f299357dc5ea32f72893d_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#98392299268e48c9d57cd8a0dcce0824" title="edu.packt.neuralnet.learn.Backpropagation.backpropagation" alt="" coords="389,5,768,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#bf900f3a44652640f21f048704ccaffd" title="edu.packt.neuralnet.learn.Backpropagation.forward" alt="" coords="417,56,740,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d8a8c2e14e0dca5720f083781cd65a75" title="edu.packt.neuralnet.NeuralNet.printNet" alt="" coords="843,107,1096,133"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#6e80c193a016810e682ac21b413a2ea4" title="edu.packt.neuralnet.learn.Backpropagation.train" alt="" coords="816,5,1123,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651" title="edu.packt.neuralnet.NeuralNet.trainNet" alt="" coords="1208,5,1461,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="1563,56,1840,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="1548,5,1855,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="1904,5,2165,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#82c9337c75bc84b8d1e84c4846a0b138" title="edu.packt.neuralnet.NeuralNet.getNetOutputValues" alt="" coords="1172,56,1497,83"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="67782e73b6b32e2cf17341c1f326624c"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::setListOfHiddenLayer" ref="67782e73b6b32e2cf17341c1f326624c" args="(ArrayList&lt; HiddenLayer &gt; listOfHiddenLayer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.packt.neuralnet.NeuralNet.setListOfHiddenLayer           </td>
+          <td>(</td>
+          <td class="paramtype">ArrayList&lt; <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html">HiddenLayer</a> &gt;&nbsp;</td>
+          <td class="paramname"> <em>listOfHiddenLayer</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00193">193</a>行定义。
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00035">edu.packt.neuralnet.NeuralNet.initNet()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_67782e73b6b32e2cf17341c1f326624c_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_67782e73b6b32e2cf17341c1f326624c_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_67782e73b6b32e2cf17341c1f326624c_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a391d187fbca78fa9fac6eb08a9dbede" title="edu.packt.neuralnet.NeuralNet.initNet" alt="" coords="391,33,633,60"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="1304,8,1581,35"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="1289,59,1596,85"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#be84746fa2c87ad362c4232c6b700930" title="edu.packt.neuralnet.som.Kohonen.train" alt="" coords="684,33,937,60"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="1645,59,1907,85"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651" title="edu.packt.neuralnet.NeuralNet.trainNet" alt="" coords="987,33,1240,60"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="242fb32fd1cfdf033445094116679d9a"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::getOutputLayer" ref="242fb32fd1cfdf033445094116679d9a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_output_layer.html">OutputLayer</a> edu.packt.neuralnet.NeuralNet.getOutputLayer           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00197">197</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00017">edu.packt.neuralnet.NeuralNet.outputLayer</a>.
+<p>
+参考自 <a class="el" href="_backpropagation_8java-source.html#l00143">edu.packt.neuralnet.learn.Backpropagation.backpropagation()</a>、<a class="el" href="_kohonen_8java-source.html#l00055">edu.packt.neuralnet.som.Kohonen.calcEuclideanDistance()</a>、<a class="el" href="_backpropagation_8java-source.html#l00052">edu.packt.neuralnet.learn.Backpropagation.forward()</a>、<a class="el" href="_neural_net_8java-source.html#l00131">edu.packt.neuralnet.NeuralNet.getNetOutputValues()</a>、<a class="el" href="_kohonen_8java-source.html#l00042">edu.packt.neuralnet.som.Kohonen.initNet()</a>及<a class="el" href="_neural_net_8java-source.html#l00072">edu.packt.neuralnet.NeuralNet.printNet()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_242fb32fd1cfdf033445094116679d9a_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_242fb32fd1cfdf033445094116679d9a_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_242fb32fd1cfdf033445094116679d9a_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#98392299268e48c9d57cd8a0dcce0824" title="edu.packt.neuralnet.learn.Backpropagation.backpropagation" alt="" coords="352,56,731,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#6415d36bba0f02933bf31b6c7a8b8cfc" title="edu.packt.neuralnet.som.Kohonen.calcEuclideanDistance" alt="" coords="360,5,723,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#bf900f3a44652640f21f048704ccaffd" title="edu.packt.neuralnet.learn.Backpropagation.forward" alt="" coords="380,107,703,133"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#82c9337c75bc84b8d1e84c4846a0b138" title="edu.packt.neuralnet.NeuralNet.getNetOutputValues" alt="" coords="780,157,1105,184"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#031630a1fae98c0924059a7b190bb2be" title="edu.packt.neuralnet.som.Kohonen.initNet" alt="" coords="408,208,675,235"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d8a8c2e14e0dca5720f083781cd65a75" title="edu.packt.neuralnet.NeuralNet.printNet" alt="" coords="1171,233,1424,260"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#6e80c193a016810e682ac21b413a2ea4" title="edu.packt.neuralnet.learn.Backpropagation.train" alt="" coords="789,107,1096,133"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651" title="edu.packt.neuralnet.NeuralNet.trainNet" alt="" coords="1171,95,1424,121"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="1504,157,1781,184"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="1489,57,1796,84"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="1845,57,2107,84"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#f264dde9528f1778b220867363c80015" title="edu.packt.neuralnet.som.Kohonen.netValidation" alt="" coords="789,5,1096,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#be84746fa2c87ad362c4232c6b700930" title="edu.packt.neuralnet.som.Kohonen.train" alt="" coords="816,56,1069,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#58dc5996f68b42708d8b991eae4cfdae" title="edu.packt.neuralnet.NeuralNet.netValidation" alt="" coords="1156,19,1439,45"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="f1c1aa92631538b5eae425583f4cc53c"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::setOutputLayer" ref="f1c1aa92631538b5eae425583f4cc53c" args="(OutputLayer outputLayer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.packt.neuralnet.NeuralNet.setOutputLayer           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_output_layer.html">OutputLayer</a>&nbsp;</td>
+          <td class="paramname"> <em>outputLayer</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00201">201</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00017">edu.packt.neuralnet.NeuralNet.outputLayer</a>.
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00035">edu.packt.neuralnet.NeuralNet.initNet()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_f1c1aa92631538b5eae425583f4cc53c_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_f1c1aa92631538b5eae425583f4cc53c_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_f1c1aa92631538b5eae425583f4cc53c_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a391d187fbca78fa9fac6eb08a9dbede" title="edu.packt.neuralnet.NeuralNet.initNet" alt="" coords="353,33,596,60"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="1267,8,1544,35"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="1252,59,1559,85"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#be84746fa2c87ad362c4232c6b700930" title="edu.packt.neuralnet.som.Kohonen.train" alt="" coords="647,33,900,60"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="1608,59,1869,85"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651" title="edu.packt.neuralnet.NeuralNet.trainNet" alt="" coords="949,33,1203,60"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="4cf1b9453bf3e121abc949a12106487e"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::getNumberOfHiddenLayers" ref="4cf1b9453bf3e121abc949a12106487e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int edu.packt.neuralnet.NeuralNet.getNumberOfHiddenLayers           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00205">205</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00018">edu.packt.neuralnet.NeuralNet.numberOfHiddenLayers</a>.
+</div>
+</div><p>
+<a class="anchor" name="770366f71716a4fd81f7743281b3a036"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::setNumberOfHiddenLayers" ref="770366f71716a4fd81f7743281b3a036" args="(int numberOfHiddenLayers)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.packt.neuralnet.NeuralNet.setNumberOfHiddenLayers           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>numberOfHiddenLayers</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00209">209</a>行定义。
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00035">edu.packt.neuralnet.NeuralNet.initNet()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_770366f71716a4fd81f7743281b3a036_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_770366f71716a4fd81f7743281b3a036_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_770366f71716a4fd81f7743281b3a036_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a391d187fbca78fa9fac6eb08a9dbede" title="edu.packt.neuralnet.NeuralNet.initNet" alt="" coords="423,33,665,60"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="1336,8,1613,35"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="1321,59,1628,85"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#be84746fa2c87ad362c4232c6b700930" title="edu.packt.neuralnet.som.Kohonen.train" alt="" coords="716,33,969,60"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="1677,59,1939,85"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651" title="edu.packt.neuralnet.NeuralNet.trainNet" alt="" coords="1019,33,1272,60"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="c2e7c33dcd99679a76e6b405d93d7f5b"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::getTrainSet" ref="c2e7c33dcd99679a76e6b405d93d7f5b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [][] edu.packt.neuralnet.NeuralNet.getTrainSet           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00213">213</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00020">edu.packt.neuralnet.NeuralNet.trainSet</a>.
+<p>
+参考自 <a class="el" href="_backpropagation_8java-source.html#l00143">edu.packt.neuralnet.learn.Backpropagation.backpropagation()</a>、<a class="el" href="_kohonen_8java-source.html#l00083">edu.packt.neuralnet.som.Kohonen.fixWinnerWeights()</a>、<a class="el" href="_backpropagation_8java-source.html#l00052">edu.packt.neuralnet.learn.Backpropagation.forward()</a>、<a class="el" href="_neural_net_8java-source.html#l00131">edu.packt.neuralnet.NeuralNet.getNetOutputValues()</a>、<a class="el" href="_training_8java-source.html#l00201">edu.packt.neuralnet.learn.Training.printTrainedNetResult()</a>、<a class="el" href="_training_8java-source.html#l00078">edu.packt.neuralnet.learn.Training.teachNeuronsOfLayer()</a>、<a class="el" href="_kohonen_8java-source.html#l00013">edu.packt.neuralnet.som.Kohonen.train()</a>、<a class="el" href="_training_8java-source.html#l00019">edu.packt.neuralnet.learn.Training.train()</a>及<a class="el" href="_backpropagation_8java-source.html#l00013">edu.packt.neuralnet.learn.Backpropagation.train()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_c2e7c33dcd99679a76e6b405d93d7f5b_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_c2e7c33dcd99679a76e6b405d93d7f5b_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_c2e7c33dcd99679a76e6b405d93d7f5b_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#98392299268e48c9d57cd8a0dcce0824" title="edu.packt.neuralnet.learn.Backpropagation.backpropagation" alt="" coords="331,195,709,221"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#6e80c193a016810e682ac21b413a2ea4" title="edu.packt.neuralnet.learn.Backpropagation.train" alt="" coords="772,195,1079,221"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#03c52691dc2a357f612be3f20bfd383d" title="edu.packt.neuralnet.som.Kohonen.fixWinnerWeights" alt="" coords="353,93,687,120"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#be84746fa2c87ad362c4232c6b700930" title="edu.packt.neuralnet.som.Kohonen.train" alt="" coords="799,93,1052,120"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#bf900f3a44652640f21f048704ccaffd" title="edu.packt.neuralnet.learn.Backpropagation.forward" alt="" coords="359,245,681,272"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#82c9337c75bc84b8d1e84c4846a0b138" title="edu.packt.neuralnet.NeuralNet.getNetOutputValues" alt="" coords="763,245,1088,272"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#90656f54913d63b3bba8edeaa4b95757" title="edu.packt.neuralnet.learn.Training.printTrainedNetResult" alt="" coords="341,347,699,373"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#7a5294957e77ea3df7d906c2e690de8c" title="edu.packt.neuralnet.learn.Training.teachNeuronsOfLayer" alt="" coords="341,448,699,475"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#1d18c774a21a409420750021a6661cec" title="edu.packt.neuralnet.learn.Training.train" alt="" coords="799,423,1052,449"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651" title="edu.packt.neuralnet.NeuralNet.trainNet" alt="" coords="1141,195,1395,221"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="1459,245,1736,272"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="1444,195,1751,221"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="1800,195,2061,221"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a8eeacb9e33fb2ad7afa7255afac5f8a" title="edu.packt.neuralnet.NeuralNet.printTrainedNetResult" alt="" coords="757,347,1093,373"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="cfabb83136c77f550a8151c973b32efd"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::setTrainSet" ref="cfabb83136c77f550a8151c973b32efd" args="(double[][] trainSet)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.packt.neuralnet.NeuralNet.setTrainSet           </td>
+          <td>(</td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>trainSet</em>[][]          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00217">217</a>行定义。
+<p>
+参考自 <a class="el" href="_weather_8java-source.html#l00015">edu.packt.neuralnet.weather.Weather.main()</a>及<a class="el" href="_neural_net_test_8java-source.html#l00013">edu.packt.neuralnet.NeuralNetTest.testKohonen()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_cfabb83136c77f550a8151c973b32efd_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_cfabb83136c77f550a8151c973b32efd_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_cfabb83136c77f550a8151c973b32efd_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="344,5,621,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="329,56,636,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="685,56,947,83"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="ce05c78718bed1c012fa76da1607736e"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::getRealOutputSet" ref="ce05c78718bed1c012fa76da1607736e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [] edu.packt.neuralnet.NeuralNet.getRealOutputSet           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00221">221</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00022">edu.packt.neuralnet.NeuralNet.realOutputSet</a>.
+<p>
+参考自 <a class="el" href="_training_8java-source.html#l00019">edu.packt.neuralnet.learn.Training.train()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_ce05c78718bed1c012fa76da1607736e_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_ce05c78718bed1c012fa76da1607736e_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_ce05c78718bed1c012fa76da1607736e_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#1d18c774a21a409420750021a6661cec" title="edu.packt.neuralnet.learn.Training.train" alt="" coords="369,5,623,32"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="8976215b3ef4c92dc944edaeae8edec5"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::setRealOutputSet" ref="8976215b3ef4c92dc944edaeae8edec5" args="(double[] realOutputSet)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.packt.neuralnet.NeuralNet.setRealOutputSet           </td>
+          <td>(</td>
+          <td class="paramtype">double[]&nbsp;</td>
+          <td class="paramname"> <em>realOutputSet</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00225">225</a>行定义。
+</div>
+</div><p>
+<a class="anchor" name="f14057f123727ff718a5403015e4e647"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::getMaxEpochs" ref="f14057f123727ff718a5403015e4e647" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int edu.packt.neuralnet.NeuralNet.getMaxEpochs           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00229">229</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00024">edu.packt.neuralnet.NeuralNet.maxEpochs</a>.
+<p>
+参考自 <a class="el" href="_kohonen_8java-source.html#l00013">edu.packt.neuralnet.som.Kohonen.train()</a>、<a class="el" href="_training_8java-source.html#l00019">edu.packt.neuralnet.learn.Training.train()</a>及<a class="el" href="_backpropagation_8java-source.html#l00013">edu.packt.neuralnet.learn.Backpropagation.train()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_f14057f123727ff718a5403015e4e647_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_f14057f123727ff718a5403015e4e647_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_f14057f123727ff718a5403015e4e647_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#be84746fa2c87ad362c4232c6b700930" title="edu.packt.neuralnet.som.Kohonen.train" alt="" coords="376,5,629,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#1d18c774a21a409420750021a6661cec" title="edu.packt.neuralnet.learn.Training.train" alt="" coords="376,56,629,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#6e80c193a016810e682ac21b413a2ea4" title="edu.packt.neuralnet.learn.Backpropagation.train" alt="" coords="349,107,656,133"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651" title="edu.packt.neuralnet.NeuralNet.trainNet" alt="" coords="704,56,957,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="1021,31,1299,57"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="1007,81,1313,108"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="1363,81,1624,108"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="460e07bbcd7a383b25dcdd17515edfb7"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::setMaxEpochs" ref="460e07bbcd7a383b25dcdd17515edfb7" args="(int maxEpochs)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.packt.neuralnet.NeuralNet.setMaxEpochs           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>maxEpochs</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00233">233</a>行定义。
+<p>
+参考自 <a class="el" href="_weather_8java-source.html#l00015">edu.packt.neuralnet.weather.Weather.main()</a>及<a class="el" href="_neural_net_test_8java-source.html#l00013">edu.packt.neuralnet.NeuralNetTest.testKohonen()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_460e07bbcd7a383b25dcdd17515edfb7_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_460e07bbcd7a383b25dcdd17515edfb7_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_460e07bbcd7a383b25dcdd17515edfb7_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="365,5,643,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="351,56,657,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="707,56,968,83"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="2f63bc17bf5a76266ab3a09660a96e5f"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::getTargetError" ref="2f63bc17bf5a76266ab3a09660a96e5f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double edu.packt.neuralnet.NeuralNet.getTargetError           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00237">237</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00026">edu.packt.neuralnet.NeuralNet.targetError</a>.
+<p>
+参考自 <a class="el" href="_training_8java-source.html#l00019">edu.packt.neuralnet.learn.Training.train()</a>及<a class="el" href="_backpropagation_8java-source.html#l00013">edu.packt.neuralnet.learn.Backpropagation.train()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_2f63bc17bf5a76266ab3a09660a96e5f_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_2f63bc17bf5a76266ab3a09660a96e5f_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_2f63bc17bf5a76266ab3a09660a96e5f_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#1d18c774a21a409420750021a6661cec" title="edu.packt.neuralnet.learn.Training.train" alt="" coords="373,5,627,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#6e80c193a016810e682ac21b413a2ea4" title="edu.packt.neuralnet.learn.Backpropagation.train" alt="" coords="347,56,653,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651" title="edu.packt.neuralnet.NeuralNet.trainNet" alt="" coords="701,56,955,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="1019,31,1296,57"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="1004,81,1311,108"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="1360,81,1621,108"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="4772754bde999eea841cce83891a441e"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::setTargetError" ref="4772754bde999eea841cce83891a441e" args="(double targetError)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.packt.neuralnet.NeuralNet.setTargetError           </td>
+          <td>(</td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>targetError</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00241">241</a>行定义。
+<p>
+参考自 <a class="el" href="_weather_8java-source.html#l00015">edu.packt.neuralnet.weather.Weather.main()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_4772754bde999eea841cce83891a441e_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_4772754bde999eea841cce83891a441e_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_4772754bde999eea841cce83891a441e_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="347,5,624,32"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="107c193fc9a6af728cc511406ee89c35"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::getLearningRate" ref="107c193fc9a6af728cc511406ee89c35" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double edu.packt.neuralnet.NeuralNet.getLearningRate           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00245">245</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00025">edu.packt.neuralnet.NeuralNet.learningRate</a>.
+<p>
+参考自 <a class="el" href="_kohonen_8java-source.html#l00083">edu.packt.neuralnet.som.Kohonen.fixWinnerWeights()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_107c193fc9a6af728cc511406ee89c35_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_107c193fc9a6af728cc511406ee89c35_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_107c193fc9a6af728cc511406ee89c35_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#03c52691dc2a357f612be3f20bfd383d" title="edu.packt.neuralnet.som.Kohonen.fixWinnerWeights" alt="" coords="360,31,693,57"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#be84746fa2c87ad362c4232c6b700930" title="edu.packt.neuralnet.som.Kohonen.train" alt="" coords="743,31,996,57"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651" title="edu.packt.neuralnet.NeuralNet.trainNet" alt="" coords="1045,31,1299,57"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="1363,5,1640,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="1348,56,1655,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="1704,56,1965,83"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="07c09b1cded532abff86d9ab9a4f1800"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::setLearningRate" ref="07c09b1cded532abff86d9ab9a4f1800" args="(double learningRate)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.packt.neuralnet.NeuralNet.setLearningRate           </td>
+          <td>(</td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>learningRate</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00249">249</a>行定义。
+<p>
+参考自 <a class="el" href="_weather_8java-source.html#l00015">edu.packt.neuralnet.weather.Weather.main()</a>及<a class="el" href="_neural_net_test_8java-source.html#l00013">edu.packt.neuralnet.NeuralNetTest.testKohonen()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_07c09b1cded532abff86d9ab9a4f1800_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_07c09b1cded532abff86d9ab9a4f1800_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_07c09b1cded532abff86d9ab9a4f1800_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="373,5,651,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="359,56,665,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="715,56,976,83"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="0d05e835e0ae90e7fef72a1f28cb7809"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::getTrainingError" ref="0d05e835e0ae90e7fef72a1f28cb7809" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double edu.packt.neuralnet.NeuralNet.getTrainingError           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00253">253</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00027">edu.packt.neuralnet.NeuralNet.trainingError</a>.
+</div>
+</div><p>
+<a class="anchor" name="91c8857c9c3a82e61f5512c09e79a376"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::setTrainingError" ref="91c8857c9c3a82e61f5512c09e79a376" args="(double trainingError)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.packt.neuralnet.NeuralNet.setTrainingError           </td>
+          <td>(</td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>trainingError</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00257">257</a>行定义。
+<p>
+参考自 <a class="el" href="_training_8java-source.html#l00019">edu.packt.neuralnet.learn.Training.train()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_91c8857c9c3a82e61f5512c09e79a376_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_91c8857c9c3a82e61f5512c09e79a376_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_91c8857c9c3a82e61f5512c09e79a376_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#1d18c774a21a409420750021a6661cec" title="edu.packt.neuralnet.learn.Training.train" alt="" coords="359,5,612,32"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="20ef5ea336c7d1730b65c4026d6fd285"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::getActivationFnc" ref="20ef5ea336c7d1730b65c4026d6fd285" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ActivationFncENUM edu.packt.neuralnet.NeuralNet.getActivationFnc           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00261">261</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00031">edu.packt.neuralnet.NeuralNet.activationFnc</a>.
+<p>
+参考自 <a class="el" href="_backpropagation_8java-source.html#l00143">edu.packt.neuralnet.learn.Backpropagation.backpropagation()</a>、<a class="el" href="_training_8java-source.html#l00104">edu.packt.neuralnet.learn.Training.calcNewWeight()</a>、<a class="el" href="_backpropagation_8java-source.html#l00052">edu.packt.neuralnet.learn.Backpropagation.forward()</a>、<a class="el" href="_training_8java-source.html#l00201">edu.packt.neuralnet.learn.Training.printTrainedNetResult()</a>及<a class="el" href="_training_8java-source.html#l00019">edu.packt.neuralnet.learn.Training.train()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_20ef5ea336c7d1730b65c4026d6fd285_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_20ef5ea336c7d1730b65c4026d6fd285_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_20ef5ea336c7d1730b65c4026d6fd285_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#98392299268e48c9d57cd8a0dcce0824" title="edu.packt.neuralnet.learn.Backpropagation.backpropagation" alt="" coords="360,107,739,133"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#d3654db10f31727f7a1c2bfefaa0a06e" title="edu.packt.neuralnet.learn.Training.calcNewWeight" alt="" coords="389,5,709,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#1d18c774a21a409420750021a6661cec" title="edu.packt.neuralnet.learn.Training.train" alt="" coords="1232,31,1485,57"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#bf900f3a44652640f21f048704ccaffd" title="edu.packt.neuralnet.learn.Backpropagation.forward" alt="" coords="388,157,711,184"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#90656f54913d63b3bba8edeaa4b95757" title="edu.packt.neuralnet.learn.Training.printTrainedNetResult" alt="" coords="371,208,728,235"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#6e80c193a016810e682ac21b413a2ea4" title="edu.packt.neuralnet.learn.Backpropagation.train" alt="" coords="813,107,1120,133"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651" title="edu.packt.neuralnet.NeuralNet.trainNet" alt="" coords="1232,107,1485,133"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="1587,157,1864,184"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="1572,107,1879,133"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="1928,107,2189,133"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#7a5294957e77ea3df7d906c2e690de8c" title="edu.packt.neuralnet.learn.Training.teachNeuronsOfLayer" alt="" coords="788,5,1145,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#82c9337c75bc84b8d1e84c4846a0b138" title="edu.packt.neuralnet.NeuralNet.getNetOutputValues" alt="" coords="1196,157,1521,184"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a8eeacb9e33fb2ad7afa7255afac5f8a" title="edu.packt.neuralnet.NeuralNet.printTrainedNetResult" alt="" coords="799,208,1135,235"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="59ca603e369ac4319892bc9d49d50477"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::setActivationFnc" ref="59ca603e369ac4319892bc9d49d50477" args="(ActivationFncENUM activationFnc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.packt.neuralnet.NeuralNet.setActivationFnc           </td>
+          <td>(</td>
+          <td class="paramtype">ActivationFncENUM&nbsp;</td>
+          <td class="paramname"> <em>activationFnc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00265">265</a>行定义。
+<p>
+参考自 <a class="el" href="_weather_8java-source.html#l00015">edu.packt.neuralnet.weather.Weather.main()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_59ca603e369ac4319892bc9d49d50477_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_59ca603e369ac4319892bc9d49d50477_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_59ca603e369ac4319892bc9d49d50477_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="360,5,637,32"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="0272182f49606767f22dafa1a5c36f3a"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::getTrainType" ref="0272182f49606767f22dafa1a5c36f3a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TrainingTypesENUM edu.packt.neuralnet.NeuralNet.getTrainType           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00269">269</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00033">edu.packt.neuralnet.NeuralNet.trainType</a>.
+<p>
+参考自 <a class="el" href="_training_8java-source.html#l00078">edu.packt.neuralnet.learn.Training.teachNeuronsOfLayer()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_0272182f49606767f22dafa1a5c36f3a_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_0272182f49606767f22dafa1a5c36f3a_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_0272182f49606767f22dafa1a5c36f3a_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#7a5294957e77ea3df7d906c2e690de8c" title="edu.packt.neuralnet.learn.Training.teachNeuronsOfLayer" alt="" coords="340,5,697,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#1d18c774a21a409420750021a6661cec" title="edu.packt.neuralnet.learn.Training.train" alt="" coords="748,5,1001,32"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="c499625ada286215d3b5a7441ec15439"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::setTrainType" ref="c499625ada286215d3b5a7441ec15439" args="(TrainingTypesENUM trainType)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.packt.neuralnet.NeuralNet.setTrainType           </td>
+          <td>(</td>
+          <td class="paramtype">TrainingTypesENUM&nbsp;</td>
+          <td class="paramname"> <em>trainType</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00273">273</a>行定义。
+<p>
+参考自 <a class="el" href="_weather_8java-source.html#l00015">edu.packt.neuralnet.weather.Weather.main()</a>及<a class="el" href="_neural_net_test_8java-source.html#l00013">edu.packt.neuralnet.NeuralNetTest.testKohonen()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_c499625ada286215d3b5a7441ec15439_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_c499625ada286215d3b5a7441ec15439_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_c499625ada286215d3b5a7441ec15439_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="355,5,632,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="340,56,647,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="696,56,957,83"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="42d6e1250122830856d89a3686b3a796"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::getListOfMSE" ref="42d6e1250122830856d89a3686b3a796" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ArrayList&lt;Double&gt; edu.packt.neuralnet.NeuralNet.getListOfMSE           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00277">277</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00030">edu.packt.neuralnet.NeuralNet.listOfMSE</a>.
+<p>
+参考自 <a class="el" href="_weather_8java-source.html#l00015">edu.packt.neuralnet.weather.Weather.main()</a>、<a class="el" href="_training_8java-source.html#l00019">edu.packt.neuralnet.learn.Training.train()</a>及<a class="el" href="_backpropagation_8java-source.html#l00013">edu.packt.neuralnet.learn.Backpropagation.train()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_42d6e1250122830856d89a3686b3a796_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_42d6e1250122830856d89a3686b3a796_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_42d6e1250122830856d89a3686b3a796_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="1016,7,1293,33"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#1d18c774a21a409420750021a6661cec" title="edu.packt.neuralnet.learn.Training.train" alt="" coords="371,32,624,59"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#6e80c193a016810e682ac21b413a2ea4" title="edu.packt.neuralnet.learn.Backpropagation.train" alt="" coords="344,83,651,109"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651" title="edu.packt.neuralnet.NeuralNet.trainNet" alt="" coords="699,69,952,96"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="1001,69,1308,96"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="1357,69,1619,96"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="59d28282fb7086f06254c471efde5af0"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::setListOfMSE" ref="59d28282fb7086f06254c471efde5af0" args="(ArrayList&lt; Double &gt; listOfMSE)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.packt.neuralnet.NeuralNet.setListOfMSE           </td>
+          <td>(</td>
+          <td class="paramtype">ArrayList&lt; Double &gt;&nbsp;</td>
+          <td class="paramname"> <em>listOfMSE</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00281">281</a>行定义。
+</div>
+</div><p>
+<a class="anchor" name="79fa7f9b399b5358a6c490fc1e9e5a9c"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::getRealMatrixOutputSet" ref="79fa7f9b399b5358a6c490fc1e9e5a9c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [][] edu.packt.neuralnet.NeuralNet.getRealMatrixOutputSet           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00285">285</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00023">edu.packt.neuralnet.NeuralNet.realMatrixOutputSet</a>.
+<p>
+参考自 <a class="el" href="_backpropagation_8java-source.html#l00052">edu.packt.neuralnet.learn.Backpropagation.forward()</a>及<a class="el" href="_training_8java-source.html#l00201">edu.packt.neuralnet.learn.Training.printTrainedNetResult()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_79fa7f9b399b5358a6c490fc1e9e5a9c_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_79fa7f9b399b5358a6c490fc1e9e5a9c_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_79fa7f9b399b5358a6c490fc1e9e5a9c_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#bf900f3a44652640f21f048704ccaffd" title="edu.packt.neuralnet.learn.Backpropagation.forward" alt="" coords="420,56,743,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#90656f54913d63b3bba8edeaa4b95757" title="edu.packt.neuralnet.learn.Training.printTrainedNetResult" alt="" coords="403,107,760,133"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#82c9337c75bc84b8d1e84c4846a0b138" title="edu.packt.neuralnet.NeuralNet.getNetOutputValues" alt="" coords="1193,5,1519,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#6e80c193a016810e682ac21b413a2ea4" title="edu.packt.neuralnet.learn.Backpropagation.train" alt="" coords="823,56,1129,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="1584,5,1861,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651" title="edu.packt.neuralnet.NeuralNet.trainNet" alt="" coords="1229,56,1483,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="1569,56,1876,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="1925,56,2187,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a8eeacb9e33fb2ad7afa7255afac5f8a" title="edu.packt.neuralnet.NeuralNet.printTrainedNetResult" alt="" coords="808,107,1144,133"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="eb1b8b8c88a3ee75dccedc0ab7efd919"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::setRealMatrixOutputSet" ref="eb1b8b8c88a3ee75dccedc0ab7efd919" args="(double[][] realMatrixOutputSet)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.packt.neuralnet.NeuralNet.setRealMatrixOutputSet           </td>
+          <td>(</td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>realMatrixOutputSet</em>[][]          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00289">289</a>行定义。
+<p>
+参考自 <a class="el" href="_weather_8java-source.html#l00015">edu.packt.neuralnet.weather.Weather.main()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_eb1b8b8c88a3ee75dccedc0ab7efd919_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_eb1b8b8c88a3ee75dccedc0ab7efd919_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_eb1b8b8c88a3ee75dccedc0ab7efd919_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="403,5,680,32"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="06b04584eccf0496d268a34cfb062a34"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::getErrorMean" ref="06b04584eccf0496d268a34cfb062a34" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double edu.packt.neuralnet.NeuralNet.getErrorMean           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00293">293</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00028">edu.packt.neuralnet.NeuralNet.errorMean</a>.
+<p>
+参考自 <a class="el" href="_backpropagation_8java-source.html#l00013">edu.packt.neuralnet.learn.Backpropagation.train()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_06b04584eccf0496d268a34cfb062a34_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_06b04584eccf0496d268a34cfb062a34_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_06b04584eccf0496d268a34cfb062a34_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#6e80c193a016810e682ac21b413a2ea4" title="edu.packt.neuralnet.learn.Backpropagation.train" alt="" coords="341,31,648,57"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651" title="edu.packt.neuralnet.NeuralNet.trainNet" alt="" coords="696,31,949,57"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="1013,5,1291,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="999,56,1305,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="1355,56,1616,83"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="3e642d97304902c4e777d03d66074af5"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::setErrorMean" ref="3e642d97304902c4e777d03d66074af5" args="(double errorMean)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.packt.neuralnet.NeuralNet.setErrorMean           </td>
+          <td>(</td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>errorMean</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00297">297</a>行定义。
+<p>
+参考自 <a class="el" href="_backpropagation_8java-source.html#l00052">edu.packt.neuralnet.learn.Backpropagation.forward()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_3e642d97304902c4e777d03d66074af5_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_3e642d97304902c4e777d03d66074af5_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_3e642d97304902c4e777d03d66074af5_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#bf900f3a44652640f21f048704ccaffd" title="edu.packt.neuralnet.learn.Backpropagation.forward" alt="" coords="343,31,665,57"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#82c9337c75bc84b8d1e84c4846a0b138" title="edu.packt.neuralnet.NeuralNet.getNetOutputValues" alt="" coords="1071,5,1396,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#6e80c193a016810e682ac21b413a2ea4" title="edu.packt.neuralnet.learn.Backpropagation.train" alt="" coords="715,56,1021,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="1461,5,1739,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651" title="edu.packt.neuralnet.NeuralNet.trainNet" alt="" coords="1107,56,1360,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="1447,56,1753,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="1803,56,2064,83"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="0d441aaaf3fc0902c508a255db617050"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::getActivationFncOutputLayer" ref="0d441aaaf3fc0902c508a255db617050" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ActivationFncENUM edu.packt.neuralnet.NeuralNet.getActivationFncOutputLayer           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00301">301</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00032">edu.packt.neuralnet.NeuralNet.activationFncOutputLayer</a>.
+<p>
+参考自 <a class="el" href="_backpropagation_8java-source.html#l00143">edu.packt.neuralnet.learn.Backpropagation.backpropagation()</a>及<a class="el" href="_backpropagation_8java-source.html#l00052">edu.packt.neuralnet.learn.Backpropagation.forward()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_0d441aaaf3fc0902c508a255db617050_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_0d441aaaf3fc0902c508a255db617050_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_0d441aaaf3fc0902c508a255db617050_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#98392299268e48c9d57cd8a0dcce0824" title="edu.packt.neuralnet.learn.Backpropagation.backpropagation" alt="" coords="432,5,811,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#bf900f3a44652640f21f048704ccaffd" title="edu.packt.neuralnet.learn.Backpropagation.forward" alt="" coords="460,56,783,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#6e80c193a016810e682ac21b413a2ea4" title="edu.packt.neuralnet.learn.Backpropagation.train" alt="" coords="859,5,1165,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651" title="edu.packt.neuralnet.NeuralNet.trainNet" alt="" coords="1251,5,1504,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="1605,56,1883,83"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="1591,5,1897,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="1947,5,2208,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#82c9337c75bc84b8d1e84c4846a0b138" title="edu.packt.neuralnet.NeuralNet.getNetOutputValues" alt="" coords="1215,56,1540,83"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="62616fe89b4ee62efc92bc0f4490a372"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::setActivationFncOutputLayer" ref="62616fe89b4ee62efc92bc0f4490a372" args="(ActivationFncENUM activationFncOutputLayer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.packt.neuralnet.NeuralNet.setActivationFncOutputLayer           </td>
+          <td>(</td>
+          <td class="paramtype">ActivationFncENUM&nbsp;</td>
+          <td class="paramname"> <em>activationFncOutputLayer</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00305">305</a>行定义。
+<p>
+参考自 <a class="el" href="_weather_8java-source.html#l00015">edu.packt.neuralnet.weather.Weather.main()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_62616fe89b4ee62efc92bc0f4490a372_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_62616fe89b4ee62efc92bc0f4490a372_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_62616fe89b4ee62efc92bc0f4490a372_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995" title="edu.packt.neuralnet.weather.Weather.main" alt="" coords="432,5,709,32"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="35b0661fea2763a1c97103ddd7e9fcb3"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::getValidationSet" ref="35b0661fea2763a1c97103ddd7e9fcb3" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [][] edu.packt.neuralnet.NeuralNet.getValidationSet           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00310">310</a>行定义。
+<p>
+参考 <a class="el" href="_neural_net_8java-source.html#l00021">edu.packt.neuralnet.NeuralNet.validationSet</a>.
+<p>
+参考自 <a class="el" href="_kohonen_8java-source.html#l00119">edu.packt.neuralnet.som.Kohonen.netValidation()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_35b0661fea2763a1c97103ddd7e9fcb3_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_35b0661fea2763a1c97103ddd7e9fcb3_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_35b0661fea2763a1c97103ddd7e9fcb3_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#f264dde9528f1778b220867363c80015" title="edu.packt.neuralnet.som.Kohonen.netValidation" alt="" coords="357,5,664,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#58dc5996f68b42708d8b991eae4cfdae" title="edu.packt.neuralnet.NeuralNet.netValidation" alt="" coords="713,5,996,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="1047,5,1353,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="1403,5,1664,32"></map>
+
+</div>
+</div><p>
+<a class="anchor" name="57b2828d7b4a77eafd7882057522cde0"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::setValidationSet" ref="57b2828d7b4a77eafd7882057522cde0" args="(double[][] validationSet)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edu.packt.neuralnet.NeuralNet.setValidationSet           </td>
+          <td>(</td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>validationSet</em>[][]          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00314">314</a>行定义。
+<p>
+参考自 <a class="el" href="_neural_net_test_8java-source.html#l00013">edu.packt.neuralnet.NeuralNetTest.testKohonen()</a>.
+<p>
+这是这个函数的调用图。<p><center><img src="classedu_1_1packt_1_1neuralnet_1_1_neural_net_57b2828d7b4a77eafd7882057522cde0_icgraph.png" border="0" usemap="#classedu_1_1packt_1_1neuralnet_1_1_neural_net_57b2828d7b4a77eafd7882057522cde0_icgraph_map" alt=""></center>
+<map name="classedu_1_1packt_1_1neuralnet_1_1_neural_net_57b2828d7b4a77eafd7882057522cde0_icgraph_map">
+<area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b" title="edu.packt.neuralnet.NeuralNetTest.testKohonen" alt="" coords="359,5,665,32"><area shape="rect" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba" title="edu.packt.neuralnet.NeuralNetTest.main" alt="" coords="715,5,976,32"></map>
+
+</div>
+</div><p>
+<hr><h2>成员数据文档</h2>
+<a class="anchor" name="790681f72fcbf2c158632bf0e3b1239a"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::inputLayer" ref="790681f72fcbf2c158632bf0e3b1239a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html">InputLayer</a> <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#790681f72fcbf2c158632bf0e3b1239a">edu.packt.neuralnet.NeuralNet.inputLayer</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00014">14</a>行定义。
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00173">edu.packt.neuralnet.NeuralNet.getInputLayer()</a>、<a class="el" href="_neural_net_8java-source.html#l00035">edu.packt.neuralnet.NeuralNet.initNet()</a>、<a class="el" href="_neural_net_8java-source.html#l00072">edu.packt.neuralnet.NeuralNet.printNet()</a>及<a class="el" href="_neural_net_8java-source.html#l00177">edu.packt.neuralnet.NeuralNet.setInputLayer()</a>.
+</div>
+</div><p>
+<a class="anchor" name="fe0d76dcfd041e6940a2c5cf0086c3f2"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::hiddenLayer" ref="fe0d76dcfd041e6940a2c5cf0086c3f2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html">HiddenLayer</a> <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#fe0d76dcfd041e6940a2c5cf0086c3f2">edu.packt.neuralnet.NeuralNet.hiddenLayer</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00015">15</a>行定义。
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00181">edu.packt.neuralnet.NeuralNet.getHiddenLayer()</a>、<a class="el" href="_neural_net_8java-source.html#l00035">edu.packt.neuralnet.NeuralNet.initNet()</a>、<a class="el" href="_neural_net_8java-source.html#l00072">edu.packt.neuralnet.NeuralNet.printNet()</a>及<a class="el" href="_neural_net_8java-source.html#l00185">edu.packt.neuralnet.NeuralNet.setHiddenLayer()</a>.
+</div>
+</div><p>
+<a class="anchor" name="1c9e22f187dd0a667def1afb9548dfe8"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::listOfHiddenLayer" ref="1c9e22f187dd0a667def1afb9548dfe8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ArrayList&lt;<a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html">HiddenLayer</a>&gt; <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1c9e22f187dd0a667def1afb9548dfe8">edu.packt.neuralnet.NeuralNet.listOfHiddenLayer</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00016">16</a>行定义。
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00189">edu.packt.neuralnet.NeuralNet.getListOfHiddenLayer()</a>及<a class="el" href="_neural_net_8java-source.html#l00035">edu.packt.neuralnet.NeuralNet.initNet()</a>.
+</div>
+</div><p>
+<a class="anchor" name="b61a78e231cae9b29dfbe69bb2baab4c"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::outputLayer" ref="b61a78e231cae9b29dfbe69bb2baab4c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_output_layer.html">OutputLayer</a> <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#b61a78e231cae9b29dfbe69bb2baab4c">edu.packt.neuralnet.NeuralNet.outputLayer</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00017">17</a>行定义。
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00197">edu.packt.neuralnet.NeuralNet.getOutputLayer()</a>、<a class="el" href="_neural_net_8java-source.html#l00035">edu.packt.neuralnet.NeuralNet.initNet()</a>、<a class="el" href="_neural_net_8java-source.html#l00072">edu.packt.neuralnet.NeuralNet.printNet()</a>及<a class="el" href="_neural_net_8java-source.html#l00201">edu.packt.neuralnet.NeuralNet.setOutputLayer()</a>.
+</div>
+</div><p>
+<a class="anchor" name="d0d02b544d2edcdf17ed38f22d4b83cb"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::numberOfHiddenLayers" ref="d0d02b544d2edcdf17ed38f22d4b83cb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d0d02b544d2edcdf17ed38f22d4b83cb">edu.packt.neuralnet.NeuralNet.numberOfHiddenLayers</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00018">18</a>行定义。
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00205">edu.packt.neuralnet.NeuralNet.getNumberOfHiddenLayers()</a>.
+</div>
+</div><p>
+<a class="anchor" name="afdbc0aa780133cc4cfbbadefc3ce139"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::trainSet" ref="afdbc0aa780133cc4cfbbadefc3ce139" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [][] <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#afdbc0aa780133cc4cfbbadefc3ce139">edu.packt.neuralnet.NeuralNet.trainSet</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00020">20</a>行定义。
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00213">edu.packt.neuralnet.NeuralNet.getTrainSet()</a>.
+</div>
+</div><p>
+<a class="anchor" name="392ce58c6e8a989c4dbd77d8d27d496c"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::validationSet" ref="392ce58c6e8a989c4dbd77d8d27d496c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [][] <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#392ce58c6e8a989c4dbd77d8d27d496c">edu.packt.neuralnet.NeuralNet.validationSet</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00021">21</a>行定义。
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00310">edu.packt.neuralnet.NeuralNet.getValidationSet()</a>.
+</div>
+</div><p>
+<a class="anchor" name="00c34ff29cd160256c7d31917077314d"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::realOutputSet" ref="00c34ff29cd160256c7d31917077314d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [] <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#00c34ff29cd160256c7d31917077314d">edu.packt.neuralnet.NeuralNet.realOutputSet</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00022">22</a>行定义。
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00221">edu.packt.neuralnet.NeuralNet.getRealOutputSet()</a>.
+</div>
+</div><p>
+<a class="anchor" name="e58c1c69c13e1f4004dc47b034f9dfd9"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::realMatrixOutputSet" ref="e58c1c69c13e1f4004dc47b034f9dfd9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [][] <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#e58c1c69c13e1f4004dc47b034f9dfd9">edu.packt.neuralnet.NeuralNet.realMatrixOutputSet</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00023">23</a>行定义。
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00285">edu.packt.neuralnet.NeuralNet.getRealMatrixOutputSet()</a>.
+</div>
+</div><p>
+<a class="anchor" name="5de098de78163ec131c4cd11e6978a2a"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::maxEpochs" ref="5de098de78163ec131c4cd11e6978a2a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#5de098de78163ec131c4cd11e6978a2a">edu.packt.neuralnet.NeuralNet.maxEpochs</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00024">24</a>行定义。
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00229">edu.packt.neuralnet.NeuralNet.getMaxEpochs()</a>.
+</div>
+</div><p>
+<a class="anchor" name="0e8d2277c7c993ab268100e221af291b"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::learningRate" ref="0e8d2277c7c993ab268100e221af291b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0e8d2277c7c993ab268100e221af291b">edu.packt.neuralnet.NeuralNet.learningRate</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00025">25</a>行定义。
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00245">edu.packt.neuralnet.NeuralNet.getLearningRate()</a>.
+</div>
+</div><p>
+<a class="anchor" name="a23dd06d7ee8a5ca177bdbd008c43c24"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::targetError" ref="a23dd06d7ee8a5ca177bdbd008c43c24" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a23dd06d7ee8a5ca177bdbd008c43c24">edu.packt.neuralnet.NeuralNet.targetError</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00026">26</a>行定义。
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00237">edu.packt.neuralnet.NeuralNet.getTargetError()</a>.
+</div>
+</div><p>
+<a class="anchor" name="8bc1a0c863fe8051bc1982b8fcfa46ca"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::trainingError" ref="8bc1a0c863fe8051bc1982b8fcfa46ca" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#8bc1a0c863fe8051bc1982b8fcfa46ca">edu.packt.neuralnet.NeuralNet.trainingError</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00027">27</a>行定义。
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00253">edu.packt.neuralnet.NeuralNet.getTrainingError()</a>.
+</div>
+</div><p>
+<a class="anchor" name="f9d91d2ad2b7ea749a1f917a20bd80c7"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::errorMean" ref="f9d91d2ad2b7ea749a1f917a20bd80c7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f9d91d2ad2b7ea749a1f917a20bd80c7">edu.packt.neuralnet.NeuralNet.errorMean</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00028">28</a>行定义。
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00293">edu.packt.neuralnet.NeuralNet.getErrorMean()</a>.
+</div>
+</div><p>
+<a class="anchor" name="bee7e85243a01f1880b221734fa46a45"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::listOfMSE" ref="bee7e85243a01f1880b221734fa46a45" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ArrayList&lt;Double&gt; <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#bee7e85243a01f1880b221734fa46a45">edu.packt.neuralnet.NeuralNet.listOfMSE</a> = new ArrayList&lt;Double&gt;()<code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00030">30</a>行定义。
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00277">edu.packt.neuralnet.NeuralNet.getListOfMSE()</a>.
+</div>
+</div><p>
+<a class="anchor" name="d7c0ed2fd6018cda917a139708eaf95a"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::activationFnc" ref="d7c0ed2fd6018cda917a139708eaf95a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ActivationFncENUM <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d7c0ed2fd6018cda917a139708eaf95a">edu.packt.neuralnet.NeuralNet.activationFnc</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00031">31</a>行定义。
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00261">edu.packt.neuralnet.NeuralNet.getActivationFnc()</a>.
+</div>
+</div><p>
+<a class="anchor" name="63fb0f3e3551a618d157b83e9609e35a"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::activationFncOutputLayer" ref="63fb0f3e3551a618d157b83e9609e35a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ActivationFncENUM <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#63fb0f3e3551a618d157b83e9609e35a">edu.packt.neuralnet.NeuralNet.activationFncOutputLayer</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00032">32</a>行定义。
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00301">edu.packt.neuralnet.NeuralNet.getActivationFncOutputLayer()</a>.
+</div>
+</div><p>
+<a class="anchor" name="1a617dc4ba66625087e8bfc46ef6f880"></a><!-- doxytag: member="edu::packt::neuralnet::NeuralNet::trainType" ref="1a617dc4ba66625087e8bfc46ef6f880" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TrainingTypesENUM <a class="el" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1a617dc4ba66625087e8bfc46ef6f880">edu.packt.neuralnet.NeuralNet.trainType</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+在文件<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a>第<a class="el" href="_neural_net_8java-source.html#l00033">33</a>行定义。
+<p>
+参考自 <a class="el" href="_neural_net_8java-source.html#l00131">edu.packt.neuralnet.NeuralNet.getNetOutputValues()</a>、<a class="el" href="_neural_net_8java-source.html#l00269">edu.packt.neuralnet.NeuralNet.getTrainType()</a>、<a class="el" href="_neural_net_8java-source.html#l00160">edu.packt.neuralnet.NeuralNet.netValidation()</a>、<a class="el" href="_neural_net_8java-source.html#l00111">edu.packt.neuralnet.NeuralNet.printTrainedNetResult()</a>及<a class="el" href="_neural_net_8java-source.html#l00084">edu.packt.neuralnet.NeuralNet.trainNet()</a>.
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>D:/dude/cca/src/edu/packt/neuralnet/<a class="el" href="_neural_net_8java-source.html">NeuralNet.java</a></ul>
+<hr size="1"><address style="text-align: right;"><small>Generated at Sat Sep 8 21:51:27 2018 for cca by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

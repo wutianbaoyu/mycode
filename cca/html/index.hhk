@@ -1,0 +1,476 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#16214b108139b3452c15a0c6695afcb7"><param name="Name" value="activationFnc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#16214b108139b3452c15a0c6695afcb7"><param name="Name" value="edu::packt::neuralnet::learn::Training"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d7c0ed2fd6018cda917a139708eaf95a"><param name="Name" value="edu::packt::neuralnet::NeuralNet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#40b11db90567d7bdc0aac4069c306446"><param name="Name" value="ActivationFncENUM"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#63fb0f3e3551a618d157b83e9609e35a"><param name="Name" value="activationFncOutputLayer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#09592c86fd666cf8bb2ab53e780c7f1ea86581d09d2089f23128be70300a3c16"><param name="Name" value="ADALINE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#5edfe85e846b30393fa072773f1a835a"><param name="Name" value="add"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#98392299268e48c9d57cd8a0dcce0824"><param name="Name" value="backpropagation"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#09592c86fd666cf8bb2ab53e780c7f1e5955bc6f11c0d70d23975bcf6e9cf2a2"><param name="Name" value="BACKPROPAGATION"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#6415d36bba0f02933bf31b6c7a8b8cfc"><param name="Name" value="calcEuclideanDistance"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#d3654db10f31727f7a1c2bfefaa0a06e"><param name="Name" value="calcNewWeight"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#9eeffe137fac7b20754fe94e3e75109f"><param name="Name" value="ChartPlotTypeENUM"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#f33c801bd0a4900e67b5dd02a238707d"><param name="Name" value="coFactors"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#9eeffe137fac7b20754fe94e3e75109f195d45c0c030939920d8a2aad646216e"><param name="Name" value="COMPARISON"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#039fa9bb77a653d4d68b11124a0e3853"><param name="Name" value="content"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#4703c30d412773e999f1f23edcd7cb19"><param name="Name" value="Data"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#5d666b85dcfedc7fd1cf5bc69316f1ec"><param name="Name" value="defineAbsoluteFilePath"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#d268fbeb64a011611913cf254e781594"><param name="Name" value="denormalize"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#0e7eb2e324e36d3b5e740675f10bdda8"><param name="Name" value="derivativeActivationFnc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#6945a19ff740099659c9e81e1255f749"><param name="Name" value="derivativeFncHyperTan"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#5bd0c1ba948a3a82c530752305bab65c"><param name="Name" value="derivativeFncLinear"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#b68e279289768f703ef8ac4ff6a18829"><param name="Name" value="derivativeFncSigLog"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#fa2fcd32fa0b2fa3582ce21e5f0548b1"><param name="Name" value="derivativeFncStep"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#361ed450349dd9ae5deda4f2f94540ba"><param name="Name" value="determinant"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html"><param name="Name" value="edu::packt::neuralnet::HiddenLayer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html#75811af83413fa7fc0c71d5eaa488ad1"><param name="Name" value="initLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html#e29a01aad1799ecf5c5fb88dd062ef31"><param name="Name" value="printLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html#5a73556371b65931dceba233a25a79d0"><param name="Name" value="setNumberOfNeuronsInLayer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html"><param name="Name" value="edu::packt::neuralnet::InputLayer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html#183330370b7cc424aef8604c00b338f7"><param name="Name" value="initLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html#d952b41e31d2d80e8a39b66b1e9816e3"><param name="Name" value="printLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html#e23766eccd21e834320faa75bf8875fd"><param name="Name" value="setNumberOfNeuronsInLayer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_layer.html"><param name="Name" value="edu::packt::neuralnet::Layer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_layer.html#884240cc906fb8b36194cccf19c2b6bc"><param name="Name" value="getListOfNeurons"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_layer.html#897922d6c13d0079f6918338b1ed7147"><param name="Name" value="getNumberOfNeuronsInLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_layer.html#96ee454e3dafe459f0420c5ac7f2e496"><param name="Name" value="listOfNeurons"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_layer.html#26ed64411afe8e25b405591196d23af6"><param name="Name" value="numberOfNeuronsInLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_layer.html#6550402845150a7107790104bf022b56"><param name="Name" value="printLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_layer.html#21227cb2127f63fd8a7ed9df8c452b8f"><param name="Name" value="setListOfNeurons"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_layer.html#98869674f0859a4ed7978f5dcd964cfc"><param name="Name" value="setNumberOfNeuronsInLayer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_adaline.html"><param name="Name" value="edu::packt::neuralnet::learn::Adaline"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html"><param name="Name" value="edu::packt::neuralnet::learn::Backpropagation"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#98392299268e48c9d57cd8a0dcce0824"><param name="Name" value="backpropagation"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#543f57aa0fedee70c2418d2bce2c93a5"><param name="Name" value="epoch"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#bf900f3a44652640f21f048704ccaffd"><param name="Name" value="forward"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#6e80c193a016810e682ac21b413a2ea4"><param name="Name" value="train"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_perceptron.html"><param name="Name" value="edu::packt::neuralnet::learn::Perceptron"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html"><param name="Name" value="edu::packt::neuralnet::learn::Training"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#16214b108139b3452c15a0c6695afcb7"><param name="Name" value="activationFnc"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#40b11db90567d7bdc0aac4069c306446"><param name="Name" value="ActivationFncENUM"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#09592c86fd666cf8bb2ab53e780c7f1ea86581d09d2089f23128be70300a3c16"><param name="Name" value="ADALINE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#09592c86fd666cf8bb2ab53e780c7f1e5955bc6f11c0d70d23975bcf6e9cf2a2"><param name="Name" value="BACKPROPAGATION"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#d3654db10f31727f7a1c2bfefaa0a06e"><param name="Name" value="calcNewWeight"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#0e7eb2e324e36d3b5e740675f10bdda8"><param name="Name" value="derivativeActivationFnc"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#6945a19ff740099659c9e81e1255f749"><param name="Name" value="derivativeFncHyperTan"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#5bd0c1ba948a3a82c530752305bab65c"><param name="Name" value="derivativeFncLinear"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#b68e279289768f703ef8ac4ff6a18829"><param name="Name" value="derivativeFncSigLog"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#fa2fcd32fa0b2fa3582ce21e5f0548b1"><param name="Name" value="derivativeFncStep"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#a94bf86ac9de0aa48b3b53cd3869b208"><param name="Name" value="epochs"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#f82041ec322909423d80c0c5b83004f3"><param name="Name" value="error"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#a1e191cb5ca4c28728e50f3a82004c36"><param name="Name" value="fncHyperTan"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#9496d7cd3c4c9098d6d636c5e657b12c"><param name="Name" value="fncLinear"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#030c1ece3079d2691fe8b550ef789bcd"><param name="Name" value="fncSigLog"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#3f840606d471f9c495ae317b43d2aa6c"><param name="Name" value="fncStep"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#8f97abc18d511d4bd641f9d7cd8c4450"><param name="Name" value="getEpochs"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#d21cc6d239aea5ac3afe8f4b883d8b74"><param name="Name" value="getError"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#b5cf1337fba9c089662d99fae5977c8c"><param name="Name" value="getMse"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#40b11db90567d7bdc0aac4069c306446076c1a5c3b532aa76af49c86692e6626"><param name="Name" value="HYPERTAN"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#09592c86fd666cf8bb2ab53e780c7f1e0a4ff7ef8133fef4fb1bf017e9be23f9"><param name="Name" value="KOHONEN"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#40b11db90567d7bdc0aac4069c306446dc101ebf31c49c2d4b80b7c6f59f22cb"><param name="Name" value="LINEAR"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#1bc508fa38fcaa12c32eae950bcf5cf5"><param name="Name" value="mse"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#09592c86fd666cf8bb2ab53e780c7f1e86ae196aae3149d1c609c87be8d499c2"><param name="Name" value="PERCEPTRON"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#90656f54913d63b3bba8edeaa4b95757"><param name="Name" value="printTrainedNetResult"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#3e516b7acc8d3855d93eb3ee0a5f64ac"><param name="Name" value="qianerror"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#2d6d0011089b720a26a8d9bf20f2f894"><param name="Name" value="setEpochs"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#5f58ba82f8ff6ac14fb0913f93781361"><param name="Name" value="setError"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#8d24c85a9586aad2cf00a305e04d39b8"><param name="Name" value="setMse"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#40b11db90567d7bdc0aac4069c306446263e1fc3594a53997ae9f4a47c23ef7f"><param name="Name" value="SIGLOG"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#40b11db90567d7bdc0aac4069c306446c0ba526afb7f54207517b48a892961c2"><param name="Name" value="STEP"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#7a5294957e77ea3df7d906c2e690de8c"><param name="Name" value="teachNeuronsOfLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#1d18c774a21a409420750021a6661cec"><param name="Name" value="train"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#09592c86fd666cf8bb2ab53e780c7f1e"><param name="Name" value="TrainingTypesENUM"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html"><param name="Name" value="edu::packt::neuralnet::NeuralNet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d7c0ed2fd6018cda917a139708eaf95a"><param name="Name" value="activationFnc"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#63fb0f3e3551a618d157b83e9609e35a"><param name="Name" value="activationFncOutputLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f9d91d2ad2b7ea749a1f917a20bd80c7"><param name="Name" value="errorMean"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#20ef5ea336c7d1730b65c4026d6fd285"><param name="Name" value="getActivationFnc"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0d441aaaf3fc0902c508a255db617050"><param name="Name" value="getActivationFncOutputLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#06b04584eccf0496d268a34cfb062a34"><param name="Name" value="getErrorMean"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#367b52fc13f06b36b77135b25cb9b798"><param name="Name" value="getHiddenLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#61327e435c95e3c3de0bbf2f2f556392"><param name="Name" value="getInputLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#107c193fc9a6af728cc511406ee89c35"><param name="Name" value="getLearningRate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#7b73c95ca04f299357dc5ea32f72893d"><param name="Name" value="getListOfHiddenLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#42d6e1250122830856d89a3686b3a796"><param name="Name" value="getListOfMSE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f14057f123727ff718a5403015e4e647"><param name="Name" value="getMaxEpochs"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#82c9337c75bc84b8d1e84c4846a0b138"><param name="Name" value="getNetOutputValues"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#4cf1b9453bf3e121abc949a12106487e"><param name="Name" value="getNumberOfHiddenLayers"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#242fb32fd1cfdf033445094116679d9a"><param name="Name" value="getOutputLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#79fa7f9b399b5358a6c490fc1e9e5a9c"><param name="Name" value="getRealMatrixOutputSet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#ce05c78718bed1c012fa76da1607736e"><param name="Name" value="getRealOutputSet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#2f63bc17bf5a76266ab3a09660a96e5f"><param name="Name" value="getTargetError"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0d05e835e0ae90e7fef72a1f28cb7809"><param name="Name" value="getTrainingError"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#c2e7c33dcd99679a76e6b405d93d7f5b"><param name="Name" value="getTrainSet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0272182f49606767f22dafa1a5c36f3a"><param name="Name" value="getTrainType"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#35b0661fea2763a1c97103ddd7e9fcb3"><param name="Name" value="getValidationSet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#fe0d76dcfd041e6940a2c5cf0086c3f2"><param name="Name" value="hiddenLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a391d187fbca78fa9fac6eb08a9dbede"><param name="Name" value="initNet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#790681f72fcbf2c158632bf0e3b1239a"><param name="Name" value="inputLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0e8d2277c7c993ab268100e221af291b"><param name="Name" value="learningRate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1c9e22f187dd0a667def1afb9548dfe8"><param name="Name" value="listOfHiddenLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#bee7e85243a01f1880b221734fa46a45"><param name="Name" value="listOfMSE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#5de098de78163ec131c4cd11e6978a2a"><param name="Name" value="maxEpochs"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#58dc5996f68b42708d8b991eae4cfdae"><param name="Name" value="netValidation"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d0d02b544d2edcdf17ed38f22d4b83cb"><param name="Name" value="numberOfHiddenLayers"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#b61a78e231cae9b29dfbe69bb2baab4c"><param name="Name" value="outputLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d8a8c2e14e0dca5720f083781cd65a75"><param name="Name" value="printNet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a8eeacb9e33fb2ad7afa7255afac5f8a"><param name="Name" value="printTrainedNetResult"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#e58c1c69c13e1f4004dc47b034f9dfd9"><param name="Name" value="realMatrixOutputSet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#00c34ff29cd160256c7d31917077314d"><param name="Name" value="realOutputSet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#59ca603e369ac4319892bc9d49d50477"><param name="Name" value="setActivationFnc"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#62616fe89b4ee62efc92bc0f4490a372"><param name="Name" value="setActivationFncOutputLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#3e642d97304902c4e777d03d66074af5"><param name="Name" value="setErrorMean"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#780816351285521bf51d63080d243c01"><param name="Name" value="setHiddenLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#24cfee30d0351c5d58aa34b7d2071d1e"><param name="Name" value="setInputLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#07c09b1cded532abff86d9ab9a4f1800"><param name="Name" value="setLearningRate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#67782e73b6b32e2cf17341c1f326624c"><param name="Name" value="setListOfHiddenLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#59d28282fb7086f06254c471efde5af0"><param name="Name" value="setListOfMSE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#460e07bbcd7a383b25dcdd17515edfb7"><param name="Name" value="setMaxEpochs"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#770366f71716a4fd81f7743281b3a036"><param name="Name" value="setNumberOfHiddenLayers"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f1c1aa92631538b5eae425583f4cc53c"><param name="Name" value="setOutputLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#eb1b8b8c88a3ee75dccedc0ab7efd919"><param name="Name" value="setRealMatrixOutputSet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#8976215b3ef4c92dc944edaeae8edec5"><param name="Name" value="setRealOutputSet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#4772754bde999eea841cce83891a441e"><param name="Name" value="setTargetError"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#91c8857c9c3a82e61f5512c09e79a376"><param name="Name" value="setTrainingError"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#cfabb83136c77f550a8151c973b32efd"><param name="Name" value="setTrainSet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#c499625ada286215d3b5a7441ec15439"><param name="Name" value="setTrainType"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#57b2828d7b4a77eafd7882057522cde0"><param name="Name" value="setValidationSet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a23dd06d7ee8a5ca177bdbd008c43c24"><param name="Name" value="targetError"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#8bc1a0c863fe8051bc1982b8fcfa46ca"><param name="Name" value="trainingError"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651"><param name="Name" value="trainNet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#afdbc0aa780133cc4cfbbadefc3ce139"><param name="Name" value="trainSet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1a617dc4ba66625087e8bfc46ef6f880"><param name="Name" value="trainType"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#392ce58c6e8a989c4dbd77d8d27d496c"><param name="Name" value="validationSet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html"><param name="Name" value="edu::packt::neuralnet::NeuralNetTest"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba"><param name="Name" value="main"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b"><param name="Name" value="testKohonen"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html"><param name="Name" value="edu::packt::neuralnet::Neuron"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#455161abb10bad3f0599f0a2e48225a4"><param name="Name" value="error"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#b36ec54c0499a80337cd81db584f14a0"><param name="Name" value="getError"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#a7dbd13df945a1940769f9c8cd47fe80"><param name="Name" value="getListOfWeightIn"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#38f3084a2ed3c3aef247b6f63df22df4"><param name="Name" value="getListOfWeightOut"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#0b36eaf596659d5588362ac484225b04"><param name="Name" value="getOutputValue"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#9b37818d7b9beb9b14c902e15aeb0979"><param name="Name" value="getSensibility"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#4f3f09792cf20b07d87353da6ae04418"><param name="Name" value="initNeuron"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#1febbff2d6d4c67daed26129a064d09b"><param name="Name" value="listOfWeightIn"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#42c094e68e428f593bf7e1265550aec8"><param name="Name" value="listOfWeightOut"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#d401558074807498d5ffaeafd481288c"><param name="Name" value="outputValue"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#2926a0158281999404f1a3061ea7e5c9"><param name="Name" value="sensibility"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#3863084bcdd366bb1c2f4ec4d22b04fc"><param name="Name" value="setError"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#babce636308e672631c1c5746c46f57d"><param name="Name" value="setListOfWeightIn"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#81f70e3728886f155baa2ac8b107681d"><param name="Name" value="setListOfWeightOut"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#52e2674319fa5ac381a007d17853dddb"><param name="Name" value="setOutputValue"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#202a8315bde031ea0052855125f70d96"><param name="Name" value="setSensibility"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_output_layer.html"><param name="Name" value="edu::packt::neuralnet::OutputLayer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_output_layer.html#ee350d0014be1cfbd3e8de279142becc"><param name="Name" value="initLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_output_layer.html#4f579ab9ea2637957305539f8f35dcd5"><param name="Name" value="printLayer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html"><param name="Name" value="edu::packt::neuralnet::som::Kohonen"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#6415d36bba0f02933bf31b6c7a8b8cfc"><param name="Name" value="calcEuclideanDistance"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#03c52691dc2a357f612be3f20bfd383d"><param name="Name" value="fixWinnerWeights"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#031630a1fae98c0924059a7b190bb2be"><param name="Name" value="initNet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#f264dde9528f1778b220867363c80015"><param name="Name" value="netValidation"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#be84746fa2c87ad362c4232c6b700930"><param name="Name" value="train"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html"><param name="Name" value="edu::packt::neuralnet::util::Chart"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#9eeffe137fac7b20754fe94e3e75109f"><param name="Name" value="ChartPlotTypeENUM"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#9eeffe137fac7b20754fe94e3e75109f195d45c0c030939920d8a2aad646216e"><param name="Name" value="COMPARISON"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#9eeffe137fac7b20754fe94e3e75109f3b42f7bedd2f2cc461eb31220977be5b"><param name="Name" value="FULL_DATA"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#cd70ff94ea2678020d41d9f1bb4456b0"><param name="Name" value="plotXYData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#96b34b4706dc50ce7bd80c16f383c272"><param name="Name" value="selectComparisonSeriesName"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#18626db7bfff9c7be41f5a9edf944f54"><param name="Name" value="selectTemperatureSeriesName"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart_test.html"><param name="Name" value="edu::packt::neuralnet::util::ChartTest"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart_test.html#f70f16060d757f62df815674f23c92d1"><param name="Name" value="libTest"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart_test.html#a35a4d27334d58d6744c51931a25c2e3"><param name="Name" value="main"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html"><param name="Name" value="edu::packt::neuralnet::util::Data"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#4703c30d412773e999f1f23edcd7cb19"><param name="Name" value="Data"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#5d666b85dcfedc7fd1cf5bc69316f1ec"><param name="Name" value="defineAbsoluteFilePath"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#d268fbeb64a011611913cf254e781594"><param name="Name" value="denormalize"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#f211b2cc61a30904bdd4ecdc3e0d91d2"><param name="Name" value="fileName"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#7a84a469d4cd0771ca19c97087bf33cb"><param name="Name" value="getFileName"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#ee5c4f8ca397fdca84ee2fe92e5100b7"><param name="Name" value="getPath"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#a6a29fb5ba343807eb1ea3f34bccd08f"><param name="Name" value="joinArrays"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#acda6fde4b5ca57aaa7bec33d0c70c282978bd49f1f0b0f58adddec8986bc1bf"><param name="Name" value="MAX_MIN"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#acda6fde4b5ca57aaa7bec33d0c70c2818c2aede38f1fd7f764e3c154a5d3fcf"><param name="Name" value="MAX_MIN_EQUALIZED"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#acda6fde4b5ca57aaa7bec33d0c70c28"><param name="Name" value="NormalizationTypesENUM"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#c0d69fe25790d44aaf0060ee3ef7dabb"><param name="Name" value="normalize"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#9ab479ab09a978ccbcaacc3b724a2faa"><param name="Name" value="path"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#ebb407ed27bd67537ca7f779c1cb3e8c"><param name="Name" value="rawData2Matrix"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#7e59a827e3b233384581fb025f5678ef"><param name="Name" value="setFileName"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#a996bdaf5cac461682bbaf265d7dcb37"><param name="Name" value="setPath"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data_test.html"><param name="Name" value="edu::packt::neuralnet::util::DataTest"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_identity_matrix.html"><param name="Name" value="edu::packt::neuralnet::util::IdentityMatrix"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_identity_matrix.html#c97ceb63d03c8207633fa5ec8c335c1f"><param name="Name" value="IdentityMatrix"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_identity_matrix.html#2e035c8debdc3e08fc9778bc138ffb6e"><param name="Name" value="setValue"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html"><param name="Name" value="edu::packt::neuralnet::util::Matrix"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#5edfe85e846b30393fa072773f1a835a"><param name="Name" value="add"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#f33c801bd0a4900e67b5dd02a238707d"><param name="Name" value="coFactors"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#039fa9bb77a653d4d68b11124a0e3853"><param name="Name" value="content"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#361ed450349dd9ae5deda4f2f94540ba"><param name="Name" value="determinant"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#8f80de29afebb9e746b6206bc0ce3b57"><param name="Name" value="getDeterminant"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#5d27282250509764a0a1367df558b5ef"><param name="Name" value="getNumberOfColumns"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#ac6583c30d5eb5424e9697ae8fc9045f"><param name="Name" value="getNumberOfRows"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#8710f51c2b7664465a7703e9ab485dbe"><param name="Name" value="getValue"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#f6d86b9d6b3f13eafe8f1a3453e48975"><param name="Name" value="inverse"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#a7136e573781b32bdc8c4d4fa5a19f69"><param name="Name" value="LUdecomposition"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#21b037d5156b40c898d810198749b242"><param name="Name" value="Matrix"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#161db5e7d94bc764430abc7c6fd18b2a"><param name="Name" value="multiply"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#510bbe9cf02aed8539388d1daed3d0bf"><param name="Name" value="multiplyDiagonal"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#e980017837d1e4cb8bb39de95a61d2a4"><param name="Name" value="multiplyRow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#9e0b9f7dcd197d526dfeb6970c3d3af9"><param name="Name" value="numberOfColumns"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#f95aadbc1ad46363cd65f9a134a0c2ff"><param name="Name" value="numberOfRows"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#66cee07984c0922df3afb4c62946f6f8"><param name="Name" value="setDeterminant"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#8a06686e95a23978bf3d35fd040de99c"><param name="Name" value="setOnes"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#964cb7a86469aa16e0f5185f8fcd1475"><param name="Name" value="setValue"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#6032f8217c058cf374a7078a5efe4a81"><param name="Name" value="setZeros"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#9293ebbe20a17c5fba0a143084b0b41a"><param name="Name" value="subMatrix"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#099ed05386817202b2c18c20b26ebcfd"><param name="Name" value="subtract"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#554f17343858aad26f583ef4d2cc0f42"><param name="Name" value="sumRowByRow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#949b0617436f0e8314047b6f1c56a7a9"><param name="Name" value="transpose"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interfaceedu_1_1packt_1_1neuralnet_1_1validation_1_1_validation.html"><param name="Name" value="edu::packt::neuralnet::validation::Validation"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html"><param name="Name" value="edu::packt::neuralnet::weather::Weather"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#6d093018b814bf28ff9f25fa3eb22c05"><param name="Name" value="learningrate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995"><param name="Name" value="main"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#543f57aa0fedee70c2418d2bce2c93a5"><param name="Name" value="epoch"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#a94bf86ac9de0aa48b3b53cd3869b208"><param name="Name" value="epochs"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#f82041ec322909423d80c0c5b83004f3"><param name="Name" value="error"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#f82041ec322909423d80c0c5b83004f3"><param name="Name" value="edu::packt::neuralnet::learn::Training"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#455161abb10bad3f0599f0a2e48225a4"><param name="Name" value="edu::packt::neuralnet::Neuron"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f9d91d2ad2b7ea749a1f917a20bd80c7"><param name="Name" value="errorMean"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#f211b2cc61a30904bdd4ecdc3e0d91d2"><param name="Name" value="fileName"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#03c52691dc2a357f612be3f20bfd383d"><param name="Name" value="fixWinnerWeights"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#a1e191cb5ca4c28728e50f3a82004c36"><param name="Name" value="fncHyperTan"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#9496d7cd3c4c9098d6d636c5e657b12c"><param name="Name" value="fncLinear"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#030c1ece3079d2691fe8b550ef789bcd"><param name="Name" value="fncSigLog"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#3f840606d471f9c495ae317b43d2aa6c"><param name="Name" value="fncStep"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#bf900f3a44652640f21f048704ccaffd"><param name="Name" value="forward"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#9eeffe137fac7b20754fe94e3e75109f3b42f7bedd2f2cc461eb31220977be5b"><param name="Name" value="FULL_DATA"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#20ef5ea336c7d1730b65c4026d6fd285"><param name="Name" value="getActivationFnc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0d441aaaf3fc0902c508a255db617050"><param name="Name" value="getActivationFncOutputLayer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#8f80de29afebb9e746b6206bc0ce3b57"><param name="Name" value="getDeterminant"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#8f97abc18d511d4bd641f9d7cd8c4450"><param name="Name" value="getEpochs"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#d21cc6d239aea5ac3afe8f4b883d8b74"><param name="Name" value="getError"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#d21cc6d239aea5ac3afe8f4b883d8b74"><param name="Name" value="edu::packt::neuralnet::learn::Training"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#b36ec54c0499a80337cd81db584f14a0"><param name="Name" value="edu::packt::neuralnet::Neuron"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#06b04584eccf0496d268a34cfb062a34"><param name="Name" value="getErrorMean"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#7a84a469d4cd0771ca19c97087bf33cb"><param name="Name" value="getFileName"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#367b52fc13f06b36b77135b25cb9b798"><param name="Name" value="getHiddenLayer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#61327e435c95e3c3de0bbf2f2f556392"><param name="Name" value="getInputLayer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#107c193fc9a6af728cc511406ee89c35"><param name="Name" value="getLearningRate"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#7b73c95ca04f299357dc5ea32f72893d"><param name="Name" value="getListOfHiddenLayer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#42d6e1250122830856d89a3686b3a796"><param name="Name" value="getListOfMSE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_layer.html#884240cc906fb8b36194cccf19c2b6bc"><param name="Name" value="getListOfNeurons"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#a7dbd13df945a1940769f9c8cd47fe80"><param name="Name" value="getListOfWeightIn"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#38f3084a2ed3c3aef247b6f63df22df4"><param name="Name" value="getListOfWeightOut"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f14057f123727ff718a5403015e4e647"><param name="Name" value="getMaxEpochs"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#b5cf1337fba9c089662d99fae5977c8c"><param name="Name" value="getMse"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#82c9337c75bc84b8d1e84c4846a0b138"><param name="Name" value="getNetOutputValues"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#5d27282250509764a0a1367df558b5ef"><param name="Name" value="getNumberOfColumns"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#4cf1b9453bf3e121abc949a12106487e"><param name="Name" value="getNumberOfHiddenLayers"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_layer.html#897922d6c13d0079f6918338b1ed7147"><param name="Name" value="getNumberOfNeuronsInLayer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#ac6583c30d5eb5424e9697ae8fc9045f"><param name="Name" value="getNumberOfRows"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#242fb32fd1cfdf033445094116679d9a"><param name="Name" value="getOutputLayer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#0b36eaf596659d5588362ac484225b04"><param name="Name" value="getOutputValue"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#ee5c4f8ca397fdca84ee2fe92e5100b7"><param name="Name" value="getPath"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#79fa7f9b399b5358a6c490fc1e9e5a9c"><param name="Name" value="getRealMatrixOutputSet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#ce05c78718bed1c012fa76da1607736e"><param name="Name" value="getRealOutputSet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#9b37818d7b9beb9b14c902e15aeb0979"><param name="Name" value="getSensibility"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#2f63bc17bf5a76266ab3a09660a96e5f"><param name="Name" value="getTargetError"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0d05e835e0ae90e7fef72a1f28cb7809"><param name="Name" value="getTrainingError"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#c2e7c33dcd99679a76e6b405d93d7f5b"><param name="Name" value="getTrainSet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0272182f49606767f22dafa1a5c36f3a"><param name="Name" value="getTrainType"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#35b0661fea2763a1c97103ddd7e9fcb3"><param name="Name" value="getValidationSet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#8710f51c2b7664465a7703e9ab485dbe"><param name="Name" value="getValue"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#fe0d76dcfd041e6940a2c5cf0086c3f2"><param name="Name" value="hiddenLayer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#40b11db90567d7bdc0aac4069c306446076c1a5c3b532aa76af49c86692e6626"><param name="Name" value="HYPERTAN"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_identity_matrix.html#c97ceb63d03c8207633fa5ec8c335c1f"><param name="Name" value="IdentityMatrix"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html#75811af83413fa7fc0c71d5eaa488ad1"><param name="Name" value="initLayer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html#75811af83413fa7fc0c71d5eaa488ad1"><param name="Name" value="edu::packt::neuralnet::HiddenLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html#183330370b7cc424aef8604c00b338f7"><param name="Name" value="edu::packt::neuralnet::InputLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_output_layer.html#ee350d0014be1cfbd3e8de279142becc"><param name="Name" value="edu::packt::neuralnet::OutputLayer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a391d187fbca78fa9fac6eb08a9dbede"><param name="Name" value="initNet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a391d187fbca78fa9fac6eb08a9dbede"><param name="Name" value="edu::packt::neuralnet::NeuralNet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#031630a1fae98c0924059a7b190bb2be"><param name="Name" value="edu::packt::neuralnet::som::Kohonen"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#4f3f09792cf20b07d87353da6ae04418"><param name="Name" value="initNeuron"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#790681f72fcbf2c158632bf0e3b1239a"><param name="Name" value="inputLayer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#f6d86b9d6b3f13eafe8f1a3453e48975"><param name="Name" value="inverse"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#a6a29fb5ba343807eb1ea3f34bccd08f"><param name="Name" value="joinArrays"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#09592c86fd666cf8bb2ab53e780c7f1e0a4ff7ef8133fef4fb1bf017e9be23f9"><param name="Name" value="KOHONEN"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0e8d2277c7c993ab268100e221af291b"><param name="Name" value="learningRate"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#6d093018b814bf28ff9f25fa3eb22c05"><param name="Name" value="learningrate"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart_test.html#f70f16060d757f62df815674f23c92d1"><param name="Name" value="libTest"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#40b11db90567d7bdc0aac4069c306446dc101ebf31c49c2d4b80b7c6f59f22cb"><param name="Name" value="LINEAR"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1c9e22f187dd0a667def1afb9548dfe8"><param name="Name" value="listOfHiddenLayer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#bee7e85243a01f1880b221734fa46a45"><param name="Name" value="listOfMSE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_layer.html#96ee454e3dafe459f0420c5ac7f2e496"><param name="Name" value="listOfNeurons"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#1febbff2d6d4c67daed26129a064d09b"><param name="Name" value="listOfWeightIn"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#42c094e68e428f593bf7e1265550aec8"><param name="Name" value="listOfWeightOut"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#a7136e573781b32bdc8c4d4fa5a19f69"><param name="Name" value="LUdecomposition"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba"><param name="Name" value="main"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#8efe123a4bf586210d969569369b0dba"><param name="Name" value="edu::packt::neuralnet::NeuralNetTest"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart_test.html#a35a4d27334d58d6744c51931a25c2e3"><param name="Name" value="edu::packt::neuralnet::util::ChartTest"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data_test.html#5a27a24cc3b39296d0addd030c2a4a5f"><param name="Name" value="edu::packt::neuralnet::util::DataTest"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1weather_1_1_weather.html#c89e26e1b946a1a81f00f8491d60e995"><param name="Name" value="edu::packt::neuralnet::weather::Weather"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#21b037d5156b40c898d810198749b242"><param name="Name" value="Matrix"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#acda6fde4b5ca57aaa7bec33d0c70c282978bd49f1f0b0f58adddec8986bc1bf"><param name="Name" value="MAX_MIN"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#acda6fde4b5ca57aaa7bec33d0c70c2818c2aede38f1fd7f764e3c154a5d3fcf"><param name="Name" value="MAX_MIN_EQUALIZED"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#5de098de78163ec131c4cd11e6978a2a"><param name="Name" value="maxEpochs"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#1bc508fa38fcaa12c32eae950bcf5cf5"><param name="Name" value="mse"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#161db5e7d94bc764430abc7c6fd18b2a"><param name="Name" value="multiply"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#510bbe9cf02aed8539388d1daed3d0bf"><param name="Name" value="multiplyDiagonal"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#e980017837d1e4cb8bb39de95a61d2a4"><param name="Name" value="multiplyRow"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#58dc5996f68b42708d8b991eae4cfdae"><param name="Name" value="netValidation"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#58dc5996f68b42708d8b991eae4cfdae"><param name="Name" value="edu::packt::neuralnet::NeuralNet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#f264dde9528f1778b220867363c80015"><param name="Name" value="edu::packt::neuralnet::som::Kohonen"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interfaceedu_1_1packt_1_1neuralnet_1_1validation_1_1_validation.html#eb892114285b2437a0c5467d963e4502"><param name="Name" value="edu::packt::neuralnet::validation::Validation"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#acda6fde4b5ca57aaa7bec33d0c70c28"><param name="Name" value="NormalizationTypesENUM"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#c0d69fe25790d44aaf0060ee3ef7dabb"><param name="Name" value="normalize"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#9e0b9f7dcd197d526dfeb6970c3d3af9"><param name="Name" value="numberOfColumns"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d0d02b544d2edcdf17ed38f22d4b83cb"><param name="Name" value="numberOfHiddenLayers"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_layer.html#26ed64411afe8e25b405591196d23af6"><param name="Name" value="numberOfNeuronsInLayer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#f95aadbc1ad46363cd65f9a134a0c2ff"><param name="Name" value="numberOfRows"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#b61a78e231cae9b29dfbe69bb2baab4c"><param name="Name" value="outputLayer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#d401558074807498d5ffaeafd481288c"><param name="Name" value="outputValue"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#9ab479ab09a978ccbcaacc3b724a2faa"><param name="Name" value="path"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#09592c86fd666cf8bb2ab53e780c7f1e86ae196aae3149d1c609c87be8d499c2"><param name="Name" value="PERCEPTRON"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#cd70ff94ea2678020d41d9f1bb4456b0"><param name="Name" value="plotXYData"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html#e29a01aad1799ecf5c5fb88dd062ef31"><param name="Name" value="printLayer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html#e29a01aad1799ecf5c5fb88dd062ef31"><param name="Name" value="edu::packt::neuralnet::HiddenLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html#d952b41e31d2d80e8a39b66b1e9816e3"><param name="Name" value="edu::packt::neuralnet::InputLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_layer.html#6550402845150a7107790104bf022b56"><param name="Name" value="edu::packt::neuralnet::Layer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_output_layer.html#4f579ab9ea2637957305539f8f35dcd5"><param name="Name" value="edu::packt::neuralnet::OutputLayer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d8a8c2e14e0dca5720f083781cd65a75"><param name="Name" value="printNet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#90656f54913d63b3bba8edeaa4b95757"><param name="Name" value="printTrainedNetResult"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#90656f54913d63b3bba8edeaa4b95757"><param name="Name" value="edu::packt::neuralnet::learn::Training"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a8eeacb9e33fb2ad7afa7255afac5f8a"><param name="Name" value="edu::packt::neuralnet::NeuralNet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#3e516b7acc8d3855d93eb3ee0a5f64ac"><param name="Name" value="qianerror"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#ebb407ed27bd67537ca7f779c1cb3e8c"><param name="Name" value="rawData2Matrix"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#e58c1c69c13e1f4004dc47b034f9dfd9"><param name="Name" value="realMatrixOutputSet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#00c34ff29cd160256c7d31917077314d"><param name="Name" value="realOutputSet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#96b34b4706dc50ce7bd80c16f383c272"><param name="Name" value="selectComparisonSeriesName"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_chart.html#18626db7bfff9c7be41f5a9edf944f54"><param name="Name" value="selectTemperatureSeriesName"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#2926a0158281999404f1a3061ea7e5c9"><param name="Name" value="sensibility"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#59ca603e369ac4319892bc9d49d50477"><param name="Name" value="setActivationFnc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#62616fe89b4ee62efc92bc0f4490a372"><param name="Name" value="setActivationFncOutputLayer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#66cee07984c0922df3afb4c62946f6f8"><param name="Name" value="setDeterminant"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#2d6d0011089b720a26a8d9bf20f2f894"><param name="Name" value="setEpochs"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#5f58ba82f8ff6ac14fb0913f93781361"><param name="Name" value="setError"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#5f58ba82f8ff6ac14fb0913f93781361"><param name="Name" value="edu::packt::neuralnet::learn::Training"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#3863084bcdd366bb1c2f4ec4d22b04fc"><param name="Name" value="edu::packt::neuralnet::Neuron"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#3e642d97304902c4e777d03d66074af5"><param name="Name" value="setErrorMean"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#7e59a827e3b233384581fb025f5678ef"><param name="Name" value="setFileName"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#780816351285521bf51d63080d243c01"><param name="Name" value="setHiddenLayer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#24cfee30d0351c5d58aa34b7d2071d1e"><param name="Name" value="setInputLayer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#07c09b1cded532abff86d9ab9a4f1800"><param name="Name" value="setLearningRate"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#67782e73b6b32e2cf17341c1f326624c"><param name="Name" value="setListOfHiddenLayer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#59d28282fb7086f06254c471efde5af0"><param name="Name" value="setListOfMSE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_layer.html#21227cb2127f63fd8a7ed9df8c452b8f"><param name="Name" value="setListOfNeurons"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#babce636308e672631c1c5746c46f57d"><param name="Name" value="setListOfWeightIn"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#81f70e3728886f155baa2ac8b107681d"><param name="Name" value="setListOfWeightOut"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#460e07bbcd7a383b25dcdd17515edfb7"><param name="Name" value="setMaxEpochs"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#8d24c85a9586aad2cf00a305e04d39b8"><param name="Name" value="setMse"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#770366f71716a4fd81f7743281b3a036"><param name="Name" value="setNumberOfHiddenLayers"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html#5a73556371b65931dceba233a25a79d0"><param name="Name" value="setNumberOfNeuronsInLayer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html#5a73556371b65931dceba233a25a79d0"><param name="Name" value="edu::packt::neuralnet::HiddenLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html#e23766eccd21e834320faa75bf8875fd"><param name="Name" value="edu::packt::neuralnet::InputLayer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_layer.html#98869674f0859a4ed7978f5dcd964cfc"><param name="Name" value="edu::packt::neuralnet::Layer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#8a06686e95a23978bf3d35fd040de99c"><param name="Name" value="setOnes"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f1c1aa92631538b5eae425583f4cc53c"><param name="Name" value="setOutputLayer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#52e2674319fa5ac381a007d17853dddb"><param name="Name" value="setOutputValue"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_data.html#a996bdaf5cac461682bbaf265d7dcb37"><param name="Name" value="setPath"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#eb1b8b8c88a3ee75dccedc0ab7efd919"><param name="Name" value="setRealMatrixOutputSet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#8976215b3ef4c92dc944edaeae8edec5"><param name="Name" value="setRealOutputSet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#202a8315bde031ea0052855125f70d96"><param name="Name" value="setSensibility"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#4772754bde999eea841cce83891a441e"><param name="Name" value="setTargetError"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#91c8857c9c3a82e61f5512c09e79a376"><param name="Name" value="setTrainingError"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#cfabb83136c77f550a8151c973b32efd"><param name="Name" value="setTrainSet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#c499625ada286215d3b5a7441ec15439"><param name="Name" value="setTrainType"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#57b2828d7b4a77eafd7882057522cde0"><param name="Name" value="setValidationSet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_identity_matrix.html#2e035c8debdc3e08fc9778bc138ffb6e"><param name="Name" value="setValue"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_identity_matrix.html#2e035c8debdc3e08fc9778bc138ffb6e"><param name="Name" value="edu::packt::neuralnet::util::IdentityMatrix"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#964cb7a86469aa16e0f5185f8fcd1475"><param name="Name" value="edu::packt::neuralnet::util::Matrix"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#6032f8217c058cf374a7078a5efe4a81"><param name="Name" value="setZeros"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#40b11db90567d7bdc0aac4069c306446263e1fc3594a53997ae9f4a47c23ef7f"><param name="Name" value="SIGLOG"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#40b11db90567d7bdc0aac4069c306446c0ba526afb7f54207517b48a892961c2"><param name="Name" value="STEP"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#9293ebbe20a17c5fba0a143084b0b41a"><param name="Name" value="subMatrix"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#099ed05386817202b2c18c20b26ebcfd"><param name="Name" value="subtract"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#554f17343858aad26f583ef4d2cc0f42"><param name="Name" value="sumRowByRow"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a23dd06d7ee8a5ca177bdbd008c43c24"><param name="Name" value="targetError"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#7a5294957e77ea3df7d906c2e690de8c"><param name="Name" value="teachNeuronsOfLayer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net_test.html#de053992d60ac8d0743510789d480f5b"><param name="Name" value="testKohonen"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_adaline.html#f398ad45e799b7e57b3c2f60e2526a55"><param name="Name" value="train"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_adaline.html#f398ad45e799b7e57b3c2f60e2526a55"><param name="Name" value="edu::packt::neuralnet::learn::Adaline"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#6e80c193a016810e682ac21b413a2ea4"><param name="Name" value="edu::packt::neuralnet::learn::Backpropagation"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_perceptron.html#1ae0dba3298a93d7ad2ab02935513f44"><param name="Name" value="edu::packt::neuralnet::learn::Perceptron"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#1d18c774a21a409420750021a6661cec"><param name="Name" value="edu::packt::neuralnet::learn::Training"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#be84746fa2c87ad362c4232c6b700930"><param name="Name" value="edu::packt::neuralnet::som::Kohonen"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#8bc1a0c863fe8051bc1982b8fcfa46ca"><param name="Name" value="trainingError"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#09592c86fd666cf8bb2ab53e780c7f1e"><param name="Name" value="TrainingTypesENUM"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651"><param name="Name" value="trainNet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#afdbc0aa780133cc4cfbbadefc3ce139"><param name="Name" value="trainSet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1a617dc4ba66625087e8bfc46ef6f880"><param name="Name" value="trainType"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1util_1_1_matrix.html#949b0617436f0e8314047b6f1c56a7a9"><param name="Name" value="transpose"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#392ce58c6e8a989c4dbd77d8d27d496c"><param name="Name" value="validationSet"></OBJECT>
+</UL>

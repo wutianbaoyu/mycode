@@ -1,0 +1,271 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>cca: D:/dude/cca/src/edu/packt/neuralnet/learn/Backpropagation.javaæºæ–‡ä»¶</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- åˆ¶ä½œè€… Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>é¦–é¡µ</span></a></li>
+    <li><a href="namespaces.html"><span>åŒ…</span></a></li>
+    <li><a href="annotated.html"><span>ç±»</span></a></li>
+    <li class="current"><a href="files.html"><span>æ–‡ä»¶</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>æ–‡ä»¶åˆ—è¡¨</span></a></li>
+    <li><a href="globals.html"><span>æ–‡ä»¶æˆå‘˜</span></a></li>
+  </ul>
+</div>
+<h1>D:/dude/cca/src/edu/packt/neuralnet/learn/Backpropagation.java</h1><a href="_backpropagation_8java.html">æµè§ˆè¯¥æ–‡ä»¶çš„æ–‡æ¡£ã€‚</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="keyword">package </span>edu.packt.neuralnet.learn;
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="keyword">import</span> java.util.ArrayList;
+<a name="l00004"></a>00004 
+<a name="l00005"></a>00005 <span class="keyword">import</span> edu.packt.neuralnet.HiddenLayer;
+<a name="l00006"></a>00006 <span class="keyword">import</span> edu.packt.neuralnet.NeuralNet;
+<a name="l00007"></a>00007 <span class="keyword">import</span> edu.packt.neuralnet.Neuron;
+<a name="l00008"></a>00008 <span class="keyword">import</span> edu.packt.neuralnet.learn.Training;
+<a name="l00009"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html">00009</a> <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html">Backpropagation</a> <span class="keyword">extends</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html">Training</a> {
+<a name="l00010"></a>00010 
+<a name="l00011"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#543f57aa0fedee70c2418d2bce2c93a5">00011</a>         <span class="keywordtype">int</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#543f57aa0fedee70c2418d2bce2c93a5">epoch</a> = 0;
+<a name="l00012"></a>00012         
+<a name="l00013"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#6e80c193a016810e682ac21b413a2ea4">00013</a>         <span class="keyword">public</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#6e80c193a016810e682ac21b413a2ea4">train</a>(<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> n) {
+<a name="l00014"></a>00014                 
+<a name="l00015"></a>00015                 <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#8d24c85a9586aad2cf00a305e04d39b8">setMse</a>(1.0);
+<a name="l00016"></a>00016                 <span class="comment">//ÉèÖÃmse</span>
+<a name="l00017"></a>00017                 <span class="keywordflow">while</span>(<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#b5cf1337fba9c089662d99fae5977c8c">getMse</a>() &gt; n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#2f63bc17bf5a76266ab3a09660a96e5f">getTargetError</a>()) {
+<a name="l00018"></a>00018                         <span class="comment">//Èç¹ûmse´óÓÚÄ¿±êµÄ´íÎó</span>
+<a name="l00019"></a>00019                         <span class="keywordflow">if</span> ( <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#543f57aa0fedee70c2418d2bce2c93a5">epoch</a> &gt;= n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f14057f123727ff718a5403015e4e647">getMaxEpochs</a>() ) <span class="keywordflow">break</span>;
+<a name="l00020"></a>00020                         <span class="comment">//Èç¹ûÑ­»·Êı´óÓÚËù¶¨ÏÂµÄÑ­»·Êı£¬±ã²»ÔÙÑ­»·</span>
+<a name="l00021"></a>00021                         <span class="keywordtype">int</span> rows = n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#c2e7c33dcd99679a76e6b405d93d7f5b">getTrainSet</a>().length;
+<a name="l00022"></a>00022                         <span class="comment">//rowsÎªÑ§Ï°¼¯µÄÊıÁ¿</span>
+<a name="l00023"></a>00023                         <span class="keywordtype">double</span> sumErrors = 0.0;
+<a name="l00024"></a>00024                         
+<a name="l00025"></a>00025                         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> rows_i = 0; rows_i &lt; rows; rows_i++) {
+<a name="l00026"></a>00026                                 
+<a name="l00027"></a>00027                                 n = <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#bf900f3a44652640f21f048704ccaffd">forward</a>(n, rows_i);
+<a name="l00028"></a>00028                                 <span class="comment">//nÊÇÉñ¾­ÍøÂçµÄ</span>
+<a name="l00029"></a>00029                                 n = <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#98392299268e48c9d57cd8a0dcce0824">backpropagation</a>(n, rows_i);
+<a name="l00030"></a>00030                                 
+<a name="l00031"></a>00031                                 sumErrors = sumErrors + n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#06b04584eccf0496d268a34cfb062a34">getErrorMean</a>();
+<a name="l00032"></a>00032                                 
+<a name="l00033"></a>00033                         }
+<a name="l00034"></a>00034                         
+<a name="l00035"></a>00035                         <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#8d24c85a9586aad2cf00a305e04d39b8">setMse</a>( sumErrors / rows );
+<a name="l00036"></a>00036                         <span class="comment">//mseÎª×Ü´íÎó³ıÒÔĞĞÊı</span>
+<a name="l00037"></a>00037                         n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#42d6e1250122830856d89a3686b3a796">getListOfMSE</a>().add( <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#b5cf1337fba9c089662d99fae5977c8c">getMse</a>() );
+<a name="l00038"></a>00038                         
+<a name="l00039"></a>00039                         <span class="comment">//System.out.println( getMse() );</span>
+<a name="l00040"></a>00040                         
+<a name="l00041"></a>00041                         <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#543f57aa0fedee70c2418d2bce2c93a5">epoch</a>++;
+<a name="l00042"></a>00042                         
+<a name="l00043"></a>00043                 }
+<a name="l00044"></a>00044                 
+<a name="l00045"></a>00045                 System.out.println( <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#b5cf1337fba9c089662d99fae5977c8c">getMse</a>() );
+<a name="l00046"></a>00046                 System.out.println(<span class="stringliteral">"Number of epochs: "</span>+<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#543f57aa0fedee70c2418d2bce2c93a5">epoch</a>);
+<a name="l00047"></a>00047                 
+<a name="l00048"></a>00048                 <span class="keywordflow">return</span> n;
+<a name="l00049"></a>00049                 
+<a name="l00050"></a>00050         }
+<a name="l00051"></a>00051 
+<a name="l00052"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#bf900f3a44652640f21f048704ccaffd">00052</a>         <span class="keyword">public</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#bf900f3a44652640f21f048704ccaffd">forward</a>(<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> n, <span class="keywordtype">int</span> row) {
+<a name="l00053"></a>00053                 
+<a name="l00054"></a>00054                 ArrayList&lt;HiddenLayer&gt; listOfHiddenLayer = <span class="keyword">new</span> ArrayList&lt;HiddenLayer&gt;();
+<a name="l00055"></a>00055                 <span class="comment">//ĞÂ½¨Ò»¸öÒş²Ø²ã</span>
+<a name="l00056"></a>00056                 listOfHiddenLayer = n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#7b73c95ca04f299357dc5ea32f72893d">getListOfHiddenLayer</a>();
+<a name="l00057"></a>00057                 <span class="comment">//»ñµÃÉñ¾­ÍøÂçÖĞµÄÒş²Ø²ã</span>
+<a name="l00058"></a>00058                 <span class="keywordtype">double</span> estimatedOutput = 0.0;
+<a name="l00059"></a>00059                 <span class="keywordtype">double</span> realOutput = 0.0;<span class="comment">//ÕæÕıµÄÊä³ö</span>
+<a name="l00060"></a>00060                 <span class="keywordtype">double</span> sumError = 0.0; <span class="comment">//×Ü´íÎó</span>
+<a name="l00061"></a>00061                 
+<a name="l00062"></a>00062                 <span class="keywordflow">if</span> (listOfHiddenLayer.size() &gt; 0) {
+<a name="l00063"></a>00063                         
+<a name="l00064"></a>00064                         <span class="keywordtype">int</span> hiddenLayer_i = 0;
+<a name="l00065"></a>00065                         
+<a name="l00066"></a>00066                         <span class="keywordflow">for</span> (<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html">HiddenLayer</a> hiddenLayer : listOfHiddenLayer) {
+<a name="l00067"></a>00067                                 <span class="comment">//Õâ¸öforµÃµ½ËùÓĞhidden layer¶ÔÏó£¬ÊıÁ¿ÎªlistOfHiddenLayer</span>
+<a name="l00068"></a>00068                                 <span class="keywordtype">int</span> numberOfNeuronsInLayer = hiddenLayer.getNumberOfNeuronsInLayer();
+<a name="l00069"></a>00069                                 <span class="comment">//Éñ¾­ÔªÔÚÒş²Ø²ãµÄÊıÄ¿</span>
+<a name="l00070"></a>00070                                 <span class="keywordflow">for</span> (<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html">Neuron</a> neuron : hiddenLayer.getListOfNeurons()) {
+<a name="l00071"></a>00071                                         <span class="comment">//»ñµÃËùÓĞµÄÉñ¾­Ôª¶ÔÏó£¬ÊıÁ¿ÎªhiddenLayer.getListOfNeurons()</span>
+<a name="l00072"></a>00072                                         <span class="keywordtype">double</span> netValueOut = 0.0;
+<a name="l00073"></a>00073                                         
+<a name="l00074"></a>00074                                         <span class="keywordflow">if</span>(neuron.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#a7dbd13df945a1940769f9c8cd47fe80">getListOfWeightIn</a>().size() &gt; 0) { <span class="comment">//exclude bias °üÀ¨Æ«²îÖµ</span>
+<a name="l00075"></a>00075                                                 <span class="comment">//¸ÃÉñ¾­ÔªÈ¨Öµ´óÓÚ0</span>
+<a name="l00076"></a>00076                                                 <span class="keywordtype">double</span> netValue = 0.0;
+<a name="l00077"></a>00077                                                 
+<a name="l00078"></a>00078                                                 <span class="keywordflow">for</span> (<span class="keywordtype">int</span> layer_j = 0; layer_j &lt; numberOfNeuronsInLayer - 1<span class="comment">/*7*/</span>; layer_j++) { <span class="comment">//exclude bias</span>
+<a name="l00079"></a>00079                                                         <span class="keywordtype">double</span> hiddenWeightIn = neuron.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#a7dbd13df945a1940769f9c8cd47fe80">getListOfWeightIn</a>().get(layer_j);
+<a name="l00080"></a>00080                                                         <span class="comment">//»ñÈ¡Éñ¾­ÔªÈ¨Öµ</span>
+<a name="l00081"></a>00081                                                         netValue = netValue + hiddenWeightIn * n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#c2e7c33dcd99679a76e6b405d93d7f5b">getTrainSet</a>()[row][layer_j];
+<a name="l00082"></a>00082                                                         <span class="comment">//°ÑÉñ¾­Ô±È¨ÖµºÍÑ§Ï°ºóµÄÊıÏà³Ëºó£¬ÔÙÏà¼Ó¡£</span>
+<a name="l00083"></a>00083                                                 }
+<a name="l00084"></a>00084                                                 
+<a name="l00085"></a>00085                                                 <span class="comment">//output hidden layer (1)</span>
+<a name="l00086"></a>00086                                                 netValueOut = super.activationFnc(n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#20ef5ea336c7d1730b65c4026d6fd285">getActivationFnc</a>(), netValue);
+<a name="l00087"></a>00087                                                 neuron.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#52e2674319fa5ac381a007d17853dddb">setOutputValue</a>( netValueOut );
+<a name="l00088"></a>00088                                         } <span class="keywordflow">else</span> {
+<a name="l00089"></a>00089                                                 neuron.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#52e2674319fa5ac381a007d17853dddb">setOutputValue</a>( 1.0 );
+<a name="l00090"></a>00090                                         }
+<a name="l00091"></a>00091                                         
+<a name="l00092"></a>00092                                 }
+<a name="l00093"></a>00093                                 
+<a name="l00094"></a>00094                                 
+<a name="l00095"></a>00095                                 <span class="comment">//output hidden layer (2)</span>
+<a name="l00096"></a>00096                                 <span class="keywordtype">double</span> netValue = 0.0;
+<a name="l00097"></a>00097                                 <span class="keywordtype">double</span> netValueOut = 0.0;
+<a name="l00098"></a>00098                                 <span class="keywordflow">for</span> (<span class="keywordtype">int</span> outLayer_i = 0; outLayer_i &lt; n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#242fb32fd1cfdf033445094116679d9a">getOutputLayer</a>().<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#897922d6c13d0079f6918338b1ed7147">getNumberOfNeuronsInLayer</a>(); outLayer_i++){
+<a name="l00099"></a>00099                                         
+<a name="l00100"></a>00100                                         <span class="keywordflow">for</span> (<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html">Neuron</a> neuron : hiddenLayer.getListOfNeurons()) {
+<a name="l00101"></a>00101                                                 <span class="comment">//µÃµ½Éñ¾­Ôª£¬ÊıÁ¿ÎªhiddenLayer.getListOfNeurons()</span>
+<a name="l00102"></a>00102                                                 <span class="keywordtype">double</span> hiddenWeightOut = neuron.getListOfWeightOut().get(outLayer_i);
+<a name="l00103"></a>00103                                                 netValue = netValue + hiddenWeightOut * neuron.getOutputValue();
+<a name="l00104"></a>00104                                         }
+<a name="l00105"></a>00105                                         
+<a name="l00106"></a>00106                                         netValueOut = <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#16214b108139b3452c15a0c6695afcb7">activationFnc</a>(n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0d441aaaf3fc0902c508a255db617050">getActivationFncOutputLayer</a>(), netValue);
+<a name="l00107"></a>00107                                         
+<a name="l00108"></a>00108                                         n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#242fb32fd1cfdf033445094116679d9a">getOutputLayer</a>().<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#884240cc906fb8b36194cccf19c2b6bc">getListOfNeurons</a>().get(outLayer_i).setOutputValue( netValueOut );
+<a name="l00109"></a>00109                                         
+<a name="l00110"></a>00110                                         <span class="comment">//error</span>
+<a name="l00111"></a>00111                                         estimatedOutput = netValueOut;
+<a name="l00112"></a>00112                                         realOutput = n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#79fa7f9b399b5358a6c490fc1e9e5a9c">getRealMatrixOutputSet</a>()[row][outLayer_i];
+<a name="l00113"></a>00113                                         <span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#f82041ec322909423d80c0c5b83004f3">error</a> = realOutput - estimatedOutput;
+<a name="l00114"></a>00114                                         n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#242fb32fd1cfdf033445094116679d9a">getOutputLayer</a>().<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#884240cc906fb8b36194cccf19c2b6bc">getListOfNeurons</a>().get(outLayer_i).setError(error);
+<a name="l00115"></a>00115                                         sumError = sumError + Math.pow(error, 2.0);
+<a name="l00116"></a>00116                                         
+<a name="l00117"></a>00117                                         <span class="comment">/*</span>
+<a name="l00118"></a>00118 <span class="comment">                                        if ( epoch == n.getMaxEpochs()-1 ) {</span>
+<a name="l00119"></a>00119 <span class="comment">                                                System.out.println("netValueOut: " + netValueOut);</span>
+<a name="l00120"></a>00120 <span class="comment">                                        }</span>
+<a name="l00121"></a>00121 <span class="comment">                                        */</span>
+<a name="l00122"></a>00122                                         
+<a name="l00123"></a>00123                                 }
+<a name="l00124"></a>00124                                 
+<a name="l00125"></a>00125                                 
+<a name="l00126"></a>00126                                 
+<a name="l00127"></a>00127                                 <span class="comment">//error mean</span>
+<a name="l00128"></a>00128                                 <span class="keywordtype">double</span> errorMean = sumError / n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#242fb32fd1cfdf033445094116679d9a">getOutputLayer</a>().<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#897922d6c13d0079f6918338b1ed7147">getNumberOfNeuronsInLayer</a>();
+<a name="l00129"></a>00129                                 n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#3e642d97304902c4e777d03d66074af5">setErrorMean</a>(errorMean);
+<a name="l00130"></a>00130                                 
+<a name="l00131"></a>00131                                 n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#7b73c95ca04f299357dc5ea32f72893d">getListOfHiddenLayer</a>().get(hiddenLayer_i).setListOfNeurons( hiddenLayer.getListOfNeurons() );
+<a name="l00132"></a>00132                         
+<a name="l00133"></a>00133                                 hiddenLayer_i++;
+<a name="l00134"></a>00134                                 
+<a name="l00135"></a>00135                         }
+<a name="l00136"></a>00136                         
+<a name="l00137"></a>00137                 }
+<a name="l00138"></a>00138 
+<a name="l00139"></a>00139                 <span class="keywordflow">return</span> n;
+<a name="l00140"></a>00140                 
+<a name="l00141"></a>00141         }
+<a name="l00142"></a>00142 
+<a name="l00143"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#98392299268e48c9d57cd8a0dcce0824">00143</a>         <span class="keyword">private</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#98392299268e48c9d57cd8a0dcce0824">backpropagation</a>(<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> n, <span class="keywordtype">int</span> row) {
+<a name="l00144"></a>00144 
+<a name="l00145"></a>00145                 ArrayList&lt;Neuron&gt; outputLayer = <span class="keyword">new</span> ArrayList&lt;Neuron&gt;();
+<a name="l00146"></a>00146                 outputLayer = n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#242fb32fd1cfdf033445094116679d9a">getOutputLayer</a>().<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#884240cc906fb8b36194cccf19c2b6bc">getListOfNeurons</a>();
+<a name="l00147"></a>00147                 
+<a name="l00148"></a>00148                 ArrayList&lt;Neuron&gt; hiddenLayer = <span class="keyword">new</span> ArrayList&lt;Neuron&gt;();
+<a name="l00149"></a>00149                 hiddenLayer = n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#7b73c95ca04f299357dc5ea32f72893d">getListOfHiddenLayer</a>().get(0).getListOfNeurons();
+<a name="l00150"></a>00150                 
+<a name="l00151"></a>00151                 <span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#f82041ec322909423d80c0c5b83004f3">error</a> = 0.0;
+<a name="l00152"></a>00152                 <span class="keywordtype">double</span> netValue = 0.0;
+<a name="l00153"></a>00153                 <span class="keywordtype">double</span> sensibility = 0.0;
+<a name="l00154"></a>00154                 
+<a name="l00155"></a>00155                 <span class="comment">//sensibility output layer</span>
+<a name="l00156"></a>00156                 <span class="keywordflow">for</span> (<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html">Neuron</a> neuron : outputLayer) {
+<a name="l00157"></a>00157                         <span class="comment">//µÃµ½ËùÓĞoutputlayerµÄÉñ¾­Ôª</span>
+<a name="l00158"></a>00158                         error = neuron.getError();
+<a name="l00159"></a>00159                         netValue = neuron.getOutputValue();
+<a name="l00160"></a>00160                         sensibility = <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#0e7eb2e324e36d3b5e740675f10bdda8">derivativeActivationFnc</a>(n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0d441aaaf3fc0902c508a255db617050">getActivationFncOutputLayer</a>(), netValue) * error;
+<a name="l00161"></a>00161                         <span class="comment">//derivative ÅÉÉúµÄ Activation ¼¤»î n. </span>
+<a name="l00162"></a>00162                         neuron.setSensibility(sensibility);
+<a name="l00163"></a>00163                 }
+<a name="l00164"></a>00164                 
+<a name="l00165"></a>00165                 n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#242fb32fd1cfdf033445094116679d9a">getOutputLayer</a>().<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#21227cb2127f63fd8a7ed9df8c452b8f">setListOfNeurons</a>(outputLayer);
+<a name="l00166"></a>00166                 
+<a name="l00167"></a>00167                 
+<a name="l00168"></a>00168                 <span class="comment">//sensibility hidden layer</span>
+<a name="l00169"></a>00169                 <span class="keywordflow">for</span> (<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html">Neuron</a> neuron : hiddenLayer) {
+<a name="l00170"></a>00170                         
+<a name="l00171"></a>00171                         sensibility = 0.0;
+<a name="l00172"></a>00172                         <span class="comment">//sensibility Çé¸Ğ£»Ãô¸ĞĞÔ ¸Ğ¾õ Ê¶±ğÁ¦£¬ÁéÃôÆ÷</span>
+<a name="l00173"></a>00173                         <span class="keywordflow">if</span>(neuron.getListOfWeightIn().size() &gt; 0) { <span class="comment">//exclude bias °üÀ¨Æ«ÖÃ</span>
+<a name="l00174"></a>00174                                 ArrayList&lt;Double&gt; listOfWeightsOut = <span class="keyword">new</span> ArrayList&lt;Double&gt;();
+<a name="l00175"></a>00175                                 
+<a name="l00176"></a>00176                                 listOfWeightsOut = neuron.getListOfWeightOut();
+<a name="l00177"></a>00177                                 
+<a name="l00178"></a>00178                                 <span class="keywordtype">double</span> tempSensibility = 0.0;
+<a name="l00179"></a>00179                                 <span class="comment">//temp ÎÂ¶È</span>
+<a name="l00180"></a>00180                                 <span class="keywordtype">int</span> weight_i = 0;
+<a name="l00181"></a>00181                                 <span class="keywordflow">for</span> (Double weight : listOfWeightsOut) {
+<a name="l00182"></a>00182                                         <span class="comment">//µÃµ½È¨ÖµµÄ¼¯ºÏ</span>
+<a name="l00183"></a>00183                                         tempSensibility = tempSensibility + (weight * outputLayer.get(weight_i).getSensibility());
+<a name="l00184"></a>00184 
+<a name="l00185"></a>00185                                                 
+<a name="l00186"></a>00186                                 }
+<a name="l00187"></a>00187                                 
+<a name="l00188"></a>00188                                 sensibility = <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#0e7eb2e324e36d3b5e740675f10bdda8">derivativeActivationFnc</a>(n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#20ef5ea336c7d1730b65c4026d6fd285">getActivationFnc</a>(), neuron.getOutputValue()) * tempSensibility;
+<a name="l00189"></a>00189                                 
+<a name="l00190"></a>00190                                 neuron.setSensibility(sensibility);
+<a name="l00191"></a>00191                                 
+<a name="l00192"></a>00192                         }
+<a name="l00193"></a>00193                         
+<a name="l00194"></a>00194                 }
+<a name="l00195"></a>00195                 
+<a name="l00196"></a>00196                 <span class="comment">//fix weights (teach) [output layer to hidden layer]</span>
+<a name="l00197"></a>00197                 <span class="keywordflow">for</span> (<span class="keywordtype">int</span> outLayer_i = 0; outLayer_i &lt; n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#242fb32fd1cfdf033445094116679d9a">getOutputLayer</a>().<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#897922d6c13d0079f6918338b1ed7147">getNumberOfNeuronsInLayer</a>(); outLayer_i++) {
+<a name="l00198"></a>00198                         
+<a name="l00199"></a>00199                         <span class="keywordflow">for</span> (<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html">Neuron</a> neuron : hiddenLayer) {
+<a name="l00200"></a>00200                                 
+<a name="l00201"></a>00201                                 <span class="keywordtype">double</span> newWeight = neuron.getListOfWeightOut().get( outLayer_i ) + 
+<a name="l00202"></a>00202                                                                 ( <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#3e516b7acc8d3855d93eb3ee0a5f64ac">qianerror</a> * 
+<a name="l00203"></a>00203                                                                   outputLayer.get( outLayer_i ).getSensibility() * 
+<a name="l00204"></a>00204                                                                   neuron.getOutputValue() );
+<a name="l00205"></a>00205                                 
+<a name="l00206"></a>00206                                 neuron.getListOfWeightOut().set(outLayer_i, newWeight);
+<a name="l00207"></a>00207                         }
+<a name="l00208"></a>00208                         
+<a name="l00209"></a>00209                 }
+<a name="l00210"></a>00210                 
+<a name="l00211"></a>00211                 <span class="comment">//fix weights (teach) [hidden layer to input layer]</span>
+<a name="l00212"></a>00212                 <span class="keywordflow">for</span> (<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html">Neuron</a> neuron : hiddenLayer) {
+<a name="l00213"></a>00213                         
+<a name="l00214"></a>00214                         ArrayList&lt;Double&gt; hiddenLayerInputWeights = <span class="keyword">new</span> ArrayList&lt;Double&gt;();
+<a name="l00215"></a>00215                         hiddenLayerInputWeights = neuron.getListOfWeightIn();
+<a name="l00216"></a>00216                         
+<a name="l00217"></a>00217                         <span class="keywordflow">if</span>(hiddenLayerInputWeights.size() &gt; 0) { <span class="comment">//exclude bias</span>
+<a name="l00218"></a>00218                         
+<a name="l00219"></a>00219                                 <span class="keywordtype">int</span> hidden_i = 0;
+<a name="l00220"></a>00220                                 <span class="keywordtype">double</span> newWeight = 0.0;
+<a name="l00221"></a>00221                                 <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#61327e435c95e3c3de0bbf2f2f556392">getInputLayer</a>().<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#897922d6c13d0079f6918338b1ed7147">getNumberOfNeuronsInLayer</a>(); i++) {
+<a name="l00222"></a>00222                                         
+<a name="l00223"></a>00223                                         newWeight = hiddenLayerInputWeights.get(hidden_i) +
+<a name="l00224"></a>00224                                                         ( <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#3e516b7acc8d3855d93eb3ee0a5f64ac">qianerror</a> *
+<a name="l00225"></a>00225                                                           neuron.getSensibility() * 
+<a name="l00226"></a>00226                                                           n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#c2e7c33dcd99679a76e6b405d93d7f5b">getTrainSet</a>()[row][i]); 
+<a name="l00227"></a>00227                                         
+<a name="l00228"></a>00228                                         neuron.getListOfWeightIn().set(hidden_i, newWeight);
+<a name="l00229"></a>00229                                         
+<a name="l00230"></a>00230                                         hidden_i++;
+<a name="l00231"></a>00231                                 }
+<a name="l00232"></a>00232                                 
+<a name="l00233"></a>00233                         }
+<a name="l00234"></a>00234                         
+<a name="l00235"></a>00235                 }
+<a name="l00236"></a>00236                 
+<a name="l00237"></a>00237                 n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#7b73c95ca04f299357dc5ea32f72893d">getListOfHiddenLayer</a>().get(0).setListOfNeurons(hiddenLayer);
+<a name="l00238"></a>00238 
+<a name="l00239"></a>00239                 <span class="keywordflow">return</span> n;
+<a name="l00240"></a>00240                 
+<a name="l00241"></a>00241         }
+<a name="l00242"></a>00242 
+<a name="l00243"></a>00243         
+<a name="l00244"></a>00244 
+<a name="l00245"></a>00245 }
+</pre></div><hr size="1"><address style="text-align: right;"><small>Generated at Sat Sep 8 21:51:21 2018 for cca by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1learn_1_1_adaline.html" title="{edu.packt.neuralnet.learn.Adaline\n||+ train()\l}" alt="" coords="5,517,224,597">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html" title="{edu.packt.neuralnet.learn.Backpropagation\n|~ epoch\l|+ train()\l+ forward()\l&#45; backpropagation()\l}" alt="" coords="248,501,523,613">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1learn_1_1_perceptron.html" title="{edu.packt.neuralnet.learn.Perceptron\n||+ train()\l}" alt="" coords="547,517,787,597">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html" title="{edu.packt.neuralnet.som.Kohonen\n||+ train()\l+ netValidation()\l&#45; initNet()\l&#45; calcEuclideanDistance()\l&#45; fixWinnerWeights()\l}" alt="" coords="811,485,1035,629">

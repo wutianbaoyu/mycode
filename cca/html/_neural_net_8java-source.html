@@ -1,0 +1,345 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>cca: D:/dude/cca/src/edu/packt/neuralnet/NeuralNet.javaÊ∫êÊñá‰ª∂</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Âà∂‰ΩúËÄÖ Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>È¶ñÈ°µ</span></a></li>
+    <li><a href="namespaces.html"><span>ÂåÖ</span></a></li>
+    <li><a href="annotated.html"><span>Á±ª</span></a></li>
+    <li class="current"><a href="files.html"><span>Êñá‰ª∂</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>Êñá‰ª∂ÂàóË°®</span></a></li>
+    <li><a href="globals.html"><span>Êñá‰ª∂ÊàêÂëò</span></a></li>
+  </ul>
+</div>
+<h1>D:/dude/cca/src/edu/packt/neuralnet/NeuralNet.java</h1><a href="_neural_net_8java.html">ÊµèËßàËØ•Êñá‰ª∂ÁöÑÊñáÊ°£„ÄÇ</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="keyword">package </span>edu.packt.neuralnet;
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="keyword">import</span> java.util.ArrayList;
+<a name="l00004"></a>00004 
+<a name="l00005"></a>00005 <span class="keyword">import</span> edu.packt.neuralnet.learn.Adaline;
+<a name="l00006"></a>00006 <span class="keyword">import</span> edu.packt.neuralnet.learn.Backpropagation;
+<a name="l00007"></a>00007 <span class="keyword">import</span> edu.packt.neuralnet.learn.Perceptron;
+<a name="l00008"></a>00008 <span class="keyword">import</span> edu.packt.neuralnet.learn.Training.ActivationFncENUM;
+<a name="l00009"></a>00009 <span class="keyword">import</span> edu.packt.neuralnet.learn.Training.TrainingTypesENUM;
+<a name="l00010"></a>00010 <span class="keyword">import</span> edu.packt.neuralnet.som.Kohonen;
+<a name="l00011"></a>00011 
+<a name="l00012"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">00012</a> <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> {
+<a name="l00013"></a>00013 
+<a name="l00014"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#790681f72fcbf2c158632bf0e3b1239a">00014</a>         <span class="keyword">private</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html">InputLayer</a> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#790681f72fcbf2c158632bf0e3b1239a">inputLayer</a>;
+<a name="l00015"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#fe0d76dcfd041e6940a2c5cf0086c3f2">00015</a>         <span class="keyword">private</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html">HiddenLayer</a> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#fe0d76dcfd041e6940a2c5cf0086c3f2">hiddenLayer</a>;
+<a name="l00016"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1c9e22f187dd0a667def1afb9548dfe8">00016</a>         <span class="keyword">private</span> ArrayList&lt;HiddenLayer&gt; <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1c9e22f187dd0a667def1afb9548dfe8">listOfHiddenLayer</a>;
+<a name="l00017"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#b61a78e231cae9b29dfbe69bb2baab4c">00017</a>         <span class="keyword">private</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_output_layer.html">OutputLayer</a> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#b61a78e231cae9b29dfbe69bb2baab4c">outputLayer</a>;
+<a name="l00018"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d0d02b544d2edcdf17ed38f22d4b83cb">00018</a>         <span class="keyword">private</span> <span class="keywordtype">int</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d0d02b544d2edcdf17ed38f22d4b83cb">numberOfHiddenLayers</a>;
+<a name="l00019"></a>00019         
+<a name="l00020"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#afdbc0aa780133cc4cfbbadefc3ce139">00020</a>         <span class="keyword">private</span> <span class="keywordtype">double</span>[][] <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#afdbc0aa780133cc4cfbbadefc3ce139">trainSet</a>;
+<a name="l00021"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#392ce58c6e8a989c4dbd77d8d27d496c">00021</a>         <span class="keyword">private</span> <span class="keywordtype">double</span>[][] <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#392ce58c6e8a989c4dbd77d8d27d496c">validationSet</a>;
+<a name="l00022"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#00c34ff29cd160256c7d31917077314d">00022</a>         <span class="keyword">private</span> <span class="keywordtype">double</span>[] <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#00c34ff29cd160256c7d31917077314d">realOutputSet</a>;
+<a name="l00023"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#e58c1c69c13e1f4004dc47b034f9dfd9">00023</a>         <span class="keyword">private</span> <span class="keywordtype">double</span>[][] <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#e58c1c69c13e1f4004dc47b034f9dfd9">realMatrixOutputSet</a>;
+<a name="l00024"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#5de098de78163ec131c4cd11e6978a2a">00024</a>         <span class="keyword">private</span> <span class="keywordtype">int</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#5de098de78163ec131c4cd11e6978a2a">maxEpochs</a>;
+<a name="l00025"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0e8d2277c7c993ab268100e221af291b">00025</a>         <span class="keyword">private</span> <span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0e8d2277c7c993ab268100e221af291b">learningRate</a>;
+<a name="l00026"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a23dd06d7ee8a5ca177bdbd008c43c24">00026</a>         <span class="keyword">private</span> <span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a23dd06d7ee8a5ca177bdbd008c43c24">targetError</a>;
+<a name="l00027"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#8bc1a0c863fe8051bc1982b8fcfa46ca">00027</a>         <span class="keyword">private</span> <span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#8bc1a0c863fe8051bc1982b8fcfa46ca">trainingError</a>;
+<a name="l00028"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f9d91d2ad2b7ea749a1f917a20bd80c7">00028</a>         <span class="keyword">private</span> <span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f9d91d2ad2b7ea749a1f917a20bd80c7">errorMean</a>;
+<a name="l00029"></a>00029         
+<a name="l00030"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#bee7e85243a01f1880b221734fa46a45">00030</a>         <span class="keyword">private</span> ArrayList&lt;Double&gt; <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#bee7e85243a01f1880b221734fa46a45">listOfMSE</a> = <span class="keyword">new</span> ArrayList&lt;Double&gt;();
+<a name="l00031"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d7c0ed2fd6018cda917a139708eaf95a">00031</a>         <span class="keyword">private</span> ActivationFncENUM <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d7c0ed2fd6018cda917a139708eaf95a">activationFnc</a>;
+<a name="l00032"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#63fb0f3e3551a618d157b83e9609e35a">00032</a>         <span class="keyword">private</span> ActivationFncENUM <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#63fb0f3e3551a618d157b83e9609e35a">activationFncOutputLayer</a>;
+<a name="l00033"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1a617dc4ba66625087e8bfc46ef6f880">00033</a>         <span class="keyword">private</span> TrainingTypesENUM <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1a617dc4ba66625087e8bfc46ef6f880">trainType</a>;
+<a name="l00034"></a>00034         
+<a name="l00035"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a391d187fbca78fa9fac6eb08a9dbede">00035</a>         <span class="keyword">public</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a391d187fbca78fa9fac6eb08a9dbede">initNet</a>(<span class="keywordtype">int</span> numberOfInputNeurons, <span class="comment">//”√Œ±ÀÊª˙ µ ˝≥ı ºªØlistofweightIn∫ÕlistOfWeightOut</span>
+<a name="l00036"></a>00036                         <span class="keywordtype">int</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d0d02b544d2edcdf17ed38f22d4b83cb">numberOfHiddenLayers</a>,
+<a name="l00037"></a>00037                         <span class="keywordtype">int</span> numberOfNeuronsInHiddenLayer,
+<a name="l00038"></a>00038                         <span class="keywordtype">int</span> numberOfOutputNeurons){
+<a name="l00040"></a>00040                 <span class="comment">//, int numberOfNeuronsInHiddenLayer(“˛≤„÷–…Òæ≠‘™µƒ ˝¡ø), int numberOfOutputNeurons£® ‰≥ˆ≤„µƒ…Òæ≠‘™ ˝¡ø£©£©</span>
+<a name="l00041"></a>00041                 <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#790681f72fcbf2c158632bf0e3b1239a">inputLayer</a> = <span class="keyword">new</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html">InputLayer</a>();
+<a name="l00042"></a>00042                 <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#790681f72fcbf2c158632bf0e3b1239a">inputLayer</a>.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html#e23766eccd21e834320faa75bf8875fd">setNumberOfNeuronsInLayer</a>( numberOfInputNeurons );
+<a name="l00043"></a>00043                 
+<a name="l00044"></a>00044                 <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1c9e22f187dd0a667def1afb9548dfe8">listOfHiddenLayer</a> = <span class="keyword">new</span> ArrayList&lt;HiddenLayer&gt;();
+<a name="l00045"></a>00045                 <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; numberOfHiddenLayers; i++) {<span class="comment">//ªÒ»°“˛≤ÿ≤„</span>
+<a name="l00046"></a>00046                         <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#fe0d76dcfd041e6940a2c5cf0086c3f2">hiddenLayer</a> = <span class="keyword">new</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html">HiddenLayer</a>();
+<a name="l00047"></a>00047                         <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#fe0d76dcfd041e6940a2c5cf0086c3f2">hiddenLayer</a>.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html#5a73556371b65931dceba233a25a79d0">setNumberOfNeuronsInLayer</a>( numberOfNeuronsInHiddenLayer );
+<a name="l00048"></a>00048                         <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1c9e22f187dd0a667def1afb9548dfe8">listOfHiddenLayer</a>.add( <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#fe0d76dcfd041e6940a2c5cf0086c3f2">hiddenLayer</a> );
+<a name="l00049"></a>00049                 }
+<a name="l00050"></a>00050                 
+<a name="l00051"></a>00051                 <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#b61a78e231cae9b29dfbe69bb2baab4c">outputLayer</a> = <span class="keyword">new</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_output_layer.html">OutputLayer</a>();
+<a name="l00052"></a>00052                 <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#b61a78e231cae9b29dfbe69bb2baab4c">outputLayer</a>.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#98869674f0859a4ed7978f5dcd964cfc">setNumberOfNeuronsInLayer</a>( numberOfOutputNeurons );
+<a name="l00053"></a>00053                 
+<a name="l00054"></a>00054                 <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#790681f72fcbf2c158632bf0e3b1239a">inputLayer</a> = <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#790681f72fcbf2c158632bf0e3b1239a">inputLayer</a>.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html#183330370b7cc424aef8604c00b338f7">initLayer</a>(<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#790681f72fcbf2c158632bf0e3b1239a">inputLayer</a>);
+<a name="l00055"></a>00055                 <span class="comment">//“‘…œ «≥ı ºªØ≤„</span>
+<a name="l00056"></a>00056                 <span class="keywordflow">if</span>(numberOfHiddenLayers &gt; 0) {
+<a name="l00057"></a>00057                         <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1c9e22f187dd0a667def1afb9548dfe8">listOfHiddenLayer</a> = <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#fe0d76dcfd041e6940a2c5cf0086c3f2">hiddenLayer</a>.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html#75811af83413fa7fc0c71d5eaa488ad1">initLayer</a>(<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#fe0d76dcfd041e6940a2c5cf0086c3f2">hiddenLayer</a>, <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1c9e22f187dd0a667def1afb9548dfe8">listOfHiddenLayer</a>, <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#790681f72fcbf2c158632bf0e3b1239a">inputLayer</a>, <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#b61a78e231cae9b29dfbe69bb2baab4c">outputLayer</a>);
+<a name="l00058"></a>00058                 }
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060                 <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#b61a78e231cae9b29dfbe69bb2baab4c">outputLayer</a> = <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#b61a78e231cae9b29dfbe69bb2baab4c">outputLayer</a>.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_output_layer.html#ee350d0014be1cfbd3e8de279142becc">initLayer</a>(<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#b61a78e231cae9b29dfbe69bb2baab4c">outputLayer</a>);
+<a name="l00061"></a>00061                 
+<a name="l00062"></a>00062                 <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> newNet = <span class="keyword">new</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a>();
+<a name="l00063"></a>00063                 newNet.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#24cfee30d0351c5d58aa34b7d2071d1e">setInputLayer</a>(<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#790681f72fcbf2c158632bf0e3b1239a">inputLayer</a>);
+<a name="l00064"></a>00064                 newNet.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#780816351285521bf51d63080d243c01">setHiddenLayer</a>(<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#fe0d76dcfd041e6940a2c5cf0086c3f2">hiddenLayer</a>);
+<a name="l00065"></a>00065                 newNet.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#67782e73b6b32e2cf17341c1f326624c">setListOfHiddenLayer</a>(<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1c9e22f187dd0a667def1afb9548dfe8">listOfHiddenLayer</a>);
+<a name="l00066"></a>00066                 newNet.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#770366f71716a4fd81f7743281b3a036">setNumberOfHiddenLayers</a>(numberOfHiddenLayers);
+<a name="l00067"></a>00067                 newNet.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f1c1aa92631538b5eae425583f4cc53c">setOutputLayer</a>(<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#b61a78e231cae9b29dfbe69bb2baab4c">outputLayer</a>);
+<a name="l00068"></a>00068         
+<a name="l00069"></a>00069                 <span class="keywordflow">return</span> newNet;
+<a name="l00070"></a>00070         }
+<a name="l00071"></a>00071         
+<a name="l00072"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d8a8c2e14e0dca5720f083781cd65a75">00072</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d8a8c2e14e0dca5720f083781cd65a75">printNet</a>(<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> n){
+<a name="l00073"></a>00073                 <span class="comment">//¥Ú”°≤„</span>
+<a name="l00074"></a>00074                 <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#790681f72fcbf2c158632bf0e3b1239a">inputLayer</a>.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html#d952b41e31d2d80e8a39b66b1e9816e3">printLayer</a>(n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#61327e435c95e3c3de0bbf2f2f556392">getInputLayer</a>());
+<a name="l00075"></a>00075                 System.out.println();
+<a name="l00076"></a>00076                 <span class="keywordflow">if</span>(n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#367b52fc13f06b36b77135b25cb9b798">getHiddenLayer</a>() != null){
+<a name="l00077"></a>00077                         <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#fe0d76dcfd041e6940a2c5cf0086c3f2">hiddenLayer</a>.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html#e29a01aad1799ecf5c5fb88dd062ef31">printLayer</a>(n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#7b73c95ca04f299357dc5ea32f72893d">getListOfHiddenLayer</a>());
+<a name="l00078"></a>00078                         System.out.println();
+<a name="l00079"></a>00079                 }
+<a name="l00080"></a>00080                 <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#b61a78e231cae9b29dfbe69bb2baab4c">outputLayer</a>.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_output_layer.html#4f579ab9ea2637957305539f8f35dcd5">printLayer</a>(n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#242fb32fd1cfdf033445094116679d9a">getOutputLayer</a>());
+<a name="l00081"></a>00081                 
+<a name="l00082"></a>00082         }
+<a name="l00083"></a>00083         
+<a name="l00084"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651">00084</a>         <span class="keyword">public</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0fb68b5351c5a8be51f96c0197ab6651">trainNet</a>(<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> n){
+<a name="l00085"></a>00085 
+<a name="l00086"></a>00086                 <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> trainedNet = <span class="keyword">new</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a>();
+<a name="l00087"></a>00087                 
+<a name="l00088"></a>00088                 <span class="keywordflow">switch</span> (n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1a617dc4ba66625087e8bfc46ef6f880">trainType</a>) {
+<a name="l00089"></a>00089                 <span class="keywordflow">case</span> <a class="code" href="_training_8java.html#09592c86fd666cf8bb2ab53e780c7f1e86ae196aae3149d1c609c87be8d499c2">PERCEPTRON</a>:
+<a name="l00090"></a>00090                         <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_perceptron.html">Perceptron</a> t = <span class="keyword">new</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_perceptron.html">Perceptron</a>();
+<a name="l00091"></a>00091                         trainedNet = t.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_perceptron.html#1ae0dba3298a93d7ad2ab02935513f44">train</a>(n);
+<a name="l00092"></a>00092                         <span class="keywordflow">return</span> trainedNet;
+<a name="l00093"></a>00093                 <span class="keywordflow">case</span> <a class="code" href="_training_8java.html#09592c86fd666cf8bb2ab53e780c7f1ea86581d09d2089f23128be70300a3c16">ADALINE</a>:
+<a name="l00094"></a>00094                         <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_adaline.html">Adaline</a> a = <span class="keyword">new</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_adaline.html">Adaline</a>();
+<a name="l00095"></a>00095                         trainedNet = a.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_adaline.html#f398ad45e799b7e57b3c2f60e2526a55">train</a>(n);
+<a name="l00096"></a>00096                         <span class="keywordflow">return</span> trainedNet;
+<a name="l00097"></a>00097                 <span class="keywordflow">case</span> <a class="code" href="_training_8java.html#09592c86fd666cf8bb2ab53e780c7f1e5955bc6f11c0d70d23975bcf6e9cf2a2">BACKPROPAGATION</a>:<span class="comment">//BPÕ¯¬ÁÀ„∑®£¨”–º‡∂Ω—ßœ∞Õ¯¬Á</span>
+<a name="l00098"></a>00098                         <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html">Backpropagation</a> b = <span class="keyword">new</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html">Backpropagation</a>();
+<a name="l00099"></a>00099                         trainedNet = b.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#6e80c193a016810e682ac21b413a2ea4">train</a>(n);
+<a name="l00100"></a>00100                         <span class="keywordflow">return</span> trainedNet;
+<a name="l00101"></a>00101                 <span class="keywordflow">case</span> <a class="code" href="_training_8java.html#09592c86fd666cf8bb2ab53e780c7f1e0a4ff7ef8133fef4fb1bf017e9be23f9">KOHONEN</a>:<span class="comment">//◊‘◊È÷Øæ∫’˘–Õ…Òæ≠Õ¯¬Áµƒ“ª÷÷£¨Œﬁº‡∂Ω—ßœ∞Õ¯¬Á</span>
+<a name="l00102"></a>00102                         <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html">Kohonen</a> k = <span class="keyword">new</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html">Kohonen</a>();
+<a name="l00103"></a>00103                         trainedNet = k.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#be84746fa2c87ad362c4232c6b700930">train</a>(n);
+<a name="l00104"></a>00104                         <span class="keywordflow">return</span> trainedNet;
+<a name="l00105"></a>00105                 <span class="keywordflow">default</span>:
+<a name="l00106"></a>00106                         <span class="keywordflow">throw</span> <span class="keyword">new</span> IllegalArgumentException(n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1a617dc4ba66625087e8bfc46ef6f880">trainType</a>+<span class="stringliteral">" does not exist in TrainingTypesENUM"</span>);
+<a name="l00107"></a>00107                 }
+<a name="l00108"></a>00108                 
+<a name="l00109"></a>00109         }
+<a name="l00110"></a>00110         
+<a name="l00111"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a8eeacb9e33fb2ad7afa7255afac5f8a">00111</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a8eeacb9e33fb2ad7afa7255afac5f8a">printTrainedNetResult</a>(<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> n) {
+<a name="l00112"></a>00112                 <span class="comment">//¥Ú”°Õ¯¬ÁΩ·π˚</span>
+<a name="l00113"></a>00113                 <span class="keywordflow">switch</span> (n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1a617dc4ba66625087e8bfc46ef6f880">trainType</a>) {
+<a name="l00114"></a>00114                 <span class="keywordflow">case</span> <a class="code" href="_training_8java.html#09592c86fd666cf8bb2ab53e780c7f1e86ae196aae3149d1c609c87be8d499c2">PERCEPTRON</a>:
+<a name="l00115"></a>00115                         <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_perceptron.html">Perceptron</a> t = <span class="keyword">new</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_perceptron.html">Perceptron</a>();
+<a name="l00116"></a>00116                         t.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#90656f54913d63b3bba8edeaa4b95757">printTrainedNetResult</a>( n );
+<a name="l00117"></a>00117                         <span class="keywordflow">break</span>;
+<a name="l00118"></a>00118                 <span class="keywordflow">case</span> <a class="code" href="_training_8java.html#09592c86fd666cf8bb2ab53e780c7f1ea86581d09d2089f23128be70300a3c16">ADALINE</a>:
+<a name="l00119"></a>00119                         <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_adaline.html">Adaline</a> a = <span class="keyword">new</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_adaline.html">Adaline</a>();
+<a name="l00120"></a>00120                         a.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#90656f54913d63b3bba8edeaa4b95757">printTrainedNetResult</a>( n );
+<a name="l00121"></a>00121                         <span class="keywordflow">break</span>;
+<a name="l00122"></a>00122                 <span class="keywordflow">case</span> <a class="code" href="_training_8java.html#09592c86fd666cf8bb2ab53e780c7f1e5955bc6f11c0d70d23975bcf6e9cf2a2">BACKPROPAGATION</a>:<span class="comment">//BP…Òæ≠Õ¯¬Á</span>
+<a name="l00123"></a>00123                         <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html">Backpropagation</a> b = <span class="keyword">new</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html">Backpropagation</a>();
+<a name="l00124"></a>00124                         b.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#90656f54913d63b3bba8edeaa4b95757">printTrainedNetResult</a>( n );
+<a name="l00125"></a>00125                         <span class="keywordflow">break</span>;
+<a name="l00126"></a>00126                 <span class="keywordflow">default</span>:
+<a name="l00127"></a>00127                         <span class="keywordflow">throw</span> <span class="keyword">new</span> IllegalArgumentException(n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1a617dc4ba66625087e8bfc46ef6f880">trainType</a>+<span class="stringliteral">" does not exist in TrainingTypesENUM"</span>);
+<a name="l00128"></a>00128                 }
+<a name="l00129"></a>00129         }
+<a name="l00130"></a>00130         
+<a name="l00131"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#82c9337c75bc84b8d1e84c4846a0b138">00131</a>         <span class="keyword">public</span> <span class="keywordtype">double</span>[][] <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#82c9337c75bc84b8d1e84c4846a0b138">getNetOutputValues</a>(<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> trainedNet){
+<a name="l00132"></a>00132                 
+<a name="l00133"></a>00133                 <span class="keywordtype">int</span> rows = trainedNet.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#c2e7c33dcd99679a76e6b405d93d7f5b">getTrainSet</a>().length;
+<a name="l00134"></a>00134                 
+<a name="l00135"></a>00135                 <span class="keywordtype">int</span> cols = trainedNet.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#242fb32fd1cfdf033445094116679d9a">getOutputLayer</a>().<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#897922d6c13d0079f6918338b1ed7147">getNumberOfNeuronsInLayer</a>();
+<a name="l00136"></a>00136                 
+<a name="l00137"></a>00137                 <span class="keywordtype">double</span>[][] matrixOutputValues = <span class="keyword">new</span> <span class="keywordtype">double</span>[rows][cols];
+<a name="l00138"></a>00138                 
+<a name="l00139"></a>00139                 <span class="keywordflow">switch</span> (trainedNet.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1a617dc4ba66625087e8bfc46ef6f880">trainType</a>) {
+<a name="l00140"></a>00140                         <span class="keywordflow">case</span> <a class="code" href="_training_8java.html#09592c86fd666cf8bb2ab53e780c7f1e5955bc6f11c0d70d23975bcf6e9cf2a2">BACKPROPAGATION</a>:
+<a name="l00141"></a>00141                                 <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html">Backpropagation</a> b = <span class="keyword">new</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html">Backpropagation</a>();
+<a name="l00142"></a>00142                                 
+<a name="l00143"></a>00143                                 <span class="keywordflow">for</span> (<span class="keywordtype">int</span> rows_i = 0; rows_i &lt; rows; rows_i++) {
+<a name="l00144"></a>00144                                         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> cols_i = 0; cols_i &lt; cols; cols_i++) {
+<a name="l00145"></a>00145                                                 
+<a name="l00146"></a>00146                                                 matrixOutputValues[rows_i][cols_i] = b.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#bf900f3a44652640f21f048704ccaffd">forward</a>(trainedNet, rows_i).<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#242fb32fd1cfdf033445094116679d9a">getOutputLayer</a>().<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#884240cc906fb8b36194cccf19c2b6bc">getListOfNeurons</a>().get(cols_i).getOutputValue();
+<a name="l00147"></a>00147                                                 
+<a name="l00148"></a>00148                                         }
+<a name="l00149"></a>00149                                 }
+<a name="l00150"></a>00150                                 
+<a name="l00151"></a>00151                                 <span class="keywordflow">break</span>;
+<a name="l00152"></a>00152                         <span class="keywordflow">default</span>:
+<a name="l00153"></a>00153                                 <span class="keywordflow">throw</span> <span class="keyword">new</span> IllegalArgumentException(trainedNet.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1a617dc4ba66625087e8bfc46ef6f880">trainType</a>+<span class="stringliteral">" does not exist in TrainingTypesENUM"</span>);
+<a name="l00154"></a>00154                 }
+<a name="l00155"></a>00155                 
+<a name="l00156"></a>00156                 <span class="keywordflow">return</span> matrixOutputValues;
+<a name="l00157"></a>00157                                 
+<a name="l00158"></a>00158         }
+<a name="l00159"></a>00159         
+<a name="l00160"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#58dc5996f68b42708d8b991eae4cfdae">00160</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#58dc5996f68b42708d8b991eae4cfdae">netValidation</a>(<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html">NeuralNet</a> n) {
+<a name="l00161"></a>00161                 
+<a name="l00162"></a>00162                 <span class="keywordflow">switch</span> (n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1a617dc4ba66625087e8bfc46ef6f880">trainType</a>) {
+<a name="l00163"></a>00163                 <span class="keywordflow">case</span> <a class="code" href="_training_8java.html#09592c86fd666cf8bb2ab53e780c7f1e0a4ff7ef8133fef4fb1bf017e9be23f9">KOHONEN</a>:
+<a name="l00164"></a>00164                         <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html">Kohonen</a> k = <span class="keyword">new</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html">Kohonen</a>();
+<a name="l00165"></a>00165                         k.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1som_1_1_kohonen.html#f264dde9528f1778b220867363c80015">netValidation</a>( n );
+<a name="l00166"></a>00166                         <span class="keywordflow">break</span>;
+<a name="l00167"></a>00167                 <span class="keywordflow">default</span>:
+<a name="l00168"></a>00168                         <span class="keywordflow">throw</span> <span class="keyword">new</span> IllegalArgumentException(n.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1a617dc4ba66625087e8bfc46ef6f880">trainType</a>+<span class="stringliteral">" does not exist in TrainingTypesENUM"</span>);
+<a name="l00169"></a>00169                 }
+<a name="l00170"></a>00170                 
+<a name="l00171"></a>00171         }
+<a name="l00172"></a>00172         
+<a name="l00173"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#61327e435c95e3c3de0bbf2f2f556392">00173</a>         <span class="keyword">public</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html">InputLayer</a> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#61327e435c95e3c3de0bbf2f2f556392">getInputLayer</a>() {
+<a name="l00174"></a>00174                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#790681f72fcbf2c158632bf0e3b1239a">inputLayer</a>;
+<a name="l00175"></a>00175         }
+<a name="l00176"></a>00176 
+<a name="l00177"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#24cfee30d0351c5d58aa34b7d2071d1e">00177</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#24cfee30d0351c5d58aa34b7d2071d1e">setInputLayer</a>(<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html">InputLayer</a> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#790681f72fcbf2c158632bf0e3b1239a">inputLayer</a>) {
+<a name="l00178"></a>00178                 <span class="keyword">this</span>.inputLayer = <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#790681f72fcbf2c158632bf0e3b1239a">inputLayer</a>;
+<a name="l00179"></a>00179         }
+<a name="l00180"></a>00180 
+<a name="l00181"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#367b52fc13f06b36b77135b25cb9b798">00181</a>         <span class="keyword">public</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html">HiddenLayer</a> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#367b52fc13f06b36b77135b25cb9b798">getHiddenLayer</a>() {
+<a name="l00182"></a>00182                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#fe0d76dcfd041e6940a2c5cf0086c3f2">hiddenLayer</a>;
+<a name="l00183"></a>00183         }
+<a name="l00184"></a>00184 
+<a name="l00185"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#780816351285521bf51d63080d243c01">00185</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#780816351285521bf51d63080d243c01">setHiddenLayer</a>(<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html">HiddenLayer</a> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#fe0d76dcfd041e6940a2c5cf0086c3f2">hiddenLayer</a>) {
+<a name="l00186"></a>00186                 <span class="keyword">this</span>.hiddenLayer = <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#fe0d76dcfd041e6940a2c5cf0086c3f2">hiddenLayer</a>;
+<a name="l00187"></a>00187         }
+<a name="l00188"></a>00188 
+<a name="l00189"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#7b73c95ca04f299357dc5ea32f72893d">00189</a>         <span class="keyword">public</span> ArrayList&lt;HiddenLayer&gt; <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#7b73c95ca04f299357dc5ea32f72893d">getListOfHiddenLayer</a>() {
+<a name="l00190"></a>00190                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1c9e22f187dd0a667def1afb9548dfe8">listOfHiddenLayer</a>;
+<a name="l00191"></a>00191         }
+<a name="l00192"></a>00192 
+<a name="l00193"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#67782e73b6b32e2cf17341c1f326624c">00193</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#67782e73b6b32e2cf17341c1f326624c">setListOfHiddenLayer</a>(ArrayList&lt;HiddenLayer&gt; <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1c9e22f187dd0a667def1afb9548dfe8">listOfHiddenLayer</a>) {
+<a name="l00194"></a>00194                 <span class="keyword">this</span>.listOfHiddenLayer = listOfHiddenLayer;
+<a name="l00195"></a>00195         }
+<a name="l00196"></a>00196 
+<a name="l00197"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#242fb32fd1cfdf033445094116679d9a">00197</a>         <span class="keyword">public</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_output_layer.html">OutputLayer</a> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#242fb32fd1cfdf033445094116679d9a">getOutputLayer</a>() {
+<a name="l00198"></a>00198                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#b61a78e231cae9b29dfbe69bb2baab4c">outputLayer</a>;
+<a name="l00199"></a>00199         }
+<a name="l00200"></a>00200 
+<a name="l00201"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f1c1aa92631538b5eae425583f4cc53c">00201</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f1c1aa92631538b5eae425583f4cc53c">setOutputLayer</a>(<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_output_layer.html">OutputLayer</a> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#b61a78e231cae9b29dfbe69bb2baab4c">outputLayer</a>) {
+<a name="l00202"></a>00202                 <span class="keyword">this</span>.outputLayer = <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#b61a78e231cae9b29dfbe69bb2baab4c">outputLayer</a>;
+<a name="l00203"></a>00203         }
+<a name="l00204"></a>00204 
+<a name="l00205"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#4cf1b9453bf3e121abc949a12106487e">00205</a>         <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#4cf1b9453bf3e121abc949a12106487e">getNumberOfHiddenLayers</a>() {
+<a name="l00206"></a>00206                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d0d02b544d2edcdf17ed38f22d4b83cb">numberOfHiddenLayers</a>;
+<a name="l00207"></a>00207         }
+<a name="l00208"></a>00208 
+<a name="l00209"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#770366f71716a4fd81f7743281b3a036">00209</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#770366f71716a4fd81f7743281b3a036">setNumberOfHiddenLayers</a>(<span class="keywordtype">int</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d0d02b544d2edcdf17ed38f22d4b83cb">numberOfHiddenLayers</a>) {
+<a name="l00210"></a>00210                 <span class="keyword">this</span>.numberOfHiddenLayers = numberOfHiddenLayers;
+<a name="l00211"></a>00211         }
+<a name="l00212"></a>00212 
+<a name="l00213"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#c2e7c33dcd99679a76e6b405d93d7f5b">00213</a>         <span class="keyword">public</span> <span class="keywordtype">double</span>[][] <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#c2e7c33dcd99679a76e6b405d93d7f5b">getTrainSet</a>() {
+<a name="l00214"></a>00214                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#afdbc0aa780133cc4cfbbadefc3ce139">trainSet</a>;
+<a name="l00215"></a>00215         }
+<a name="l00216"></a>00216 
+<a name="l00217"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#cfabb83136c77f550a8151c973b32efd">00217</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#cfabb83136c77f550a8151c973b32efd">setTrainSet</a>(<span class="keywordtype">double</span>[][] <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#afdbc0aa780133cc4cfbbadefc3ce139">trainSet</a>) {
+<a name="l00218"></a>00218                 <span class="keyword">this</span>.trainSet = trainSet;
+<a name="l00219"></a>00219         }
+<a name="l00220"></a>00220 
+<a name="l00221"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#ce05c78718bed1c012fa76da1607736e">00221</a>         <span class="keyword">public</span> <span class="keywordtype">double</span>[] <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#ce05c78718bed1c012fa76da1607736e">getRealOutputSet</a>() {
+<a name="l00222"></a>00222                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#00c34ff29cd160256c7d31917077314d">realOutputSet</a>;
+<a name="l00223"></a>00223         }
+<a name="l00224"></a>00224 
+<a name="l00225"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#8976215b3ef4c92dc944edaeae8edec5">00225</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#8976215b3ef4c92dc944edaeae8edec5">setRealOutputSet</a>(<span class="keywordtype">double</span>[] <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#00c34ff29cd160256c7d31917077314d">realOutputSet</a>) {
+<a name="l00226"></a>00226                 <span class="keyword">this</span>.realOutputSet = realOutputSet;
+<a name="l00227"></a>00227         }
+<a name="l00228"></a>00228 
+<a name="l00229"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f14057f123727ff718a5403015e4e647">00229</a>         <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f14057f123727ff718a5403015e4e647">getMaxEpochs</a>() {
+<a name="l00230"></a>00230                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#5de098de78163ec131c4cd11e6978a2a">maxEpochs</a>;
+<a name="l00231"></a>00231         }
+<a name="l00232"></a>00232 
+<a name="l00233"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#460e07bbcd7a383b25dcdd17515edfb7">00233</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#460e07bbcd7a383b25dcdd17515edfb7">setMaxEpochs</a>(<span class="keywordtype">int</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#5de098de78163ec131c4cd11e6978a2a">maxEpochs</a>) {
+<a name="l00234"></a>00234                 <span class="keyword">this</span>.maxEpochs = maxEpochs;
+<a name="l00235"></a>00235         }
+<a name="l00236"></a>00236 
+<a name="l00237"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#2f63bc17bf5a76266ab3a09660a96e5f">00237</a>         <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#2f63bc17bf5a76266ab3a09660a96e5f">getTargetError</a>() {
+<a name="l00238"></a>00238                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a23dd06d7ee8a5ca177bdbd008c43c24">targetError</a>;
+<a name="l00239"></a>00239         }
+<a name="l00240"></a>00240 
+<a name="l00241"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#4772754bde999eea841cce83891a441e">00241</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#4772754bde999eea841cce83891a441e">setTargetError</a>(<span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#a23dd06d7ee8a5ca177bdbd008c43c24">targetError</a>) {
+<a name="l00242"></a>00242                 <span class="keyword">this</span>.targetError = targetError;
+<a name="l00243"></a>00243         }
+<a name="l00244"></a>00244 
+<a name="l00245"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#107c193fc9a6af728cc511406ee89c35">00245</a>         <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#107c193fc9a6af728cc511406ee89c35">getLearningRate</a>() {
+<a name="l00246"></a>00246                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0e8d2277c7c993ab268100e221af291b">learningRate</a>;
+<a name="l00247"></a>00247         }
+<a name="l00248"></a>00248 
+<a name="l00249"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#07c09b1cded532abff86d9ab9a4f1800">00249</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#07c09b1cded532abff86d9ab9a4f1800">setLearningRate</a>(<span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0e8d2277c7c993ab268100e221af291b">learningRate</a>) {
+<a name="l00250"></a>00250                 <span class="keyword">this</span>.learningRate = learningRate;
+<a name="l00251"></a>00251         }
+<a name="l00252"></a>00252 
+<a name="l00253"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0d05e835e0ae90e7fef72a1f28cb7809">00253</a>         <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0d05e835e0ae90e7fef72a1f28cb7809">getTrainingError</a>() {
+<a name="l00254"></a>00254                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#8bc1a0c863fe8051bc1982b8fcfa46ca">trainingError</a>;
+<a name="l00255"></a>00255         }
+<a name="l00256"></a>00256 
+<a name="l00257"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#91c8857c9c3a82e61f5512c09e79a376">00257</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#91c8857c9c3a82e61f5512c09e79a376">setTrainingError</a>(<span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#8bc1a0c863fe8051bc1982b8fcfa46ca">trainingError</a>) {
+<a name="l00258"></a>00258                 <span class="keyword">this</span>.trainingError = trainingError;
+<a name="l00259"></a>00259         }
+<a name="l00260"></a>00260 
+<a name="l00261"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#20ef5ea336c7d1730b65c4026d6fd285">00261</a>         <span class="keyword">public</span> ActivationFncENUM <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#20ef5ea336c7d1730b65c4026d6fd285">getActivationFnc</a>() {
+<a name="l00262"></a>00262                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d7c0ed2fd6018cda917a139708eaf95a">activationFnc</a>;
+<a name="l00263"></a>00263         }
+<a name="l00264"></a>00264 
+<a name="l00265"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#59ca603e369ac4319892bc9d49d50477">00265</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#59ca603e369ac4319892bc9d49d50477">setActivationFnc</a>(ActivationFncENUM <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#d7c0ed2fd6018cda917a139708eaf95a">activationFnc</a>) {
+<a name="l00266"></a>00266                 <span class="keyword">this</span>.activationFnc = activationFnc;
+<a name="l00267"></a>00267         }
+<a name="l00268"></a>00268 
+<a name="l00269"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0272182f49606767f22dafa1a5c36f3a">00269</a>         <span class="keyword">public</span> TrainingTypesENUM <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0272182f49606767f22dafa1a5c36f3a">getTrainType</a>() {
+<a name="l00270"></a>00270                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1a617dc4ba66625087e8bfc46ef6f880">trainType</a>;
+<a name="l00271"></a>00271         }
+<a name="l00272"></a>00272 
+<a name="l00273"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#c499625ada286215d3b5a7441ec15439">00273</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#c499625ada286215d3b5a7441ec15439">setTrainType</a>(TrainingTypesENUM <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#1a617dc4ba66625087e8bfc46ef6f880">trainType</a>) {
+<a name="l00274"></a>00274                 <span class="keyword">this</span>.trainType = trainType;
+<a name="l00275"></a>00275         }
+<a name="l00276"></a>00276 
+<a name="l00277"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#42d6e1250122830856d89a3686b3a796">00277</a>         <span class="keyword">public</span> ArrayList&lt;Double&gt; <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#42d6e1250122830856d89a3686b3a796">getListOfMSE</a>() {
+<a name="l00278"></a>00278                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#bee7e85243a01f1880b221734fa46a45">listOfMSE</a>;
+<a name="l00279"></a>00279         }
+<a name="l00280"></a>00280 
+<a name="l00281"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#59d28282fb7086f06254c471efde5af0">00281</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#59d28282fb7086f06254c471efde5af0">setListOfMSE</a>(ArrayList&lt;Double&gt; <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#bee7e85243a01f1880b221734fa46a45">listOfMSE</a>) {
+<a name="l00282"></a>00282                 <span class="keyword">this</span>.listOfMSE = listOfMSE;
+<a name="l00283"></a>00283         }
+<a name="l00284"></a>00284 
+<a name="l00285"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#79fa7f9b399b5358a6c490fc1e9e5a9c">00285</a>         <span class="keyword">public</span> <span class="keywordtype">double</span>[][] <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#79fa7f9b399b5358a6c490fc1e9e5a9c">getRealMatrixOutputSet</a>() {
+<a name="l00286"></a>00286                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#e58c1c69c13e1f4004dc47b034f9dfd9">realMatrixOutputSet</a>;
+<a name="l00287"></a>00287         }
+<a name="l00288"></a>00288 
+<a name="l00289"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#eb1b8b8c88a3ee75dccedc0ab7efd919">00289</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#eb1b8b8c88a3ee75dccedc0ab7efd919">setRealMatrixOutputSet</a>(<span class="keywordtype">double</span>[][] <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#e58c1c69c13e1f4004dc47b034f9dfd9">realMatrixOutputSet</a>) {
+<a name="l00290"></a>00290                 <span class="keyword">this</span>.realMatrixOutputSet = realMatrixOutputSet;
+<a name="l00291"></a>00291         }
+<a name="l00292"></a>00292 
+<a name="l00293"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#06b04584eccf0496d268a34cfb062a34">00293</a>         <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#06b04584eccf0496d268a34cfb062a34">getErrorMean</a>() {
+<a name="l00294"></a>00294                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f9d91d2ad2b7ea749a1f917a20bd80c7">errorMean</a>;
+<a name="l00295"></a>00295         }
+<a name="l00296"></a>00296 
+<a name="l00297"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#3e642d97304902c4e777d03d66074af5">00297</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#3e642d97304902c4e777d03d66074af5">setErrorMean</a>(<span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#f9d91d2ad2b7ea749a1f917a20bd80c7">errorMean</a>) {
+<a name="l00298"></a>00298                 <span class="keyword">this</span>.errorMean = errorMean;
+<a name="l00299"></a>00299         }
+<a name="l00300"></a>00300 
+<a name="l00301"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0d441aaaf3fc0902c508a255db617050">00301</a>         <span class="keyword">public</span> ActivationFncENUM <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0d441aaaf3fc0902c508a255db617050">getActivationFncOutputLayer</a>() {
+<a name="l00302"></a>00302                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#63fb0f3e3551a618d157b83e9609e35a">activationFncOutputLayer</a>;
+<a name="l00303"></a>00303         }
+<a name="l00304"></a>00304 
+<a name="l00305"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#62616fe89b4ee62efc92bc0f4490a372">00305</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#62616fe89b4ee62efc92bc0f4490a372">setActivationFncOutputLayer</a>(
+<a name="l00306"></a>00306                         ActivationFncENUM <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#63fb0f3e3551a618d157b83e9609e35a">activationFncOutputLayer</a>) {
+<a name="l00307"></a>00307                 <span class="keyword">this</span>.activationFncOutputLayer = activationFncOutputLayer;
+<a name="l00308"></a>00308         }
+<a name="l00309"></a>00309 
+<a name="l00310"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#35b0661fea2763a1c97103ddd7e9fcb3">00310</a>         <span class="keyword">public</span> <span class="keywordtype">double</span>[][] <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#35b0661fea2763a1c97103ddd7e9fcb3">getValidationSet</a>() {
+<a name="l00311"></a>00311                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#392ce58c6e8a989c4dbd77d8d27d496c">validationSet</a>;
+<a name="l00312"></a>00312         }
+<a name="l00313"></a>00313 
+<a name="l00314"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#57b2828d7b4a77eafd7882057522cde0">00314</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#57b2828d7b4a77eafd7882057522cde0">setValidationSet</a>(<span class="keywordtype">double</span>[][] <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#392ce58c6e8a989c4dbd77d8d27d496c">validationSet</a>) {
+<a name="l00315"></a>00315                 <span class="keyword">this</span>.validationSet = validationSet;
+<a name="l00316"></a>00316         }
+<a name="l00317"></a>00317 
+<a name="l00318"></a>00318         
+<a name="l00319"></a>00319         
+<a name="l00320"></a>00320 }
+</pre></div><hr size="1"><address style="text-align: right;"><small>Generated at Sat Sep 8 21:51:21 2018 for cca by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

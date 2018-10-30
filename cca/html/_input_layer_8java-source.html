@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>cca: D:/dude/cca/src/edu/packt/neuralnet/InputLayer.javaæºæ–‡ä»¶</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- åˆ¶ä½œè€… Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>é¦–é¡µ</span></a></li>
+    <li><a href="namespaces.html"><span>åŒ…</span></a></li>
+    <li><a href="annotated.html"><span>ç±»</span></a></li>
+    <li class="current"><a href="files.html"><span>æ–‡ä»¶</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>æ–‡ä»¶åˆ—è¡¨</span></a></li>
+    <li><a href="globals.html"><span>æ–‡ä»¶æˆå‘˜</span></a></li>
+  </ul>
+</div>
+<h1>D:/dude/cca/src/edu/packt/neuralnet/InputLayer.java</h1><a href="_input_layer_8java.html">æµè§ˆè¯¥æ–‡ä»¶çš„æ–‡æ¡£ã€‚</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="keyword">package </span>edu.packt.neuralnet;
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="keyword">import</span> java.util.ArrayList;
+<a name="l00004"></a>00004 <span class="keyword">import</span> java.util.Arrays;
+<a name="l00005"></a>00005 
+<a name="l00006"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html">00006</a> <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html">InputLayer</a> <span class="keyword">extends</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html">Layer</a> {
+<a name="l00007"></a>00007 
+<a name="l00008"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html#183330370b7cc424aef8604c00b338f7">00008</a>         <span class="keyword">public</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html">InputLayer</a> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html#183330370b7cc424aef8604c00b338f7">initLayer</a>(<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html">InputLayer</a> inputLayer) {
+<a name="l00009"></a>00009                 <span class="comment">//ÓÃÎ±Ëæ»úÊı³õÊ¼»¯ÊäÈë²ã</span>
+<a name="l00010"></a>00010                 ArrayList&lt;Double&gt; listOfWeightInTemp = <span class="keyword">new</span> ArrayList&lt;Double&gt;();
+<a name="l00011"></a>00011                 ArrayList&lt;Neuron&gt; <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#96ee454e3dafe459f0420c5ac7f2e496">listOfNeurons</a> = <span class="keyword">new</span> ArrayList&lt;Neuron&gt;();
+<a name="l00012"></a>00012                 
+<a name="l00013"></a>00013                 <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; inputLayer.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#897922d6c13d0079f6918338b1ed7147">getNumberOfNeuronsInLayer</a>(); i++) {
+<a name="l00014"></a>00014                         <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html">Neuron</a> neuron = <span class="keyword">new</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html">Neuron</a>();
+<a name="l00015"></a>00015                         
+<a name="l00016"></a>00016                         listOfWeightInTemp.add( neuron.initNeuron() );
+<a name="l00017"></a>00017                         <span class="comment">//listOfWeightInTemp.add( neuron.initNeuron( i ) );</span>
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019                         neuron.setListOfWeightIn( listOfWeightInTemp );
+<a name="l00020"></a>00020                         listOfNeurons.add( neuron );
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022                         listOfWeightInTemp = <span class="keyword">new</span> ArrayList&lt;Double&gt;();
+<a name="l00023"></a>00023                 }
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025                 inputLayer.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#21227cb2127f63fd8a7ed9df8c452b8f">setListOfNeurons</a>(listOfNeurons);
+<a name="l00026"></a>00026 
+<a name="l00027"></a>00027                 <span class="keywordflow">return</span> inputLayer;
+<a name="l00028"></a>00028         }
+<a name="l00029"></a>00029 
+<a name="l00030"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html#d952b41e31d2d80e8a39b66b1e9816e3">00030</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#6550402845150a7107790104bf022b56">printLayer</a>(<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html">InputLayer</a> inputLayer){
+<a name="l00031"></a>00031                 <span class="comment">//´òÓ¡²ãµÄÊäÈëÈ¨Öµ</span>
+<a name="l00032"></a>00032                 System.out.println(<span class="stringliteral">"### INPUT LAYER ###"</span>);
+<a name="l00033"></a>00033                 <span class="keywordtype">int</span> n = 1;
+<a name="l00034"></a>00034                 <span class="keywordflow">for</span> (<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html">Neuron</a> neuron : inputLayer.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#884240cc906fb8b36194cccf19c2b6bc">getListOfNeurons</a>()) {
+<a name="l00035"></a>00035                         System.out.println(<span class="stringliteral">"Neuron #"</span> + n + <span class="stringliteral">":"</span>);
+<a name="l00036"></a>00036                         System.out.println(<span class="stringliteral">"Input Weights:"</span>);
+<a name="l00037"></a>00037                         System.out.println(Arrays.deepToString( neuron.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#a7dbd13df945a1940769f9c8cd47fe80">getListOfWeightIn</a>().toArray() ));
+<a name="l00038"></a>00038                         n++;
+<a name="l00039"></a>00039                 }
+<a name="l00040"></a>00040         }
+<a name="l00041"></a>00041         
+<a name="l00042"></a>00042         
+<a name="l00043"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html#e23766eccd21e834320faa75bf8875fd">00043</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html#e23766eccd21e834320faa75bf8875fd">setNumberOfNeuronsInLayer</a>(<span class="keywordtype">int</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#26ed64411afe8e25b405591196d23af6">numberOfNeuronsInLayer</a>) {
+<a name="l00044"></a>00044                 <span class="keyword">this</span>.numberOfNeuronsInLayer = numberOfNeuronsInLayer + 1; <span class="comment">//BIAS</span>
+<a name="l00045"></a>00045         }
+<a name="l00046"></a>00046         
+<a name="l00047"></a>00047         
+<a name="l00048"></a>00048 }
+</pre></div><hr size="1"><address style="text-align: right;"><small>Generated at Sat Sep 8 21:51:21 2018 for cca by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

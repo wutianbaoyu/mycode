@@ -1,0 +1,12 @@
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#d3654db10f31727f7a1c2bfefaa0a06e" title="edu.packt.neuralnet.learn.Training.calcNewWeight" alt="" coords="413,107,733,133">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#61327e435c95e3c3de0bbf2f2f556392" title="edu.packt.neuralnet.NeuralNet.getInputLayer" alt="" coords="429,157,717,184">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1_layer.html#884240cc906fb8b36194cccf19c2b6bc" title="edu.packt.neuralnet.Layer.getListOfNeurons" alt="" coords="432,208,715,235">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#c2e7c33dcd99679a76e6b405d93d7f5b" title="edu.packt.neuralnet.NeuralNet.getTrainSet" alt="" coords="436,259,711,285">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0272182f49606767f22dafa1a5c36f3a" title="edu.packt.neuralnet.NeuralNet.getTrainType" alt="" coords="431,309,716,336">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1_neuron.html#babce636308e672631c1c5746c46f57d" title="edu.packt.neuralnet.Neuron.setListOfWeightIn" alt="" coords="425,360,721,387">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#0e7eb2e324e36d3b5e740675f10bdda8" title="edu.packt.neuralnet.learn.Training.derivativeActivationFnc" alt="" coords="781,81,1147,108">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#20ef5ea336c7d1730b65c4026d6fd285" title="edu.packt.neuralnet.NeuralNet.getActivationFnc" alt="" coords="812,132,1116,159">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#6945a19ff740099659c9e81e1255f749" title="edu.packt.neuralnet.learn.Training.derivativeFncHyperTan" alt="" coords="1196,5,1561,32">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#5bd0c1ba948a3a82c530752305bab65c" title="edu.packt.neuralnet.learn.Training.derivativeFncLinear" alt="" coords="1207,56,1551,83">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#b68e279289768f703ef8ac4ff6a18829" title="edu.packt.neuralnet.learn.Training.derivativeFncSigLog" alt="" coords="1204,107,1553,133">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#fa2fcd32fa0b2fa3582ce21e5f0548b1" title="edu.packt.neuralnet.learn.Training.derivativeFncStep" alt="" coords="1212,157,1545,184">

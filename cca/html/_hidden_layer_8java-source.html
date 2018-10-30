@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>cca: D:/dude/cca/src/edu/packt/neuralnet/HiddenLayer.javaæºæ–‡ä»¶</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- åˆ¶ä½œè€… Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>é¦–é¡µ</span></a></li>
+    <li><a href="namespaces.html"><span>åŒ…</span></a></li>
+    <li><a href="annotated.html"><span>ç±»</span></a></li>
+    <li class="current"><a href="files.html"><span>æ–‡ä»¶</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>æ–‡ä»¶åˆ—è¡¨</span></a></li>
+    <li><a href="globals.html"><span>æ–‡ä»¶æˆå‘˜</span></a></li>
+  </ul>
+</div>
+<h1>D:/dude/cca/src/edu/packt/neuralnet/HiddenLayer.java</h1><a href="_hidden_layer_8java.html">æµè§ˆè¯¥æ–‡ä»¶çš„æ–‡æ¡£ã€‚</a><div class="fragment"><pre class="fragment"><a name="l00001"></a><a class="code" href="namespaceedu_1_1packt_1_1neuralnet.html">00001</a> <span class="keyword">package </span>edu.packt.neuralnet;
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="keyword">import</span> java.util.ArrayList;
+<a name="l00004"></a>00004 <span class="keyword">import</span> java.util.Arrays;
+<a name="l00005"></a>00005 
+<a name="l00006"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html">00006</a> <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html">HiddenLayer</a> <span class="keyword">extends</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html">Layer</a> {<span class="comment">//Òş²Ø²ã</span>
+<a name="l00007"></a>00007 
+<a name="l00008"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html#75811af83413fa7fc0c71d5eaa488ad1">00008</a>         <span class="keyword">public</span> ArrayList&lt;HiddenLayer&gt; <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html#75811af83413fa7fc0c71d5eaa488ad1">initLayer</a>(<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html">HiddenLayer</a> hiddenLayer,
+<a name="l00009"></a>00009                         ArrayList&lt;HiddenLayer&gt; listOfHiddenLayer, <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_input_layer.html">InputLayer</a> inputLayer,
+<a name="l00010"></a>00010                         <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_output_layer.html">OutputLayer</a> outputLayer) {<span class="comment">//³õÊ¼»¯</span>
+<a name="l00011"></a>00011                 <span class="comment">//Òş²Ø²ã£¬Òş²Ø²ãÁĞ±í£¬ÊäÈë²ã£¬Êä³ö²ã</span>
+<a name="l00012"></a>00012                 <span class="comment">//ÓÃÎ±Ëæ»úÊµÊı³õÊ¼»¯Òş²Ø²ã</span>
+<a name="l00013"></a>00013                 ArrayList&lt;Double&gt; listOfWeightIn = <span class="keyword">new</span> ArrayList&lt;Double&gt;();
+<a name="l00014"></a>00014                 <span class="comment">//ÊäÈë²ãµÄÈ¨ÖØ</span>
+<a name="l00015"></a>00015                 ArrayList&lt;Double&gt; listOfWeightOut = <span class="keyword">new</span> ArrayList&lt;Double&gt;();
+<a name="l00016"></a>00016                 <span class="comment">//Êä³ö²ãµÄÈ¨ÖØ</span>
+<a name="l00017"></a>00017                 ArrayList&lt;Neuron&gt; <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#96ee454e3dafe459f0420c5ac7f2e496">listOfNeurons</a> = <span class="keyword">new</span> ArrayList&lt;Neuron&gt;();
+<a name="l00018"></a>00018                 <span class="comment">//Éñ¾­Ôª</span>
+<a name="l00019"></a>00019                 <span class="keywordtype">int</span> numberOfHiddenLayers = listOfHiddenLayer.size();
+<a name="l00020"></a>00020                 <span class="comment">//µÃµ½Òş²Ø²ãµÄÊıÁ¿</span>
+<a name="l00021"></a>00021                 <span class="keywordflow">for</span> (<span class="keywordtype">int</span> hdn_i = 0; hdn_i &lt; numberOfHiddenLayers; hdn_i++) {
+<a name="l00022"></a>00022                         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> neuron_i = 0; neuron_i &lt; hiddenLayer.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#897922d6c13d0079f6918338b1ed7147">getNumberOfNeuronsInLayer</a>(); neuron_i++) {
+<a name="l00023"></a>00023                                 <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html">Neuron</a> neuron = <span class="keyword">new</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html">Neuron</a>();
+<a name="l00024"></a>00024                                 <span class="comment">//µÃµ½Éñ¾­Ôª</span>
+<a name="l00025"></a>00025                                 <span class="keywordtype">int</span> limitIn  = 0;
+<a name="l00026"></a>00026                                 <span class="keywordtype">int</span> limitOut = 0;
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028                                 <span class="keywordflow">if</span> (hdn_i == 0) { <span class="comment">// first</span>
+<a name="l00029"></a>00029                                         limitIn = inputLayer.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#897922d6c13d0079f6918338b1ed7147">getNumberOfNeuronsInLayer</a>();
+<a name="l00030"></a>00030                                         <span class="comment">//µÃµ½ÊäÈë²ãµÄÉñ¾­ÔªÊıÁ¿</span>
+<a name="l00031"></a>00031                                         <span class="keywordflow">if</span> (numberOfHiddenLayers &gt; 1) {<span class="comment">//Èç¹ûÊäÈë²ãµÄÉñ¾­ÔªÊıÁ¿´óÓÚ1</span>
+<a name="l00032"></a>00032                                                 limitOut = listOfHiddenLayer.get(hdn_i + 1).getNumberOfNeuronsInLayer();
+<a name="l00033"></a>00033                                                 <span class="comment">//µÃµ½µÚhdn_i+1£¨¼´1£©²ãÒş²Ø²ãµÄµÄÉñ¾­ÔªÊıÁ¿</span>
+<a name="l00034"></a>00034                                                 <span class="comment">//hdn_i¾ÍÊÇÒş²ãµÄ²ãÊı£¬ÕâÀïÊÇÎªÁËµÃµ½Òş²Ø²ãµÄÉñ¾­ÔªÊıÁ¿£¬´ÓµÚÒ»²ã¿ªÊ¼</span>
+<a name="l00035"></a>00035                                         } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(numberOfHiddenLayers == 1){<span class="comment">//Èç¹ûÊäÈë²ãµÄÉñ¾­ÔªÊıÁ¿µÈÓÚ1</span>
+<a name="l00036"></a>00036                                                 limitOut = outputLayer.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#897922d6c13d0079f6918338b1ed7147">getNumberOfNeuronsInLayer</a>();
+<a name="l00037"></a>00037                                                 <span class="comment">//µÃµ½Êä³ö²ãµÄÉñ¾­ÔªÊıÁ¿</span>
+<a name="l00038"></a>00038                                                 <span class="comment">//Òş²ãÖ»ÓĞÒ»²ãµÄÇé¿öÏÂ£¬Òş²ãÊä³öµÄÊıÁ¿¾ÍÊÇÊä³ö²ãµÄÉñ¾­ÔªÊıÁ¿</span>
+<a name="l00039"></a>00039                                         }
+<a name="l00040"></a>00040                                 } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (hdn_i == numberOfHiddenLayers - 1) { <span class="comment">// last//×îºóµÄ²ãµÄÉñ¾­ÔªÊıÁ¿</span>
+<a name="l00041"></a>00041                                         limitIn = listOfHiddenLayer.get(hdn_i - 1).getNumberOfNeuronsInLayer();
+<a name="l00042"></a>00042                                         limitOut = outputLayer.<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#897922d6c13d0079f6918338b1ed7147">getNumberOfNeuronsInLayer</a>();
+<a name="l00043"></a>00043                                 } <span class="keywordflow">else</span> { <span class="comment">// middle//ÖĞ¼äµÄÒş²Ø²ãµÄÉñ¾­ÔªÊıÁ¿</span>
+<a name="l00044"></a>00044                                         limitIn = listOfHiddenLayer.get(hdn_i - 1).getNumberOfNeuronsInLayer();
+<a name="l00045"></a>00045                                         limitOut = listOfHiddenLayer.get(hdn_i + 1).getNumberOfNeuronsInLayer();
+<a name="l00046"></a>00046                                 }
+<a name="l00047"></a>00047                                 
+<a name="l00048"></a>00048                                 limitIn  = limitIn  - 1;  <span class="comment">//bias is not connected//²»¼ÆËãÆ«ÖÃÉñ¾­Ôª</span>
+<a name="l00049"></a>00049                                 limitOut = limitOut - 1;  <span class="comment">//bias is not connected//²»¼ÆËãÆ«ÖÃÉñ¾­Ôª</span>
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051                                 <span class="keywordflow">if</span> (neuron_i &gt;= 1) { <span class="comment">//bias has no input//Æ«ÖÃÉñ¾­Ôª²»¼ÆÈëÊäÈë</span>
+<a name="l00052"></a>00052                                         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt;= limitIn; k++) {
+<a name="l00053"></a>00053                                                 listOfWeightIn.add(neuron.initNeuron());
+<a name="l00054"></a>00054                                                 <span class="comment">//initNeuron()·½·¨ÕâÀïÊÇËæ»údoubleÈ¨Öµ</span>
+<a name="l00055"></a>00055                                                 <span class="comment">//listOfWeightIn.add(neuron.initNeuron(k, neuron_i, 1));</span>
+<a name="l00056"></a>00056                                                 <span class="comment">//Õâ¸ö·½·¨Ã»¶¨ÒåÔÚ³õÊ¼´úÂë</span>
+<a name="l00057"></a>00057                                         }
+<a name="l00058"></a>00058                                 }
+<a name="l00059"></a>00059                                 <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt;= limitOut; k++) {
+<a name="l00060"></a>00060                                         listOfWeightOut.add(neuron.initNeuron());
+<a name="l00061"></a>00061                                         <span class="comment">//initNeuron()·½·¨ÕâÀïÊÇËæ»údoubleÈ¨Öµ</span>
+<a name="l00062"></a>00062                                         <span class="comment">//listOfWeightOut.add(neuron.initNeuron(k, neuron_i, 2));</span>
+<a name="l00063"></a>00063                                         <span class="comment">//Õâ¸ö·½·¨Ã»¶¨ÒåÔÚ³õÊ¼´úÂë</span>
+<a name="l00064"></a>00064                                 }
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066                                 neuron.setListOfWeightIn(listOfWeightIn);<span class="comment">//ÉèÖÃÊäÈë²ãµÄÈ¨ÖØ</span>
+<a name="l00067"></a>00067                                 neuron.setListOfWeightOut(listOfWeightOut);<span class="comment">//ÉèÖÃÊä³ö²ãµÄÈ¨ÖØ</span>
+<a name="l00068"></a>00068                                 listOfNeurons.add(neuron);
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070                                 listOfWeightIn = <span class="keyword">new</span> ArrayList&lt;Double&gt;();
+<a name="l00071"></a>00071                                 listOfWeightOut = <span class="keyword">new</span> ArrayList&lt;Double&gt;();
+<a name="l00072"></a>00072 
+<a name="l00073"></a>00073                         }
+<a name="l00074"></a>00074 
+<a name="l00075"></a>00075                         listOfHiddenLayer.get(hdn_i).setListOfNeurons(listOfNeurons);
+<a name="l00076"></a>00076 
+<a name="l00077"></a>00077                         listOfNeurons = <span class="keyword">new</span> ArrayList&lt;Neuron&gt;();
+<a name="l00078"></a>00078 
+<a name="l00079"></a>00079                 }
+<a name="l00080"></a>00080 
+<a name="l00081"></a>00081                 <span class="keywordflow">return</span> listOfHiddenLayer;
+<a name="l00082"></a>00082 
+<a name="l00083"></a>00083         }
+<a name="l00084"></a>00084 
+<a name="l00085"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html#e29a01aad1799ecf5c5fb88dd062ef31">00085</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#6550402845150a7107790104bf022b56">printLayer</a>(ArrayList&lt;HiddenLayer&gt; listOfHiddenLayer) {
+<a name="l00086"></a>00086                 <span class="comment">//ÔÚ¿ØÖÆÌ¨ÉÏÊä³öÒş²Ø²ã£¬Éñ¾­Ôª£¬ÊäÈë²ãÈ¨Öµ£¬Êä³ö²ãÈ¨Öµ</span>
+<a name="l00087"></a>00087                 <span class="keywordflow">if</span> (listOfHiddenLayer.size() &gt; 0) {
+<a name="l00088"></a>00088                         System.out.println(<span class="stringliteral">"### HIDDEN LAYER ###"</span>);
+<a name="l00089"></a>00089                         <span class="keywordtype">int</span> h = 1;
+<a name="l00090"></a>00090                         <span class="keywordflow">for</span> (<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html">HiddenLayer</a> hiddenLayer : listOfHiddenLayer) {
+<a name="l00091"></a>00091                                 System.out.println(<span class="stringliteral">"Hidden Layer #"</span> + h);
+<a name="l00092"></a>00092                                 <span class="keywordtype">int</span> n = 1;
+<a name="l00093"></a>00093                                 <span class="keywordflow">for</span> (<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html">Neuron</a> neuron : hiddenLayer.getListOfNeurons()) {
+<a name="l00094"></a>00094                                         System.out.println(<span class="stringliteral">"Neuron #"</span> + n);
+<a name="l00095"></a>00095                                         System.out.println(<span class="stringliteral">"Input Weights:"</span>);
+<a name="l00096"></a>00096                                         System.out.println(Arrays.deepToString(neuron
+<a name="l00097"></a>00097                                                         .<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#a7dbd13df945a1940769f9c8cd47fe80">getListOfWeightIn</a>().toArray()));
+<a name="l00098"></a>00098                                         System.out.println(<span class="stringliteral">"Output Weights:"</span>);
+<a name="l00099"></a>00099                                         System.out.println(Arrays.deepToString(neuron
+<a name="l00100"></a>00100                                                         .<a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#38f3084a2ed3c3aef247b6f63df22df4">getListOfWeightOut</a>().toArray()));
+<a name="l00101"></a>00101                                         n++;
+<a name="l00102"></a>00102                                 }
+<a name="l00103"></a>00103                                 h++;
+<a name="l00104"></a>00104                         }
+<a name="l00105"></a>00105                 }
+<a name="l00106"></a>00106         }
+<a name="l00107"></a>00107         
+<a name="l00108"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html#5a73556371b65931dceba233a25a79d0">00108</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_hidden_layer.html#5a73556371b65931dceba233a25a79d0">setNumberOfNeuronsInLayer</a>(<span class="keywordtype">int</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_layer.html#26ed64411afe8e25b405591196d23af6">numberOfNeuronsInLayer</a>) {
+<a name="l00109"></a>00109                 <span class="keyword">this</span>.numberOfNeuronsInLayer = numberOfNeuronsInLayer + 1; <span class="comment">//BIAS</span>
+<a name="l00110"></a>00110         }
+<a name="l00111"></a>00111         
+<a name="l00112"></a>00112 }
+</pre></div><hr size="1"><address style="text-align: right;"><small>Generated at Sat Sep 8 21:51:21 2018 for cca by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>

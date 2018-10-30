@@ -1,0 +1,17 @@
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1learn_1_1_backpropagation.html#bf900f3a44652640f21f048704ccaffd" title="edu.packt.neuralnet.learn.Backpropagation.forward" alt="" coords="383,309,705,336">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1_layer.html#884240cc906fb8b36194cccf19c2b6bc" title="edu.packt.neuralnet.Layer.getListOfNeurons" alt="" coords="803,5,1085,32">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1_layer.html#897922d6c13d0079f6918338b1ed7147" title="edu.packt.neuralnet.Layer.getNumberOfNeuronsInLayer" alt="" coords="767,461,1121,488">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#242fb32fd1cfdf033445094116679d9a" title="edu.packt.neuralnet.NeuralNet.getOutputLayer" alt="" coords="795,512,1093,539">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#c2e7c33dcd99679a76e6b405d93d7f5b" title="edu.packt.neuralnet.NeuralNet.getTrainSet" alt="" coords="807,563,1081,589">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#16214b108139b3452c15a0c6695afcb7" title="edu.packt.neuralnet.learn.Training.activationFnc" alt="" coords="791,259,1097,285">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#20ef5ea336c7d1730b65c4026d6fd285" title="edu.packt.neuralnet.NeuralNet.getActivationFnc" alt="" coords="792,309,1096,336">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#0d441aaaf3fc0902c508a255db617050" title="edu.packt.neuralnet.NeuralNet.getActivationFncOutputLayer" alt="" coords="755,360,1133,387">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#7b73c95ca04f299357dc5ea32f72893d" title="edu.packt.neuralnet.NeuralNet.getListOfHiddenLayer" alt="" coords="776,411,1112,437">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1_neuron.html#a7dbd13df945a1940769f9c8cd47fe80" title="edu.packt.neuralnet.Neuron.getListOfWeightIn" alt="" coords="796,56,1092,83">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#79fa7f9b399b5358a6c490fc1e9e5a9c" title="edu.packt.neuralnet.NeuralNet.getRealMatrixOutputSet" alt="" coords="769,107,1119,133">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1_neural_net.html#3e642d97304902c4e777d03d66074af5" title="edu.packt.neuralnet.NeuralNet.setErrorMean" alt="" coords="800,157,1088,184">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1_neuron.html#52e2674319fa5ac381a007d17853dddb" title="edu.packt.neuralnet.Neuron.setOutputValue" alt="" coords="803,208,1085,235">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#a1e191cb5ca4c28728e50f3a82004c36" title="edu.packt.neuralnet.learn.Training.fncHyperTan" alt="" coords="1183,183,1487,209">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#9496d7cd3c4c9098d6d636c5e657b12c" title="edu.packt.neuralnet.learn.Training.fncLinear" alt="" coords="1193,233,1476,260">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#030c1ece3079d2691fe8b550ef789bcd" title="edu.packt.neuralnet.learn.Training.fncSigLog" alt="" coords="1191,284,1479,311">
+<area shape="rect" href="$classedu_1_1packt_1_1neuralnet_1_1learn_1_1_training.html#3f840606d471f9c495ae317b43d2aa6c" title="edu.packt.neuralnet.learn.Training.fncStep" alt="" coords="1199,335,1471,361">

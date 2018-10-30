@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>cca: D:/dude/cca/src/edu/packt/neuralnet/Neuron.java源文件</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.2 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li><a href="namespaces.html"><span>包</span></a></li>
+    <li><a href="annotated.html"><span>类</span></a></li>
+    <li class="current"><a href="files.html"><span>文件</span></a></li>
+  </ul>
+</div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>文件列表</span></a></li>
+    <li><a href="globals.html"><span>文件成员</span></a></li>
+  </ul>
+</div>
+<h1>D:/dude/cca/src/edu/packt/neuralnet/Neuron.java</h1><a href="_neuron_8java.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="keyword">package </span>edu.packt.neuralnet;
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="keyword">import</span> java.util.ArrayList;
+<a name="l00004"></a>00004 <span class="keyword">import</span> java.util.Random;
+<a name="l00005"></a>00005 
+<a name="l00006"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html">00006</a> <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html">Neuron</a> {
+<a name="l00007"></a>00007 
+<a name="l00008"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#1febbff2d6d4c67daed26129a064d09b">00008</a>         <span class="keyword">private</span> ArrayList&lt;Double&gt; <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#1febbff2d6d4c67daed26129a064d09b">listOfWeightIn</a>;
+<a name="l00009"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#42c094e68e428f593bf7e1265550aec8">00009</a>         <span class="keyword">private</span> ArrayList&lt;Double&gt; <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#42c094e68e428f593bf7e1265550aec8">listOfWeightOut</a>;
+<a name="l00010"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#d401558074807498d5ffaeafd481288c">00010</a>         <span class="keyword">private</span> <span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#d401558074807498d5ffaeafd481288c">outputValue</a>;
+<a name="l00011"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#455161abb10bad3f0599f0a2e48225a4">00011</a>         <span class="keyword">private</span> <span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#455161abb10bad3f0599f0a2e48225a4">error</a>;
+<a name="l00012"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#2926a0158281999404f1a3061ea7e5c9">00012</a>         <span class="keyword">private</span> <span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#2926a0158281999404f1a3061ea7e5c9">sensibility</a>;
+<a name="l00013"></a>00013         
+<a name="l00014"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#4f3f09792cf20b07d87353da6ae04418">00014</a>         <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#4f3f09792cf20b07d87353da6ae04418">initNeuron</a>(){
+<a name="l00015"></a>00015                 Random r = <span class="keyword">new</span> Random();
+<a name="l00016"></a>00016                 <span class="comment">//���double��Ԫ</span>
+<a name="l00017"></a>00017                 <span class="keywordflow">return</span> r.nextDouble();
+<a name="l00018"></a>00018         }
+<a name="l00019"></a>00019         
+<a name="l00020"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#a7dbd13df945a1940769f9c8cd47fe80">00020</a>         <span class="keyword">public</span> ArrayList&lt;Double&gt; <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#a7dbd13df945a1940769f9c8cd47fe80">getListOfWeightIn</a>() {
+<a name="l00021"></a>00021                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#1febbff2d6d4c67daed26129a064d09b">listOfWeightIn</a>;
+<a name="l00022"></a>00022         }
+<a name="l00023"></a>00023 
+<a name="l00024"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#babce636308e672631c1c5746c46f57d">00024</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#babce636308e672631c1c5746c46f57d">setListOfWeightIn</a>(ArrayList&lt;Double&gt; <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#1febbff2d6d4c67daed26129a064d09b">listOfWeightIn</a>) {
+<a name="l00025"></a>00025                 <span class="keyword">this</span>.listOfWeightIn = listOfWeightIn;
+<a name="l00026"></a>00026         }
+<a name="l00027"></a>00027 
+<a name="l00028"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#38f3084a2ed3c3aef247b6f63df22df4">00028</a>         <span class="keyword">public</span> ArrayList&lt;Double&gt; <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#38f3084a2ed3c3aef247b6f63df22df4">getListOfWeightOut</a>() {
+<a name="l00029"></a>00029                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#42c094e68e428f593bf7e1265550aec8">listOfWeightOut</a>;
+<a name="l00030"></a>00030         }
+<a name="l00031"></a>00031 
+<a name="l00032"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#81f70e3728886f155baa2ac8b107681d">00032</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#81f70e3728886f155baa2ac8b107681d">setListOfWeightOut</a>(ArrayList&lt;Double&gt; <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#42c094e68e428f593bf7e1265550aec8">listOfWeightOut</a>) {
+<a name="l00033"></a>00033                 <span class="keyword">this</span>.listOfWeightOut = listOfWeightOut;
+<a name="l00034"></a>00034         }
+<a name="l00035"></a>00035 
+<a name="l00036"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#0b36eaf596659d5588362ac484225b04">00036</a>         <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#0b36eaf596659d5588362ac484225b04">getOutputValue</a>() {
+<a name="l00037"></a>00037                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#d401558074807498d5ffaeafd481288c">outputValue</a>;
+<a name="l00038"></a>00038         }
+<a name="l00039"></a>00039 
+<a name="l00040"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#52e2674319fa5ac381a007d17853dddb">00040</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#52e2674319fa5ac381a007d17853dddb">setOutputValue</a>(<span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#d401558074807498d5ffaeafd481288c">outputValue</a>) {
+<a name="l00041"></a>00041                 <span class="keyword">this</span>.outputValue = outputValue;
+<a name="l00042"></a>00042         }
+<a name="l00043"></a>00043 
+<a name="l00044"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#b36ec54c0499a80337cd81db584f14a0">00044</a>         <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#b36ec54c0499a80337cd81db584f14a0">getError</a>() {
+<a name="l00045"></a>00045                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#455161abb10bad3f0599f0a2e48225a4">error</a>;
+<a name="l00046"></a>00046         }
+<a name="l00047"></a>00047 
+<a name="l00048"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#3863084bcdd366bb1c2f4ec4d22b04fc">00048</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#3863084bcdd366bb1c2f4ec4d22b04fc">setError</a>(<span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#455161abb10bad3f0599f0a2e48225a4">error</a>) {
+<a name="l00049"></a>00049                 <span class="keyword">this</span>.error = error;
+<a name="l00050"></a>00050         }
+<a name="l00051"></a>00051 
+<a name="l00052"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#9b37818d7b9beb9b14c902e15aeb0979">00052</a>         <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#9b37818d7b9beb9b14c902e15aeb0979">getSensibility</a>() {
+<a name="l00053"></a>00053                 <span class="keywordflow">return</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#2926a0158281999404f1a3061ea7e5c9">sensibility</a>;
+<a name="l00054"></a>00054         }
+<a name="l00055"></a>00055 
+<a name="l00056"></a><a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#202a8315bde031ea0052855125f70d96">00056</a>         <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#202a8315bde031ea0052855125f70d96">setSensibility</a>(<span class="keywordtype">double</span> <a class="code" href="classedu_1_1packt_1_1neuralnet_1_1_neuron.html#2926a0158281999404f1a3061ea7e5c9">sensibility</a>) {
+<a name="l00057"></a>00057                 <span class="keyword">this</span>.sensibility = sensibility;
+<a name="l00058"></a>00058         }
+<a name="l00059"></a>00059         
+<a name="l00060"></a>00060 }
+</pre></div><hr size="1"><address style="text-align: right;"><small>Generated at Sat Sep 8 21:51:21 2018 for cca by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.2 </small></address>
+</body>
+</html>
