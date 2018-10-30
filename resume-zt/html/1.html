@@ -1,0 +1,9 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<html> <head> <title>自动选择播放器</title> </head>
+  <body> <h3>自动选择播放器</h3>
+    <p> <script type="text/javascript">
+       if (navigator.appVersion.indexOf("Win") != -1)
+         document.write( "<object classid='clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6' width='500' height='350'><param name='type' value='video/x-ms-wmv' /><param name='url' value='flash/f.flv' /><param name='uiMode' value='full' /><param name='autoStart' value='true' /><embed width='500' height='350' type='video/x-ms-wmv' src='flash/f.flv' controls='All' autostart='true' /></object>");
+       else document.write( "<object classid='clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95' width='500' height='350'><param name='type' value='video/x-ms-wmv' /><param name='src' value='flash/f.mp4' /><param name='controls' value='All' /><param name='autostart' value='true' /><param name='prefetch' value='false' /><embed width='500' height='350' type='video/x-ms-wmv' src='flash/f.mp4' controls='All' autostart='true' /></object>"); </script>
+    </p> </body> </html> 
